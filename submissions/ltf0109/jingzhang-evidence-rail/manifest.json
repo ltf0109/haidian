@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "c7eb2be2f87b3a9487a4a790044c3921d1c317d2efa3478d8de8c3e0bbb48eae"
+   "sha256": "204956a1743353e849d4a175d9bcb1ad196e5ebbcb8f9ca6dd043eeedf0a00d0"
   },
   {
    "path": "agent.json",
@@ -44,13 +44,13 @@
    "path": "assumptions.json",
    "role": "assumptions",
    "required": true,
-   "sha256": "e77e06a137c9320cdbd47bd635eaa0ce2c6999ef92b92f9acaf2f92fe94aea4e"
+   "sha256": "96733d4d58ea0e5559209eadb43451b98bed3332c1c51f12d8decdda9aa29fae"
   },
   {
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "a522928b0a55c942e8b3a7387857253a10622ebd3c0669cbdf2a80afc59f8d8a"
+   "sha256": "c71b8c3dbf6552e7228afdc678089c7906034e9e4b26afe690e27ae0219aa8b6"
   },
   {
    "path": "self_check.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "49dc96821279a80af27b178db29c0ec2369f1663dc1c254911c6a0642f5b568b"
+   "sha256": "faea056b53eb43d0eb55107f67b8e16ea15394e9d82ee94ee909662fa65fee9a"
   },
   {
    "path": "report/narrative.md",
@@ -217,7 +217,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "57863de13724f46d82dd710af03f566ceb05a7e7702e510f55ee73018430e592"
+   "sha256": "406326c4db5958d44cd80b31b38dfb548b04ab6e7b6654283028e93508ca6e63"
   },
   {
    "path": "report/proposal.en.html",
@@ -290,6 +290,52 @@
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
    "sha256": "c0553b0983106e7943d966054c1840a8f1b9c8b2e006de1200e5dbed2f1bf017"
+  },
+  {
+   "path": "assets/figures/structure-overview.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "ba514a2fbb1740d531b39355e1e581c2d48b065be296c59acc0f91ad8b7415bd",
+   "language": "zh",
+   "title_zh": "总体空间结构图",
+   "title_en": "Overall Spatial Structure",
+   "description_zh": "总体空间结构图（中文主，en 占位同文件）",
+   "description_en": "Overall Spatial Structure (Chinese primary; en placeholder = same file, pending regeneration)"
+  },
+  {
+   "path": "assets/figures/scenario-matrix.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "04ba2be05d4bcffbee52030f89cb6a8a4685c3d6c913ee8c257d1c23b47b826f",
+   "language": "zh",
+   "title_zh": "场景-空间-运营协同矩阵",
+   "title_en": "Scenario-Space-Operation Matrix",
+   "description_zh": "12 场景-空间-运营协同矩阵（中文主，en 占位同文件）",
+   "description_en": "Scenario-Space-Operation Matrix (Chinese primary; en placeholder = same file, pending regeneration)"
+  },
+  {
+   "path": "assets/figures/structure-overview.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "ba514a2fbb1740d531b39355e1e581c2d48b065be296c59acc0f91ad8b7415bd",
+   "language": "en",
+   "title_zh": "structure-overview（英文占位，待 Gemini 重新生成）",
+   "title_en": "structure-overview English placeholder",
+   "description_zh": "本图当前内容与中文版相同；下一轮将用英文 prompt 让 Gemini 重新生成",
+   "description_en": "Currently identical to the Chinese version; will be regenerated with English prompts in the next round",
+   "translation_of": "assets/figures/structure-overview.png"
+  },
+  {
+   "path": "assets/figures/scenario-matrix.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "04ba2be05d4bcffbee52030f89cb6a8a4685c3d6c913ee8c257d1c23b47b826f",
+   "language": "en",
+   "title_zh": "scenario-matrix（英文占位，待 Gemini 重新生成）",
+   "title_en": "scenario-matrix English placeholder",
+   "description_zh": "本图当前内容与中文版相同；下一轮将用英文 prompt 让 Gemini 重新生成",
+   "description_en": "Currently identical to the Chinese version; will be regenerated with English prompts in the next round",
+   "translation_of": "assets/figures/scenario-matrix.png"
   }
  ],
  "validation_claim": {

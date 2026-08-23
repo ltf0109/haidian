@@ -203,6 +203,25 @@
    "usable_for_formal": "no",
    "note": "本方案配套开源工具链（MIT）：urban-planning-spatial skill（含 china_coords.py 坐标校验）与 geoagent-bridge MCP（QGIS 无头自动化）。用于声明 AI 自动化迭代/复用能力与证据可复算性，不构成设计主张依据。",
    "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途"
+  },
+  {
+   "id": "AMAP-OPENPLATFORM",
+   "title": "高德开放平台 Web 服务 API（POI/地铁站点数据）",
+   "publisher": "高德软件有限公司（AutoNavi / amap.com）",
+   "url": "https://lbs.amap.com/api/webservice/guide/api/search",
+   "api_endpoint": "https://restapi.amap.com/v3/place/polygon",
+   "api_version": "v3.0",
+   "data_acquisition_date": "2026-08-10",
+   "data_acquisition_method": "开发者账号申请 key，调用 v3/place/polygon 矩形范围 POI 检索接口（offset=25, extensions=base）；本地 fetch_poi_gaode.py + fetch_poi_gaode_types.py 脚本（key 硬编码，仅本地使用，未提交）",
+   "temporal_coverage": "2026-08-10 当日一次性检索快照（非时序数据）",
+   "spatial_coverage": "海淀 43.6 km² 研究范围（含设计范围 11.41 km² 与站点覆盖分析区域）；地铁 77 站数据为 POI typecode 080000+080500 范围内的高德收录站点",
+   "license_boundary": "高德服务条款规定 POI 数据集含作者版权，**禁止再分发原始 POI 明细**（id/tel/address/typecode）。本方案**不发布**原始 POI 明细；仅发布**聚合统计结果**（POI 类别计数、key_area_ai_origin_research_poi_count=335、key_area_dazhongsi_residential_poi_count 等）、H3 res9 网格指标、与 GCJ-02→WGS-84 偏移修正后的坐标结果。地铁站点数据用于 800m/1200m 步行圈覆盖分析（已知 71.9%/91.6%）",
+   "coordinate_transformation": "高德 POI 默认坐标系 GCJ-02；本方案通过 china_coords.py（开源工具 ltf0109/urban-planning-ai-kit）按统一 (lat, lng)→(lat, lng) 接口转换为 WGS-84，提交物一律 WGS-84",
+   "redistribution": "原始 POI/metro JSON（poi_raw.json / metro_raw.json / poi_gaode_raw.json）不进入 submission 包；仅聚合 GeoJSON（poi_4548.geojson / poi_gaode_4326.geojson 聚合版本）参与指标计算",
+   "usable_for_formal": "no",
+   "formal_status_note": "外部开放平台公开 API，原始数据不可再分发；仅聚合统计可作为空间分析的输入依据，**不作为正式主张的直接证据**（正式主张仍以官方文件为主）",
+   "type": "open_platform_api",
+   "access_note": "key 由项目团队申请并管理；key 硬编码在本地脚本中已脱敏为占位符（提交包不含 key）"
   }
  ]
 }

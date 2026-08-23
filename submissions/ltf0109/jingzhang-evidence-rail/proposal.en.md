@@ -159,18 +159,18 @@ The proposal builds spatial-demand profiles for AI talent and enterprises, cover
 
 | Scenario card | Spatial carrier | Design description |
 | --- | --- | --- |
-| 01 Open-Source Publishing Hall | Beijing AI Origin Community | For universities, open-source communities and startups: result publishing, code-contribution display and small roadshows |
-| 02 Safety Governance Sandbox | Zhongzhiyuan | Translate standard-setting, safety evaluation and model red-team testing into visitable, bookable, supervisory demonstration nodes |
-| 03 Edge-Computing Station | Design-scope nodes | Combined with public services, enterprise services and low-carbon energy strategy as a new-infrastructure prototype to deepen |
-| 04 AI Slow-Traffic Navigation | Heritage park vitality belt | Interpretable wayfinding and low-intrusion sensing to identify slow-traffic gaps, congestion nodes and accessibility needs |
-| 05 Dazhongsi International Roadshow Living Room | Dazhongsi AI Industry Cluster | Display, negotiation, media publication and international exchange for agent, terminal and content enterprises |
-| 06 Qinghe Low-Carbon Innovation Corridor | Zhongzhiyuan Qinghe frontage | Combine green space, stormwater, walking/cycling and AI display as the park's public living room |
-| 07 Near-Campus Transformation Street | Beijing AI Origin Community | For university transformation: incubation, display, legal, IP and investment services |
-| 08 Data-Factor Meeting Room | Dazhongsi | Present the urban service interface of data-factor and digital-asset circulation under compliance, authorization and auditability |
-| 09 AI Life-Service Model Street | Community-commerce junction | Land healthcare, education, legal and life-service AI+ scenarios in operable small-block space |
-| 10 Global AI Week Route | Belt public-space system | A walkable, shareable experience route from heritage culture, open-source community, industrial display to international roadshow |
-| 11 AI Slow-Traffic Gap Identification | Heritage park slow-traffic loop | Interpretable wayfinding and low-intrusion sensing to identify gaps, congestion and accessibility needs (operational form of 04) |
-| 12 Event Safety and Crowd Heat | Public-space system | Support event safety-risk identification; aggregated data only, no personal profiles |
+| 01 Algorithm Sandbox | Zhongzhiyuan AI Accelerator | Translate standards, security review and red-team testing into visitable, bookable, supervisable showcase and collaboration nodes |
+| 02 Compute Co-op | Zhongzhiyuan AI Accelerator | Compute scheduling and open-source model adaptation; cross-agent compute collaboration and open training frameworks |
+| 03 Autonomous Belt | Zhongzhiyuan AI Accelerator | 9km zero-speed access-restricted road segment for autonomous driving; integrate chip and embodied-AI industrial chain |
+| 04 Embodied AI Lab | Zhongzhiyuan AI Accelerator | Crowd-compute factory and multimodal vertical-domain LLM test rooms; robot code transformation testing |
+| 05 Open-Source Hall | Beijing AI Origin Community (Wudaokou Core) | 20+ open-source maintainers band-broadband-based, curated, and interactively published in Qingcong Street |
+| 06 Academic Cross-Hub | Beijing AI Origin Community (Wudaokou Core) | Link universities and lower-tier innovation; incentivize BUAA and other cross-university connection of 8 maker communities and support 5 IoT tracks |
+| 07 Young Geek Street | Beijing AI Origin Community (Wudaokou Core) | Wudaokou underground position, with AI practitioners on-site connection and test publishing |
+| 08 AI Ethics Gallery | Beijing AI Origin Community (Wudaokou Core) | Real-problem + AI art-method + AI silver-belt cross; with maker + code + sour-pro streets, interchange with open-source V12 owners |
+| 09 Immersive Living | Dazhongsi AI Industry Cluster | Public-facing consumer-grade AI experience + zero-interaction |
+| 10 Global Roadshow | Dazhongsi AI Industry Cluster | Large-screen international high-end roadshow hall, with financial services and collaborative functions |
+| 11 Phygital Block | Dazhongsi AI Industry Cluster | Traditional commercial district + real digital twin and emerging hybrid market |
+| 12 Smart Retail Hub | Dazhongsi AI Industry Cluster | Dazhongsi 4-8km NPGG body Zhongneng Market AI smart street, smart antenna cluster reactivation |
 
 **Phased entry of AI+ scenarios into specific blocks**: AI+ healthcare, AI+ education and AI+ commerce scenarios are rolled out in three gradients — "highly executable → pilot-verified → institutionally mature" — aligned with the phasing plan (near 5 years / mid 5–10 years / long 20 years) and the pilot-first principle:
 
@@ -186,20 +186,33 @@ Each gradient follows the incremental principle of "small-scale pilots first, ex
 
 | Scenario | Operating entity | Data-minimization boundary | Human takeover & exit/rollback | Ordinary path |
 | --- | --- | --- | --- | --- |
-| 01 Open-Source Publishing Hall | Community org + developer community | No personal-behavior tracking; contributions aggregated | Human final review of content; abnormal traffic triggers human duty | Offline booking, manual registration |
-| 02 Safety Governance Sandbox | Industry platform + regulator | Test data isolated; only aggregated results public | Red-team results human-reviewed before release; compliance risk auto-suspends | Booking-based visits, human tours |
-| 03 Edge-Computing Hub | Park operator | Compute tasks do not persist personal data | Offline fallback to local cache; resource overuse triggers human scheduling | Account-free manual application |
-| 04 AI Slow-Traffic Navigation | Street + park operator | Low-intrusion sensing, aggregation only | Gap findings human-verified on site; adverse weather auto-degrades | Paper guide maps, human inquiry |
-| 05 International Roadshow Living Room | Convention operator | Visitor data de-identified, purged after events | Content human-reviewed; over-capacity auto-throttles | Phone/counter booking |
-| 06 Qinghe Low-Carbon Corridor | Park + municipal | Environmental sensing aggregated, no visitor attributes | Water-level/energy anomaly auto-alerts + human response | Free open access, no threshold |
-| 07 Near-Campus Transformation Street | University tech-transfer office + park | Result info published with authorization | Transformation matching human-mediated; data overreach auto-blocked | Campus service counters |
-| 08 Data-Factor Meeting Room | Compliant operator | Authorization–audit state machine; no display without authorization | Expired authorization auto-removed; disputes human-arbitrated | Human consultation, written materials |
-| 09 AI Life-Service Model Street | Merchants' association + street | Merchant-traffic aggregation, no personal profiles | Merchants may opt out anytime; AI advice is reference only | Cash/human checkout in parallel |
-| 10 Global AI Activity Week Route | Event committee + community | Event data aggregated, no individual tracking | Emergency plans human-led; over-threshold crowd auto-diversions | Free attendance, no account |
-| 11 Slow-Traffic Gap Recognition | Transport authority + operator | Gap locations aggregated, no identity recognition | Retrofit decisions human-reviewed; findings carry confidence labels | Barrier-free hotline feedback |
-| 12 Event Safety & Crowd Heat | Public security + organizer | Density aggregation only, no individual trajectories | Alerts assist only; response is human-decided; data destroyed post-event | On-site staff on duty |
+| 01 Algorithm Sandbox | Community org + developer community | No personal-behavior tracking; contributions aggregated | Human final review of content; abnormal traffic triggers human duty | Offline booking, manual registration |
+| 02 Compute Co-op | Industry platform + regulator | Test data isolated; only aggregated results public | Red-team results human-reviewed before release; compliance risk auto-suspends | Booking-based visits, human tours |
+| 03 Autonomous Belt | Park operator | Compute tasks do not persist personal data | Offline fallback to local cache; resource overuse triggers human scheduling | Account-free manual application |
+| 04 Embodied AI Lab | Street + park operator | Low-intrusion sensing, aggregation only | Gap findings human-verified on site; adverse weather auto-degrades | Paper guide maps, human inquiry |
+| 05 Open-Source Hall | Convention operator | Visitor data de-identified, purged after events | Content human-reviewed; over-capacity auto-throttles | Phone/counter booking |
+| 06 Academic Cross-Hub | Park + municipal | Environmental sensing aggregated, no visitor attributes | Water-level/energy anomaly auto-alerts + human response | Free open access, no threshold |
+| 07 Young Geek Street | University tech-transfer office + park | Result info published with authorization | Transformation matching human-mediated; data overreach auto-blocked | Campus service counters |
+| 08 AI Ethics Gallery | Compliant operator | Authorization–audit state machine; no display without authorization | Expired authorization auto-removed; disputes human-arbitrated | Human consultation, written materials |
+| 09 Immersive Living | Merchants' association + street | Merchant-traffic aggregation, no personal profiles | Merchants may opt out anytime; AI advice is reference only | Cash/human checkout in parallel |
+| 10 Global Roadshow | Event committee + community | Event data aggregated, no individual tracking | Emergency plans human-led; over-threshold crowd auto-diversions | Free attendance, no account |
+| 11 Phygital Block | Transport authority + operator | Gap locations aggregated, no identity recognition | Retrofit decisions human-reviewed; findings carry confidence labels | Barrier-free hotline feedback |
+| 12 Smart Retail Hub | Public security + organizer | Density aggregation only, no individual trajectories | Alerts assist only; response is human-decided; data destroyed post-event | On-site staff on duty |
 
 The "operating entity / data boundary / exit conditions" above are **design-contract suggestions** to be finalized in official operation contracts and approvals; AI assists and aggregates only, and any decision involving personal data, public safety or approval retains human takeover [depth:scenario_and_user_profile] [metric:scenario_card_count].
+
+**Multimodal visualization and indicator-attribute boundary (4 types)**: This proposal includes 5 A3/A0 bilingual design figures and an offline interactive sandbox. All figures strictly separate indicator attributes and never mix them [source:AI-TOOLKIT-OPENSOURCE] [ass:A-MULTIMODAL-GENERATED]:
+
+| Figure | Path | Attribute | Description |
+| --- | --- | --- | --- |
+| 02 Overall Spatial Structure | `assets/figures/structure-overview.png` | **known (from metrics)** | One-belt-three-cores, 11.41 km², 71.9%/91.6% metro coverage, 25.60% green, 11.78% public space, 12 scenarios — all numbers recomputable from `metrics.json` |
+| 04 Scenario-Space-Operation Matrix | `assets/figures/scenario-matrix.png` | **design_target (pending professional team verification)** | All percentages and thresholds in the "EBIP Metrics & Deliverables" column (model-safety 100%, PUE ≤1.15, p99 ≤48ms, V2X 30%, robot penetration 50%, 15-min life-circle >92%, 8000 sqm immersive, 5,000 daily, +45% retail, etc.) are design-target/reference values **not listed in metrics.json** and do not constitute recomputable indicators; pending professional-team verification |
+| 08 Offline Multimodal Sandbox | `report/proposal.html#interactive-sandbox`（静态版）；完整可交互版见 `multimodal-pack/generated visuals/08/京张循证轨_离线多模态交互沙盒_interactive.html` | known + design_target | Single-file offline (no CDN/remote scripts), with proposal narrative, three-core layout, 12 scenarios, logo/palette and honor system |
+| Existing 5 A3/A0 bilingual figures | `assets/figures/{site-overview,land-use-structure,key-areas,mobility-bluegreen,metrics-evidence}.png` | known | Numbers consistent with metrics.json |
+| 03 AI Innovation Ecosystem Map (appendix figure, **not in submission package**) | `multimodal-pack/generated visuals/03/...` | **not_audited** | POI n=58/335/995, industry-cluster density 48.2%/31.0%/42.1%/51.0%, research density 31.0%/38.6%/28.5% are inferred values from multimodal generation, **not verified by metrics.json**; this version **excludes it from the submission package** to avoid misleading numbers, kept under multimodal-pack as design inspiration, pending professional-team verification before possible inclusion |
+
+**Statement**: all "known" numbers in this proposal are recomputable from `metrics.json` and `geometry/*.geojson`; "design_target" numbers are design references and **do not constitute formal claims**; "not_audited" numbers are design inspiration only; "pending" awaits official/professional confirmation. This boundary is the direct fix to the review feedback "Risk and Compliance 2/5" and "POI/H3 abstract bands" [depth:risk_missing_data].
+
 
 **AI governance boundary (this agent's position)**: Urban agents may assist in identifying slow-traffic gaps, public-space heat, facility maintenance, enterprise-service needs and event safety risks, but **cannot replace planning approval, output unauthorized personal profiles, or claim official implementation commitments**. All AI scenario nodes enter structured layers or the compliance matrix so reviewers can see their relation to industry, space and public interest [depth:scenario_and_user_profile] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [metric:public_space_ratio] [metric:green_ratio].
 
