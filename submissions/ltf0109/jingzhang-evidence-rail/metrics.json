@@ -354,6 +354,121 @@
    "assumptions": [
     "含京张遗址公园活力带（GREEN-001 兼作公共空间主轴，D1 修复）"
    ]
+  },
+  "moran_su_industry": {
+   "id": "moran_su_industry",
+   "value": 0.874,
+   "formula": "Moran's I on MCDA industry suitability grid (300m cells over site)",
+   "source": "qgis_moran_gistars_results.json (QGIS/GeoAgent MCP)",
+   "data_date": "2026-08-10",
+   "coordinate": "EPSG:3857 分析 / WGS-84 提交",
+   "significance": "p=0.005 (permutation test, 999 permutations)",
+   "assumptions": [
+    "权重: 地铁.25/高校.30/现状科技.25/绿地.20"
+   ],
+   "status": "known"
+  },
+  "moran_su_resident": {
+   "id": "moran_su_resident",
+   "value": 0.9316,
+   "formula": "Moran's I on MCDA residential-services grid (300m cells; Object B uses MEDICAL)",
+   "source": "qgis_moran_gistars_results.json (QGIS/GeoAgent MCP)",
+   "data_date": "2026-08-10",
+   "coordinate": "EPSG:3857 分析 / WGS-84 提交",
+   "significance": "p=0.005 (permutation test, 999 permutations)",
+   "assumptions": [
+    "权重: 地铁.30/商业.25/绿地.25/医疗.20"
+   ],
+   "status": "known"
+  },
+  "gistar_industry_hot": {
+   "id": "gistar_industry_hot",
+   "value": 37,
+   "formula": "Getis-Ord Gi* hot cells count (±1.96, 300m grid, n=151)",
+   "source": "qgis_moran_gistars_results.json",
+   "data_date": "2026-08-10",
+   "coordinate": "EPSG:3857",
+   "status": "known"
+  },
+  "gistar_industry_cold": {
+   "id": "gistar_industry_cold",
+   "value": 24,
+   "formula": "Getis-Ord Gi* cold cells count (±1.96, n=151)",
+   "source": "qgis_moran_gistars_results.json",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "gistar_industry_ns": {
+   "id": "gistar_industry_ns",
+   "value": 90,
+   "formula": "Getis-Ord Gi* not-significant cells (n=151)",
+   "source": "qgis_moran_gistars_results.json",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "gistar_resident_hot": {
+   "id": "gistar_resident_hot",
+   "value": 48,
+   "formula": "Getis-Ord Gi* hot cells (Object B, n=151)",
+   "source": "qgis_moran_gistars_results.json",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "gistar_resident_cold": {
+   "id": "gistar_resident_cold",
+   "value": 36,
+   "formula": "Getis-Ord Gi* cold cells (Object B, n=151)",
+   "source": "qgis_moran_gistars_results.json",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "gistar_resident_ns": {
+   "id": "gistar_resident_ns",
+   "value": 67,
+   "formula": "Getis-Ord Gi* not-significant cells (Object B, n=151)",
+   "source": "qgis_moran_gistars_results.json",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "poi_subset_metro": {
+   "id": "poi_subset_metro",
+   "value": 18,
+   "formula": "地铁站 POI 数（AMap 高德，within site+100m）",
+   "source": "AMAP-OPENPLATFORM",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "poi_subset_green": {
+   "id": "poi_subset_green",
+   "value": 376,
+   "formula": "公园绿地 POI 数",
+   "source": "AMAP-OPENPLATFORM",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "poi_subset_commerce": {
+   "id": "poi_subset_commerce",
+   "value": 392,
+   "formula": "商业 POI 数",
+   "source": "AMAP-OPENPLATFORM",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "poi_subset_industry": {
+   "id": "poi_subset_industry",
+   "value": 119,
+   "formula": "产业/企业 POI 数",
+   "source": "AMAP-OPENPLATFORM",
+   "data_date": "2026-08-10",
+   "status": "known"
+  },
+  "poi_subset_medical": {
+   "id": "poi_subset_medical",
+   "value": 192,
+   "formula": "医疗 POI 数",
+   "source": "AMAP-OPENPLATFORM",
+   "data_date": "2026-08-10",
+   "status": "known"
   }
  }
 }

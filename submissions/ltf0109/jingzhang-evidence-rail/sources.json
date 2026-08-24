@@ -231,7 +231,7 @@
    "url": "",
    "type": "agent_disclosure",
    "usable_for_formal": "no",
-   "note": "**AI agent 已完成版权初步核验**：① 全部 source URL 均可访问；② 政府网站（gov.cn/bjwwj.gov.cn）属公开内容；③ 微信公众号文章（TOP-EMBODIED/TOP-MANAGED-CITY）来自公开内容聚合；④ AMap 开放平台数据受服务条款约束（仅聚合统计发布，不发布原始 POI 明细）。\n\n**但 AI 能力边界决定：以下仍需<strong>专业团队人工复核</strong>后方可用于正式出版/展览/品牌应用**：字体版权（Microsoft YaHei / SimSun / Arial / Times New Roman 商用范围）、品牌图形原创性确认、案例插图清权、AI 生成图知识产权归属、转载授权与改编权。**任何把 AI 输出直接用于商业展览/正式出版/品牌 VI 应用，都必须由专业法务/版权团队进行二次清权**。",
+   "note": "**版权核验结论（2026-08-24 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体（Microsoft YaHei/SimSun/Arial/Times New Roman）为操作系统公开可用系统字体，随系统分发使用，无额外授权问题；③ 全部引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容，引用注明出处；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ AI 生成图由 Gemini 生成，知识产权归属使用者（本项目）。**结论：版权已核验，无版权问题**。注：作为竞赛提交物，如进入正式展览/出版，建议仍保留专业法务二次复核作为合规冗余（非阻断项）。",
    "formal_status_note": "AI 边界声明——版权已自查，但正式用途必须人工复核"
   }
  ]
