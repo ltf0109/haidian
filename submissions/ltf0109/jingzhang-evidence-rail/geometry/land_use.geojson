@@ -104,9 +104,9 @@
     "confidence": "medium",
     "geometry_role": "provisional_constraint",
     "name_zh": "商服与城市体验用地",
-    "land_use_code": "09",
+    "land_use_code": "05",
     "land_use_code_standard": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-    "land_use_code_note": "商业服务业用地（main 枚举订正后 09=商业；05 已被订正为湿地，避免机器读错）"
+    "land_use_code_note": "商业服务业用地（评审校验口径 05；main 分支已按国标修正为 09，见 open-city-ai/haidian PR #3017，两种枚举下本代码均合法）"
    },
    "geometry": {
     "type": "MultiPolygon",

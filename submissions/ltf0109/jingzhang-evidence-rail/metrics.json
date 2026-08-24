@@ -16,7 +16,8 @@
    "confidence": "medium",
    "assumptions": [
     "面积基于 provisional site_boundary（组织方官方 polygon 未发布）的 EPSG:4548 重算，为临时估算，非官方红线/精确面积依据；官方几何发布后须重算"
-   ]
+   ],
+   "precision_note": "EPSG:4548 平面面积，6 位小数来自计算器输出，非测量精度；基于 provisional site_boundary（组织方官方 polygon 未发布），官方几何发布后须重算。"
   },
   "building_footprint_area_sqm": {
    "status": "known",
@@ -154,7 +155,8 @@
    "confidence": "high",
    "assumptions": [
     "77 个地铁站点本体来自 AMap place/around 检索；EPSG:4548 计算"
-   ]
+   ],
+   "scope": "77 个地铁站点本体 = AMap typecode 080000+080500 检索的全部收录站点（含设计范围外站点），用于 800m/1200m 步行圈 buffer 覆盖计算；与 poi_subset_metro=18（within site+100m 的站点数）统计范围不同。"
   },
   "design_scope_metro_1200m_coverage": {
    "status": "known",
@@ -167,7 +169,8 @@
    "confidence": "high",
    "assumptions": [
     "同上；1200m = 15 分钟步行圈上界"
-   ]
+   ],
+   "scope": "77 个地铁站点本体 = AMap typecode 080000+080500 检索的全部收录站点（含设计范围外站点），用于 800m/1200m 步行圈 buffer 覆盖计算；与 poi_subset_metro=18（within site+100m 的站点数）统计范围不同。"
   },
   "key_area_dazhongsi_research_distance_m": {
    "status": "known",
@@ -287,7 +290,7 @@
    "assumptions": [
     "AI 原点社区科研 POI 密度最高（107.9/km² 当量）"
    ],
-   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 262 / 大钟寺 62；口径与 within key_areas 几何一致"
+   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 161 / 大钟寺 63（众智园 36）；口径与 within key_areas 几何一致"
   },
   "key_area_dazhongsi_residential_poi_count": {
    "status": "known",
@@ -301,7 +304,7 @@
    "assumptions": [
     "大钟寺居住密集但产业/科研/商业 POI 为 0 → 渐进更新主战场"
    ],
-   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 262 / 大钟寺 62；口径与 within key_areas 几何一致"
+   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 161 / 大钟寺 63（众智园 36）；口径与 within key_areas 几何一致"
   },
   "building_height_m": {
    "status": "unknown",
@@ -436,7 +439,8 @@
    "formula": "地铁站 POI 数（AMap 高德，within site+100m）",
    "source": "AMAP-OPENPLATFORM",
    "data_date": "2026-08-10",
-   "status": "known"
+   "status": "known",
+   "scope": "within site_boundary + 100m buffer 内的地铁站 POI 数（子集）；77 站为覆盖分析全集"
   },
   "poi_subset_green": {
    "id": "poi_subset_green",

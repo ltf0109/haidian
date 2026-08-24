@@ -1,13 +1,13 @@
 {
  "schema_version": "0.1.0",
- "review_status": "formal-review-ready",
+ "review_status": "revised-ready-for-revalidation",
  "can_enter_formal_review": true,
  "checks": [
   {
    "check_id": "DETERMINISTIC_VALIDATION",
    "result": "pass",
    "severity": "blocking",
-   "message": "Manifest hashes, required figures, tracks registry and geometry file whitelist all validated.",
+   "message": "land_use 09→05 修复；manifest 哈希、必需图件、几何白名单与指标复算全部一致；本地 main 版校验通过（详见 revision_log）",
    "target": "manifest.json"
   },
   {
@@ -43,7 +43,14 @@
    "result": "pass",
    "severity": "blocking",
    "target": "report/proposal.html + visual/index.html + visual/index.en.html + all SVG",
-   "message": "字体规范：非衬线统一 Microsoft YaHei + Arial，移除苹方/Noto 等；HTML charset=utf-8；SVG 内 & 已批量转义为 &amp;；rsvg-convert 2.56.3 重渲染 11 张 SVG，文字清晰无方框；visual/index.en.html 已重写为纯英文版（0 中文残留，原 170 处）；02 结构图删除 84 个地铁站蓝点（42 站 × 内外圈），改为以 800m/1200m 覆盖指标表达；可读性自检报告见 readability_check.md。"
+   "message": "中文字体栈：SimSun/宋体/Songti SC 优先（评审环境缺字方框问题；OSM 底图尝试性叠加，网络不可达回退白底）；HTML charset=utf-8；visual/index.en.html 为纯英文版；关键图已按 A3/A0 实际输出尺寸重排放大。可读性自检报告见 readability_check.md。若终端仍无中文字体，请改用 PDF 打印版。"
+  },
+  {
+   "check_id": "REVIEW_RESPONSE_62",
+   "result": "pass",
+   "severity": "info",
+   "target": "revision_log",
+   "message": "62/100 评审 8 项必须完成中参与者可控项已响应（land_use 05、英文占位件、英文 A3/A0、POI 口径、版权统一、字体、OSM 风险声明、状态声明）；组织方依赖项保留待办。"
   }
  ],
  "ok": true,
@@ -60,5 +67,28 @@
    "zh/en 图真实英文版（03/04/05）"
   ],
   "report_file": "readability_check.md"
+ },
+ "revision_log": {
+  "review_round": "62/100 request-changes (SHA 65b0489d)",
+  "resolved_blockers": [
+   "land_use.geojson feature[2] 09 → 05（评审校验口径商业服务业用地）",
+   "structure-overview.en.png / scenario-matrix.en.png 英文占位件 → 真实英文版（同数据同布局）",
+   "英文 A3/A0 PDF 嵌入中文图 → 改用 .en.png 重排（放大关键图）",
+   "POI 口径统一：55/262/62（不可复算）→ 36/161/63（within key_areas 几何全类别可复算）",
+   "sources.json 335 旧指标名残留清理；版权表述统一（无矛盾）",
+   "中文字体栈改宋体优先（SimSun/Songti SC）",
+   "metrics.json 地铁 77/18 口径说明 + site_area provisional 精度声明",
+   "OSM 底图尝试 + 风险声明（sources.json OSM-BASEMAP）"
+  ],
+  "remaining_dependent": [
+   "三处重点区 key_areas 为 provisional（组织方官方 polygon 发布后替换并重算）",
+   "重点区内部街区/现状建议/步行断点/建筑留改修细部图待深化（超出当前数据条件，以 design_target 标注）",
+   "JZ-01—JZ-07 与 12 场景最短实施合同（牵头/协作主体/阈值依据/退出验收）待补",
+   "现场踏勘/访谈/无障碍专业审查/利益相关方参与证据缺失（AI 能力边界，待专业团队）",
+   "觉生寺正式文保四至与项目边界关系为 provisional 推定",
+   "法定控规（容积率/高度/红线/管线/消防/防洪）待组织方提供",
+   "OSM 底图为尝试性叠加：当前渲染环境网络不可达，图件回退白底（风险声明见 sources.json OSM-BASEMAP）",
+   "评审环境字体依赖：HTML 采用 SimSun/Songti SC 宋体栈，若终端无中文字体请改用 PDF 打印版"
+  ]
  }
 }
