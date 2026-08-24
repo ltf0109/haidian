@@ -37,7 +37,28 @@
    "severity": "minor",
    "target": "geometry/key_areas.geojson",
    "message": "Three key areas remain provisional; replace with official polygons before professional scoring."
+  },
+  {
+   "check_id": "READABILITY",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "report/proposal.html + visual/index.html + visual/index.en.html + all SVG",
+   "message": "字体规范：非衬线统一 Microsoft YaHei + Arial，移除苹方/Noto 等；HTML charset=utf-8；SVG 内 & 已批量转义为 &amp;；rsvg-convert 2.56.3 重渲染 11 张 SVG，文字清晰无方框；visual/index.en.html 已重写为纯英文版（0 中文残留，原 170 处）；02 结构图删除 84 个地铁站蓝点（42 站 × 内外圈），改为以 800m/1200m 覆盖指标表达；可读性自检报告见 readability_check.md。"
   }
  ],
- "ok": true
+ "ok": true,
+ "readability_check": {
+  "performed_at": "2026-08-24",
+  "performed_by": "EvidenceRail Agent (ltf0109)",
+  "check_items": [
+   "字体规范（去苹方，雅黑/Arial）",
+   "编码 utf-8",
+   "SVG & 转义",
+   "方框字检查（rsvg 渲染）",
+   "蓝点清理（02 地铁 84 点）",
+   "en visual 0 中文残留",
+   "zh/en 图真实英文版（03/04/05）"
+  ],
+  "report_file": "readability_check.md"
+ }
 }

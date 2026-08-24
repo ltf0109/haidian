@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "204956a1743353e849d4a175d9bcb1ad196e5ebbcb8f9ca6dd043eeedf0a00d0"
+   "sha256": "3807ecc756b1c72ac4bf7ad04d1bc86e189048c0424db997cbd8285eb7bb3288"
   },
   {
    "path": "agent.json",
@@ -38,25 +38,25 @@
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "65ec769f51d004a7678e773b2414e1fa4550194d54f1cf75be9cf7b20b01ac80"
+   "sha256": "4aed17b77c7f55493dcda1da4b0028d2397f116436b2c78952607fa66c0f2427"
   },
   {
    "path": "assumptions.json",
    "role": "assumptions",
    "required": true,
-   "sha256": "96733d4d58ea0e5559209eadb43451b98bed3332c1c51f12d8decdda9aa29fae"
+   "sha256": "1d9be73d08ca8de5abbc475a057e8b9fbaf4a1589d94f561ff902fa657faaa12"
   },
   {
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "c71b8c3dbf6552e7228afdc678089c7906034e9e4b26afe690e27ae0219aa8b6"
+   "sha256": "d6f9b622e9cd0ec30e8dc1127c6f8d587fd459f39a3720d9dba9ac13db9381dd"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "7dc39ec16ec4791be751234f01c231e2a1b57e690cb475b520a9d78f8c242d2b"
+   "sha256": "3d92d322e85643534a565fe0a980949c4adbdd1242962013d911ce36da3d13e1"
   },
   {
    "path": "compliance_matrix.json",
@@ -68,7 +68,7 @@
    "path": "standard_matrix.json",
    "role": "standard_matrix",
    "required": true,
-   "sha256": "fa5a0b4ea4ce766211f227bffbbc8c329ea31e77ef371f5eb549bfeba8252df2"
+   "sha256": "a68f5cd8318ae37a9f0eda3cf2e2f0bcd355c652d34523eaae3d8645874a940f"
   },
   {
    "path": "design_depth_matrix.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "faea056b53eb43d0eb55107f67b8e16ea15394e9d82ee94ee909662fa65fee9a"
+   "sha256": "12650c729eeea2414556293f74acf39373f296dd8665aaeea7226ecd12b3c941"
   },
   {
    "path": "report/narrative.md",
@@ -114,7 +114,7 @@
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "fa82282e9b374b12064e1065da8f6c2ccf28d6091fdffdb279ca530ba2eb4cab"
+   "sha256": "ebeb5a164b3ded967fcfb00e7cdf56743d4bdbabd184a297f60ce617b70edd1b"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -179,7 +179,7 @@
    "path": "geometry/land_use.geojson",
    "role": "geometry",
    "required": true,
-   "sha256": "e3d3e5aec851feed2b194eb97d0d855f8bcaea728f88d1d2f3f7e9b3aae49957"
+   "sha256": "6143856f50dc7c350cc1df93ce7d831aad45d2033c85ae44ba27d1cdbce7f96d"
   },
   {
    "path": "geometry/phasing.geojson",
@@ -217,7 +217,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "406326c4db5958d44cd80b31b38dfb548b04ab6e7b6654283028e93508ca6e63"
+   "sha256": "9e588abaf6d0848f92e4d2b6c9e1e832781ae69de80ff3fbec76f99d64240180"
   },
   {
    "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
    "required": true,
    "language": "en",
    "translation_of": "visual/index.html",
-   "sha256": "05fe34ee9f0c106bed46055304d3f26937f48eb0c31f98d0e99c9bab27ff2cc0"
+   "sha256": "14ee0b39aab8298c8cae2462399e131bf81f5d62ce1d878414da60a4cdc41839"
   },
   {
    "path": "assets/figures/site-overview.en.png",
@@ -295,18 +295,18 @@
    "path": "assets/figures/structure-overview.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "ba514a2fbb1740d531b39355e1e581c2d48b065be296c59acc0f91ad8b7415bd",
+   "sha256": "a37ead78520e20b92cc75b0c03d32713fd42c8b4b320e37c04d93949afa85682",
    "language": "zh",
    "title_zh": "总体空间结构图",
    "title_en": "Overall Spatial Structure",
-   "description_zh": "总体空间结构图（中文主，en 占位同文件）",
-   "description_en": "Overall Spatial Structure (Chinese primary; en placeholder = same file, pending regeneration)"
+   "description_zh": "总体空间结构图（中文主，en 占位同文件）；本版为 SVG 真实几何重绘版（替换 Gemini 示意版）",
+   "description_en": "Overall Spatial Structure (Chinese primary; en placeholder = same file, pending regeneration); this is SVG re-drawn from real geometry (replaces Gemini illustrative version)"
   },
   {
    "path": "assets/figures/scenario-matrix.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "04ba2be05d4bcffbee52030f89cb6a8a4685c3d6c913ee8c257d1c23b47b826f",
+   "sha256": "723888b3f3339a64b0fa1629787758420d90b92c5e2b0ae0af51eb228c0d613e",
    "language": "zh",
    "title_zh": "场景-空间-运营协同矩阵",
    "title_en": "Scenario-Space-Operation Matrix",
@@ -317,25 +317,104 @@
    "path": "assets/figures/structure-overview.en.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "ba514a2fbb1740d531b39355e1e581c2d48b065be296c59acc0f91ad8b7415bd",
+   "sha256": "ac8f89a41fe9f6733dd9e3df23f8505c32f46a965e11147e136c9135812a1997",
    "language": "en",
    "title_zh": "structure-overview（英文占位，待 Gemini 重新生成）",
    "title_en": "structure-overview English placeholder",
-   "description_zh": "本图当前内容与中文版相同；下一轮将用英文 prompt 让 Gemini 重新生成",
-   "description_en": "Currently identical to the Chinese version; will be regenerated with English prompts in the next round",
+   "description_zh": "本图当前内容与中文版相同；下一轮将用英文 prompt 让 Gemini 重新生成；本版为 SVG 真实几何重绘版（替换 Gemini 示意版）",
+   "description_en": "Currently identical to the Chinese version; will be regenerated with English prompts in the next round; this is SVG re-drawn from real geometry (replaces Gemini illustrative version)",
    "translation_of": "assets/figures/structure-overview.png"
   },
   {
    "path": "assets/figures/scenario-matrix.en.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "04ba2be05d4bcffbee52030f89cb6a8a4685c3d6c913ee8c257d1c23b47b826f",
+   "sha256": "2cde6e2dcfeb520264d012a0d7faba0cee350681952996395c3cfdcd82d21ff7",
    "language": "en",
    "title_zh": "scenario-matrix（英文占位，待 Gemini 重新生成）",
    "title_en": "scenario-matrix English placeholder",
    "description_zh": "本图当前内容与中文版相同；下一轮将用英文 prompt 让 Gemini 重新生成",
    "description_en": "Currently identical to the Chinese version; will be regenerated with English prompts in the next round",
    "translation_of": "assets/figures/scenario-matrix.png"
+  },
+  {
+   "path": "assets/figures/ecosystem-map.png",
+   "role": "proposal_figure",
+   "language": "zh",
+   "title_zh": "AI 创新生态图谱（真实 POI 分布）",
+   "title_en": "AI Innovation Ecosystem (Real POI Distribution)",
+   "description_zh": "SVG 真实数据绘制（替代 Gemini 推断版）；数字 55/262/62 可从 key_areas 几何 within 复算",
+   "description_en": "SVG re-drawn from real data (replaces Gemini inferred version); numbers 55/262/62 reproducible from key_areas geometry",
+   "sha256": "0f319bd173413bf6351b1a542f4a1ca5214698cdddaffbac000bb7e65aa7ddb2",
+   "required": true
+  },
+  {
+   "path": "assets/figures/ecosystem-map.en.png",
+   "role": "proposal_figure",
+   "language": "en",
+   "title_zh": "AI 创新生态图谱（英文版）",
+   "title_en": "AI Innovation Ecosystem (English)",
+   "description_zh": "英文版（中文图同内容）",
+   "description_en": "English version (same content as Chinese)",
+   "translation_of": "assets/figures/ecosystem-map.png",
+   "sha256": "ed507e9bea9d2eefd6158767aca0c6869f0f3caa951929de140a0954dc28374d",
+   "required": true
+  },
+  {
+   "path": "assets/figures/landmark-honor.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "bf5bda9bb3e00fe271b3f167cf6ff19a7f60f45f7ba186851e9589cdcb3add40",
+   "title_zh": "三朝圣地标与贡献者荣誉体系（SVG 重设计）",
+   "title_en": "Three Pilgrimage Landmarks & Honor System (SVG re-designed)",
+   "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
+   "description_en": "SVG re-designed (design_target), replacing Gemini version"
+  },
+  {
+   "path": "assets/figures/landmark-honor.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "sha256": "300f58dc11afef5c793d8a0241466c72f4d7d96d271f93fcf39a1f237bf9a73e",
+   "title_zh": "同上（英文版）",
+   "title_en": "Same (EN)",
+   "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
+   "description_en": "SVG re-designed (design_target), replacing Gemini version",
+   "translation_of": "assets/figures/landmark-honor.png"
+  },
+  {
+   "path": "assets/figures/ka-detail-zhongzhiyuan.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "neutral",
+   "sha256": "da1630728839393666b806ab7db0001efb4cb62bac8a960559d9963c6d8d5771",
+   "title_zh": "众智园概念详细设计图（provisional 警示）",
+   "title_en": "Zhongzhiyuan conceptual detailed design (provisional warning)",
+   "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
+   "description_en": "SVG re-designed (design_target), replacing Gemini version"
+  },
+  {
+   "path": "assets/figures/ka-detail-origin.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "neutral",
+   "sha256": "a27dd2487c08d29e99bd4826dcaab96e279eeb0186227d9a2cc3c147940c234e",
+   "title_zh": "AI 原点社区概念详细设计图（provisional 警示）",
+   "title_en": "AI Origin conceptual detailed design (provisional warning)",
+   "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
+   "description_en": "SVG re-designed (design_target), replacing Gemini version"
+  },
+  {
+   "path": "assets/figures/ka-detail-dazhongsi.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "neutral",
+   "sha256": "00e9c23c371abaad650704e24600315561eec9baf7bd3aef6a94af1dff79f998",
+   "title_zh": "大钟寺概念详细设计图（provisional 警示）",
+   "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
+   "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
+   "description_en": "SVG re-designed (design_target), replacing Gemini version"
   }
  ],
  "validation_claim": {

@@ -48,6 +48,18 @@
     "07 导视与符号系统（附录图）",
     "08 离线多模态交互沙盒（已回填 visual/interactive-sandbox.html）"
    ]
+  },
+  {
+   "id": "EBIP-AI-NATIVE-001",
+   "status": "design_framework",
+   "statement": "12 场景的 AI 运行机制（证据分级 + 反事实检验 + 自检闭环 + 失败模式）按 EBIP 方法论定义；这是 AI 原生场景设计（charter.4 响应）而非'传统+AI 标签'。每个机制可在运营合同与审批中具体落地。",
+   "impact": "场景卡从'概念标签'升级为'可审计运行机制'，回应评审'场景未充分转化为街段/站点/建筑界面设计决策'与'scenario tables not giving operation/data/role/exit'两条"
+  },
+  {
+   "id": "A-AGENT-BOUNDARY-DETAIL",
+   "status": "boundary_declaration",
+   "statement": "Key-area detailed design (internal blocks/interfaces/existing-vs-proposed/project boundaries/walking-break points/retain-renovate-demolish/phasing) exceeds current agent capability. AI agent does NOT participate in any decision involving displacement risk (residents relocation, ownership restructuring, compensation). Final design decisions must be made by humans (local government + community + professional teams + property owners + affected residents) under administrative approval and social assessment procedures.",
+   "impact": "These five items are marked design_target (to be confirmed on site by humans); not formal implementation claims. The 'retain-first' methodological principle is provided as orientation only."
   }
  ]
 }

@@ -286,7 +286,8 @@
    "confidence": "medium",
    "assumptions": [
     "AI 原点社区科研 POI 密度最高（107.9/km² 当量）"
-   ]
+   ],
+   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 262 / 大钟寺 62；口径与 within key_areas 几何一致"
   },
   "key_area_dazhongsi_residential_poi_count": {
    "status": "known",
@@ -299,7 +300,8 @@
    "confidence": "medium",
    "assumptions": [
     "大钟寺居住密集但产业/科研/商业 POI 为 0 → 渐进更新主战场"
-   ]
+   ],
+   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 262 / 大钟寺 62；口径与 within key_areas 几何一致"
   },
   "building_height_m": {
    "status": "unknown",
