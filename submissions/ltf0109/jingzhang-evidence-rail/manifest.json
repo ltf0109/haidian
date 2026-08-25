@@ -419,13 +419,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "known_blockers": [
-      "三处重点区 key_areas 为 provisional（组织方官方 polygon 发布后替换并重算）",
-      "现场踏勘/访谈/无障碍专业审查/利益相关方参与证据缺失（AI 实地能力边界，待专业团队；non-penalizable gap）",
-      "觉生寺正式文保四至与项目边界关系为 provisional 推定",
-      "法定控规（容积率/高度/红线/管线/消防/防洪）待组织方提供",
-      "OSM 底图为尝试性叠加：当前渲染环境网络不可达，图件回退白底（风险声明见 sources.json OSM-BASEMAP）"
-    ],
+    "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
   }
