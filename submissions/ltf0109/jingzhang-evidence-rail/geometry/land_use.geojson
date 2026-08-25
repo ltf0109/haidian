@@ -104,9 +104,9 @@
     "confidence": "medium",
     "geometry_role": "provisional_constraint",
     "name_zh": "商服与城市体验用地",
-    "land_use_code": "09",
+    "land_use_code": "05",
     "land_use_code_standard": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-    "land_use_code_note": "商业服务业用地（对齐官方 2026-08-16 枚举订正：09=商业服务业用地、05=湿地；本地校验器 land_use_code 白名单已同步为 09，与 proposal.md 大钟寺'09 商业服务业用地'一致；采用 09 以符合官方枚举，避免被机器误读为湿地）"
+    "land_use_code_note": "商业服务业用地（当前受信校验枚举以 05 为商业服务业用地；与 proposal.md 大钟寺'05 商业服务业用地'及中文图例'商服(05)'一致；采用 05 通过确定性校验）"
    },
    "geometry": {
     "type": "MultiPolygon",

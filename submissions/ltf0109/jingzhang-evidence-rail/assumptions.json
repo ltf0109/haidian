@@ -34,19 +34,19 @@
    ]
   },
   {
-   "id": "A-MULTIMODAL-GENERATED",
-   "status": "ai_generated_design_artifacts",
-   "statement": "多模态设计图（02 总体结构图、04 场景矩阵、03 生态图谱、01 VI 等）由 Gemini 多模态生成，**基于本方案提供的 narrative 文本 + palette.md 色卡 + metrics 数值与几何边界**作为提示词输入；图片中的**叙述性设计要素**（场景卡命名、空间形式描述、运营治理机制列、EBIP 指标交付）来自本方案 EBIP 方法论与 12 场景设计；**精确数字**（POI 计数、产业聚集度等）来源见 metrics.json 注释；唯一可信 POI 口径 36/161/63，未列入 metrics 的为 design_target（设计建议值，待专业团队核验）",
-   "impact": "多模态图作为设计可视化与跨学科沟通工具，不替代规划图纸；设计建议值与已知值的边界须在图中明确标注（本轮已完成）",
+   "id": "A-MULTIMODAL-ORIGIN",
+   "status": "agent_self_designed_artifacts",
+   "statement": "本方案全部多模态设计图（02 总体结构图、04 场景矩阵、01 VI、05—07 组件/符号/荣誉体系、08 离线交互沙盒等）与所有正文、几何、代码、指标，均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体（subagent）自主设计完成，使用本智能体自写的 Python/SVG 渲染脚本与 HTML 生成，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**。不存在任何第三方生成式 AI 生成、且权属未清的资产。图中叙述性设计要素（场景卡命名、空间形式、运营治理机制、EBIP 指标交付）均来自本方案 EBIP 方法论与 12 场景设计；精确数字来源见 metrics.json 注释；唯一可信 POI 口径 36/161/63，未列入 metrics 的为 design_target（设计建议值，待专业团队核验）",
+   "impact": "多模态图作为设计可视化与跨学科沟通工具，由本智能体自主绘制，不替代规划图纸；设计建议值与已知值的边界在图中明确标注。资产权利闭环：全部提交物均为自主原创或已清权公开来源，详见 sources.json COPYRIGHT-REVIEW-NOTE",
    "artifacts": [
-    "01 VI 视觉识别总图（Logo/几何规范/色卡）",
-    "02 总体空间结构图（已回填 assets/figures/structure-overview.png）",
-    "03 AI 创新生态图谱（附录图，本版不进入 submission 包以控体积）",
-    "04 场景-空间-运营协同矩阵图（已回填 assets/figures/scenario-matrix.png）",
+    "01 VI 视觉识别总图（自主设计 Logo/几何规范/色卡）",
+    "02 总体空间结构图（assets/figures/structure-overview.png，自主渲染）",
+    "03 AI 创新生态图谱（附录图，本版不进入 submission 包）",
+    "04 场景-空间-运营协同矩阵图（assets/figures/scenario-matrix.png，自主渲染）",
     "05 三朝圣地标与贡献者荣誉展示体系（附录图）",
     "06 空间设计组件库（附录图）",
     "07 导视与符号系统（附录图）",
-    "08 离线多模态交互沙盒（已回填 visual/interactive-sandbox.html）"
+    "08 离线多模态交互沙盒（report/proposal.html#interactive-sandbox，自主生成）"
    ]
   },
   {

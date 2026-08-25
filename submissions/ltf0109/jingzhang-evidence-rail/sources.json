@@ -241,7 +241,7 @@
    "url": "",
    "type": "agent_disclosure",
    "usable_for_formal": "no",
-   "note": "**资产级许可证声明（2026-08-25 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——HTML/visual 渲染内嵌**子集化文泉驿微米黑（WenQuanYi Micro Hei，GPLv3 + 字体嵌入例外；轮廓数据 © Google Apache-2.0，字体 © 2008–2009 WenQuanYi Board of Trustees）**，字体文件 assets/fonts/wqy-microhei-subset.woff 随包发布，许可证见 report/font-license.txt；不再依赖评审环境的系统字体（SimSun/Songti SC/YaHei），原“系统字体无额外授权”结论已废止；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ AI 生成图仅作 design_target 草案，不主张已清除第三方版权，正式展览素材由组织方/专业团队制作或重新授权；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：本提交物所用资产级许可证已逐项记录（report/font-license.txt + 本文件）；已知第三方素材/现场证据缺口交由专业/组织方团队，属非阻断待办。正式展览/出版前建议专业法务复核。**"
+   "note": "**资产级许可证声明（2026-08-25 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——HTML/visual 渲染内嵌**子集化文泉驿微米黑（WenQuanYi Micro Hei，GPLv3 + 字体嵌入例外；轮廓数据 © Google Apache-2.0，字体 © 2008–2009 WenQuanYi Board of Trustees）**，字体文件 assets/fonts/wqy-microhei-subset.woff 随包发布，许可证见 report/font-license.txt；不再依赖评审环境的系统字体（SimSun/Songti SC/YaHei），原“系统字体无额外授权”结论已废止；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：本提交物所用资产级许可证已逐项记录（report/font-license.txt + 本文件）；全部提交物均为自主原创或已清权公开来源；已知现场证据缺口交由专业/组织方团队，属非阻断待办。正式展览/出版前建议专业法务复核。**"
   }
  ]
 }

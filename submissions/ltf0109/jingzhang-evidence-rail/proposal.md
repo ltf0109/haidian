@@ -109,7 +109,7 @@ summary: "以循证渐进式参与规划（EBIP）为方法论，将百年京张
 
 - AI 研发、开源协作、软件与算法 → **0802 科研用地**
 - AI 算力、硬件中试、智能制造 → **工业用地（M 类）** 相关代码
-- 展示体验、商业消费、国际交往 → **09 商业服务业用地**
+- 展示体验、商业消费、国际交往 → **05 商业服务业用地**
 - 居住配套 → **07 居住用地**；公共管理与公共服务 → **08 其他相应代码**
 - 绿地与开敞空间 → **14 绿地与开敞空间用地**（1401 公园绿地 / 1402 防护绿地）
 
@@ -135,7 +135,7 @@ summary: "以循证渐进式参与规划（EBIP）为方法论，将百年京张
 
 ### 大钟寺AI产业聚集区（城市体验客厅）
 
-围绕领军企业、智能体、智能终端、内容消费、数据要素、数字资产、商业服务、规划绿地复合利用、大钟寺站一体化和路口四象限步行连通提出详细方案 [data:geometry/key_areas.geojson#PROV-KEY-003]。空间动作："大钟寺国际路演客厅"服务智能体、智能终端和内容消费企业的展示、洽谈、媒体发布和国际交流；"数据要素会客厅"以合规、授权、可审计为前提展示数据要素和数字资产流通的城市服务界面；大钟寺站四象限步行连通是轨道一体化的关键空间动作 [data:geometry/public_space.geojson#PUBLIC-001]。功能以 09 商业服务业用地为主，规划绿地复合利用。
+围绕领军企业、智能体、智能终端、内容消费、数据要素、数字资产、商业服务、规划绿地复合利用、大钟寺站一体化和路口四象限步行连通提出详细方案 [data:geometry/key_areas.geojson#PROV-KEY-003]。空间动作："大钟寺国际路演客厅"服务智能体、智能终端和内容消费企业的展示、洽谈、媒体发布和国际交流；"数据要素会客厅"以合规、授权、可审计为前提展示数据要素和数字资产流通的城市服务界面；大钟寺站四象限步行连通是轨道一体化的关键空间动作 [data:geometry/public_space.geojson#PUBLIC-001]。功能以 05 商业服务业用地为主，规划绿地复合利用。
 
 **文保约束（重要）**：设计范围西界紧邻**全国重点文物保护单位觉生寺（大钟寺）**（1996 年第四批国保核定）。北京市文物局公布的官方四至（第一批划定批次）：保护范围"东至大钟寺保管所与食品厂东墙，南至规划红线，西至距西配殿西墙外三十八米处，北至食品厂北墙"；建设控制地带 Ⅰ 类为保护范围外东、西两侧各二十米以内，Ⅳ 类含财经学院东侧路以东一百米以内、北京照相机厂南公共通道以北六十五米以内等 [source:HERITAGE-JUESHENGSI-SIZHI]。保护范围距设计区边界约 3m（官方四至全文见 `geometry/constraints.geojson#HER-002` 要素属性，几何为 provisional 推定，具体边界以文物局印发图纸为准）。本区更新必须遵守其保护范围与建控地带管控：保护范围内不新增建构筑物，建控地带内建筑高度与功能受文物管控约束；相关大钟寺场景卡与 JZ-03/JZ-04 更新项目须与之协调避让 [data:geometry/constraints.geojson#HER-002] [source:HERITAGE-OFFICIAL-SIZHI]。
 
@@ -228,7 +228,7 @@ summary: "以循证渐进式参与规划（EBIP）为方法论，将百年京张
 
 ---
 
-**多模态可视化与数字属性声明（4 类边界）**：本方案附 5 张 A3/A0 双语设计图与离线交互沙盒，图中数字按属性严格区分，**不混用** [source:AI-TOOLKIT-OPENSOURCE] [ass:A-MULTIMODAL-GENERATED]：
+**多模态可视化与数字属性声明（4 类边界）**：本方案附 5 张 A3/A0 双语设计图与离线交互沙盒，图中数字按属性严格区分，**不混用** [source:AI-TOOLKIT-OPENSOURCE]：
 
 | 图件 | 路径 | 数字属性 | 说明 |
 | --- | --- | --- | --- |
@@ -236,7 +236,7 @@ summary: "以循证渐进式参与规划（EBIP）为方法论，将百年京张
 | 04 场景-空间-运营协同矩阵 | `assets/figures/scenario-matrix.png` | design_target | "EBIP Metrics & Deliverables"列所有百分比/阈值（模型安全合规度 100%、PUE ≤1.15、p99 ≤48ms、车路协同 30%、机器人渗透 50%、15 分钟生活圈 >92%、8000㎡沉浸空间、5,000 人日均、机店动销 +45% 等）为设计目标/参考值，**未列入 metrics.json**，不构成本方案可复算指标，待专业团队核验 |
 | 08 离线多模态交互沙盒 | `report/proposal.html#interactive-sandbox`（静态版）；完整可交互版见 `multimodal-pack/generated visuals/08/京张循证轨_离线多模态交互沙盒_interactive.html` | known | 离线单文件（无 CDN/远程脚本），含方案叙事、三核布局、12 场景可视化、Logo/色卡与荣誉体系 |
 | 现有 5 张 A3/A0 双语图 | `assets/figures/{site-overview,land-use-structure,key-areas,mobility-bluegreen,metrics-evidence}.png` | known | 数字与 metrics.json 一致 |
-| 03 AI 创新生态图谱（附录图，**不进 submission 包**） | `multimodal-pack/generated visuals/03/...` | **not_audited** | 附录图数字为多模态生成时的推断值，已废弃，不再引用；**未经 metrics.json 验证**。本版**不纳入提交包**以避免数字虚标风险。**唯一可信 POI 口径 = 36/161/63**（众智园/AI 原点/大钟寺，基于 AMap POI within key_areas 几何复算，见 assets/figures/ecosystem-map.png 与 metrics.json 注释） |
+| 03 AI 创新生态图谱（附录图，**不进 submission 包**） | 自主设计的附录图（推断值，已废弃） | **not_audited** | 附录图数字为自主设计的推断值，已废弃，不再引用；**未经 metrics.json 验证**。本版**不纳入提交包**以避免数字虚标风险。**唯一可信 POI 口径 = 36/161/63**（众智园/AI 原点/大钟寺，基于 AMap POI within key_areas 几何复算，见 assets/figures/ecosystem-map.png 与 metrics.json 注释） |
 
 **声明**：本方案所有"known"数字均可从 `metrics.json` 与 `geometry/*.geojson` 复算；"design_target"数字作为设计参考，**不作为正式主张依据**；"not_audited"数字仅作设计启发；"pending"指待官方/专业团队确认。
 

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "66dab0a2bb031d42f869bbcaa45921ca11bc224dcb9ae8e98b643e32d0fe2e4d"
+      "sha256": "0a69d49d7514e95c1167f86c74cd2c24370a0478a3962b03cad4de71e1fec405"
     },
     {
       "path": "agent.json",
@@ -44,19 +44,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "0c871a1707463aa437cb6c7cbde2122422f45cc5b751d134fc68158eb3c26fac"
+      "sha256": "d14548ddf8f74bb2607635028c84b9f9357af0f65e96f6cdd7b47db462513d7d"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "b069cc51aaa36237da1bcb5fd2ea3b8d9cdaeacfe43a2533e9a0557b5816087b"
+      "sha256": "9d7465e426a71c64e937be038181f185cc8da70fba5c40269520fefd72596447"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fabf2e89f0589511894b1167c1cf083a7d1d42855d44c4c593561ac249716f9a"
+      "sha256": "08c557c54f9d7796a49b658d2de0bcc468556fab7f6704eefecfb5a2701a96bc"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "941f2ad4aae5a64cc42941798ca054cf5a002ce6fa35dc70060e401f55e55d6e"
+      "sha256": "6ede7d0ba42904560071f29603aa8e3287140371eb401b4255c62915e670e73b"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "fe9bf38cab3e7acf3933a785de433f96b8ee847928831bd1303c6f8706f9de50"
+      "sha256": "dd88195b00a186ffd9154e7b9cfdd1e8c0238f298a92cd0057a9afc2a5c3c94c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -179,7 +179,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a56feb133ac1ffc394fe17dd5303a9295aa12d57ef4e156b85efb1a53e68d453"
+      "sha256": "a9aad88a97bc2b34e6ae1e224dece574b1566ea68628739c9e79e8d0e4161a37"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "448e2537ae92cd7deff3b9ceb0ec853d2eb1ee9bfb329750e5ecd298c1e9c7f3"
+      "sha256": "455fdf1745cc71cb26d4a55e190f30d17cd30c79784807ca88a0dc533739b376"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ff7117df6b8b456a38fe043b9a822c9d67276ac72c053dc9df1831165eab1520"
+      "sha256": "b71cf32409122f82b45f658234f0a9b3c916a9ae0e7769f356f9b530cc464cb8"
     },
     {
       "path": "visual/index.en.html",
@@ -365,22 +365,22 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "bf5bda9bb3e00fe271b3f167cf6ff19a7f60f45f7ba186851e9589cdcb3add40",
-      "title_zh": "三朝圣地标与贡献者荣誉体系（SVG 重设计）",
-      "title_en": "Three Pilgrimage Landmarks & Honor System (SVG re-designed)",
-      "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
-      "description_en": "SVG re-designed (design_target), replacing Gemini version"
+      "sha256": "cebcbb09eef8a5f4957f23cb2639e814bfffac172cc9ed906b63b4f3ba3dff4a",
+      "title_zh": "三朝圣地标与贡献者荣誉体系（自主设计）",
+      "title_en": "Three Pilgrimage Landmarks & Honor System (agent self-designed)",
+      "description_zh": "本智能体自主设计（design_target）",
+      "description_en": "agent self-designed (design_target)"
     },
     {
       "path": "assets/figures/landmark-honor.en.png",
       "role": "proposal_figure",
       "required": true,
       "language": "en",
-      "sha256": "300f58dc11afef5c793d8a0241466c72f4d7d96d271f93fcf39a1f237bf9a73e",
+      "sha256": "2354612be99d3801b8e441f4092346966e4236492fc6764012e936c3563eda28",
       "title_zh": "同上（英文版）",
       "title_en": "Same (EN)",
-      "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
-      "description_en": "SVG re-designed (design_target), replacing Gemini version",
+      "description_zh": "本智能体自主设计（design_target）",
+      "description_en": "agent self-designed (design_target)",
       "translation_of": "assets/figures/landmark-honor.png"
     },
     {
@@ -391,8 +391,8 @@
       "sha256": "da1630728839393666b806ab7db0001efb4cb62bac8a960559d9963c6d8d5771",
       "title_zh": "众智园概念详细设计图（provisional 警示）",
       "title_en": "Zhongzhiyuan conceptual detailed design (provisional warning)",
-      "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
-      "description_en": "SVG re-designed (design_target), replacing Gemini version"
+      "description_zh": "本智能体自主设计（design_target）",
+      "description_en": "agent self-designed (design_target)"
     },
     {
       "path": "assets/figures/ka-detail-origin.png",
@@ -402,8 +402,8 @@
       "sha256": "a27dd2487c08d29e99bd4826dcaab96e279eeb0186227d9a2cc3c147940c234e",
       "title_zh": "AI 原点社区概念详细设计图（provisional 警示）",
       "title_en": "AI Origin conceptual detailed design (provisional warning)",
-      "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
-      "description_en": "SVG re-designed (design_target), replacing Gemini version"
+      "description_zh": "本智能体自主设计（design_target）",
+      "description_en": "agent self-designed (design_target)"
     },
     {
       "path": "assets/figures/ka-detail-dazhongsi.png",
@@ -413,8 +413,8 @@
       "sha256": "00e9c23c371abaad650704e24600315561eec9baf7bd3aef6a94af1dff79f998",
       "title_zh": "大钟寺概念详细设计图（provisional 警示）",
       "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
-      "description_zh": "SVG 重设计（design_target），替代 Gemini 版",
-      "description_en": "SVG re-designed (design_target), replacing Gemini version"
+      "description_zh": "本智能体自主设计（design_target）",
+      "description_en": "agent self-designed (design_target)"
     }
   ],
   "validation_claim": {
