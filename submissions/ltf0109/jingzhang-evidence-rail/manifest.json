@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "75b7ca95cb3336a7026f2835db76961bd7af87b6d0a0ffd54ab345401a92ed66"
+      "sha256": "1d1fe9857348f097684d8a80708aab1670ae070d4c9a0541b09507cc2e4859e4"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "375d721b1904ef43e91a9d7ac76685c56a4b2ad1a5db2816a2661deda0e5f459"
+      "sha256": "557e5aa6d1a87611c817cb1a2be67dae90196fb78e29656584fd305c324b36cd"
     },
     {
       "path": "self_check.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "dab4b6bcd458bdc667c20cce771204fc21fca15f4eaace902df60daf7eb9ec13"
+      "sha256": "0abd4fb1fd71386782f5060309af9fd21e46f55ba521dbda98f702c1aa693b2e"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "fb4336db5a573b464b8dfc7447980dd6b70e2878f80f00a8664a604426257720"
+      "sha256": "8391046d687428219a5c32b9435ab323e58841828255dcd2f6011999e5e92c09"
     },
     {
       "path": "visual/index.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7c03877322c504fcfc8fef2683da4b9bd0ce230c323e6de85f78bbd28d59850b"
+      "sha256": "e7ae37d41bba0058c74867884b9d4b17221035e4987a6e7a7338c69330d7b5c9"
     },
     {
       "path": "report/proposal.en.html",
@@ -281,7 +281,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "160cc3dcc6feb7cd1f9e76d220e00e205a7fd50e339fc2f929cff3d6dac36db7"
+      "sha256": "81e7ea5da94f631b0f20fb24e0032d07e41e54e690cb29e78425866c4f7bef01"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -289,7 +289,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "42ce2e092e74029bd61879265b0b53e51c99bf2a79b12e38def5a290bb0476f9"
+      "sha256": "fd96b3095fe4adb65a524d9bf1bb29bdd899dd9b780d3780231203a6f2a5c8ff"
     },
     {
       "path": "assets/figures/structure-overview.png",

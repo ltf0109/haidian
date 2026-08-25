@@ -71,7 +71,9 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-08 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「ima 知识库用户笔记」及 thehighline.org 按标题检索；发布链接未随包收录，可核验性待用户补充",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "TOP-NANSHAN",
@@ -83,7 +85,9 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-08-20 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「TOP创新区研究院（FTA Group）」微信公众号按标题+发布日期（2026-08-20）检索；发布链接未随包收录",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "TOP-NEXTSV",
@@ -95,7 +99,9 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-07-22 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「TOP创新区研究院（FTA Group）」微信公众号按标题+发布日期（2026-07-22）检索；发布链接未随包收录",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "TOP-ONEPERSON",
@@ -107,7 +113,9 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-07-15 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「TOP创新区研究院（FTA Group）」微信公众号按标题+发布日期（2026-07-15）检索；发布链接未随包收录",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "DZDP-PARK",
@@ -119,7 +127,9 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-08 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "大众点评 App / 用户 ima 知识库笔记；具体页面链接未随包收录",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "HAIDIAN-BLOCK-GUIDE",
@@ -129,7 +139,7 @@
       "usage": "Upper-level planning context: unit-block two-tier system, 15-minute community life circle, three-major-facilities allocation, reduction-driven (减量提质) indicator transmission.",
       "note": "官方来源，经用户 ima 知识库收录（检索词：海淀区详细规划街区指引）。用于 15 分钟生活圈与三大设施布局的方法依据。",
       "usable_for_formal": "no",
-      "formal_status_note": "官方语境参考；未经中央 source_registry 登记为 approved formal，正式主张（面积/边界/指标）不以其为依据，仅用于背景与概念启发"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
     },
     {
       "id": "HAIDIAN-DISTRICT-PLAN",
@@ -139,7 +149,7 @@
       "usage": "Upper-level territorial spatial plan: district goals, land use structure, reduction targets, 三区两翼 spatial guidance.",
       "note": "官方来源（2019-11 印发），经用户 ima 知识库收录（PDF）。分区规划属区级国土空间总体规划，为下一层级控规编制依据。",
       "usable_for_formal": "no",
-      "formal_status_note": "官方语境参考；未经中央 source_registry 登记为 approved formal，正式主张（面积/边界/指标）不以其为依据，仅用于背景与概念启发"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
     },
     {
       "id": "ORIGIN-COMMUNITY-OFFICIAL",
@@ -149,7 +159,7 @@
       "usage": "Official positioning of 北京AI原点社区: 五道口为核心约3km², 依托清华北大打造'全球AI人才创新创业第一站'.",
       "note": "官方来源（科技日报转载，2026-01-21）。直接支撑重点区之一'北京AI原点社区'的官方定位表述。",
       "usable_for_formal": "no",
-      "formal_status_note": "官方语境参考；未经中央 source_registry 登记为 approved formal，正式主张（面积/边界/指标）不以其为依据，仅用于背景与概念启发"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
     },
     {
       "id": "SANQU-LIANGYI",
@@ -159,7 +169,7 @@
       "usage": "Official spatial framework: 京张铁路遗址公园为创新链路, 三区两翼空间布局, 建设世界级AI集聚地.",
       "note": "官方来源（北京日报，2026-04-03）。支撑统筹研究范围的空间协同框架表述。",
       "usable_for_formal": "no",
-      "formal_status_note": "官方语境参考；未经中央 source_registry 登记为 approved formal，正式主张（面积/边界/指标）不以其为依据，仅用于背景与概念启发"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
     },
     {
       "id": "HAIDIAN-STATS-2025",
@@ -169,7 +179,7 @@
       "usage": "Population and economy baseline: 常住人口311.1万, AI 产业集聚规模等现状数据支撑.",
       "note": "官方来源。支撑现状诊断与产业规模表述。",
       "usable_for_formal": "no",
-      "formal_status_note": "官方语境参考；未经中央 source_registry 登记为 approved formal，正式主张（面积/边界/指标）不以其为依据，仅用于背景与概念启发"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
     },
     {
       "id": "TOP-EMBODIED",
@@ -182,7 +192,9 @@
       "url_status": "placeholder_removed",
       "data_acquisition_date": "2026-07 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "微信 permalink 含'具体文章ID'占位，未收录真实链接；可在 TOP创新区研究院微信公众号按标题+日期（2026-07）检索",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "TOP-MANAGED-CITY",
@@ -195,7 +207,9 @@
       "url_status": "placeholder_removed",
       "data_acquisition_date": "2026-07 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "微信 permalink 含'具体文章ID'占位，未收录真实链接；可在 TOP创新区研究院微信公众号按标题+日期（2026-07）检索",
-      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核"
+      "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
+      "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+      "used_in_formal_facts": false
     },
     {
       "id": "NYCDOT-OPENSTREETS",
@@ -221,7 +235,7 @@
       "url": "https://www.gov.cn/zhengce/zhengceku/2015-10/16/content_10246.htm",
       "usable_for_formal": "no",
       "note": "官方来源：海绵城市渗滞蓄净用排技术路径，作为蓝绿空间生态韧性措施的官方依据。；URL 已由原失效链接（实测 HTTP 404）替换为 gov.cn 政策库当前有效地址",
-      "formal_status_note": "官方语境参考；未经中央 source_registry 登记为 approved formal，正式主张（面积/边界/指标）不以其为依据，仅用于背景与概念启发"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
     },
     {
       "id": "AI-TOOLKIT-OPENSOURCE",
@@ -270,6 +284,35 @@
       "type": "agent_disclosure",
       "usable_for_formal": "no",
       "note": "**资产级许可证声明（2026-08-25 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——HTML/visual 渲染内嵌**子集化文泉驿微米黑（WenQuanYi Micro Hei，GPLv3 + 字体嵌入例外；轮廓数据 © Google Apache-2.0，字体 © 2008–2009 WenQuanYi Board of Trustees）**，字体文件 assets/fonts/wqy-microhei-subset.woff 随包发布，许可证见 report/font-license.txt；不再依赖评审环境的系统字体（SimSun/Songti SC/YaHei），原“系统字体无额外授权”结论已废止；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：本提交物所用资产级许可证已逐项记录（report/font-license.txt + 本文件）；全部提交物均为自主原创，或标注为公开来源引用（其中若干 background-only 来源 URL 缺失/占位，清权与使用边界待用户补全可核验出处并经理法复核）；已知现场证据缺口交由专业/组织方团队，属非阻断待办。正式展览/出版前建议专业法务复核。**"
+    },
+    {
+      "id": "SWITCHBACK-PROTOCOL",
+      "title": "Switchback Protocol（场景卡机器可读运行合约的字段规范）",
+      "publisher": "chucky1102 / RENLINE（open-city-ai/haidian Issue #1119 开放贡献）",
+      "url": "https://github.com/open-city-ai/haidian/issues/1119",
+      "license": "CC-BY-4.0",
+      "type": "open_protocol_spec",
+      "usage": "场景卡的字段结构 / 枚举 / 语义规范（switchback 触发条件、recovery_rule、ledger 事件、near-miss/decommission 等级等）",
+      "scope_note_zh": "仅协议规范（字段结构/枚举/语义）按 CC-BY-4.0 署名 chucky1102 / RENLINE 使用；本包的叙事、图面、几何、几何推断、指标计算、场景描述与最终结论均由 EvidenceRail Agent 自主设计生成，不在此许可覆盖范围内。",
+      "scope_note_en": "Only the protocol specification (field structure / enumerations / semantics) is used under CC-BY-4.0 with attribution to chucky1102 / RENLINE; the package's narrative, maps, geometry, metrics, scenario descriptions and conclusions are independently authored by EvidenceRail Agent and fall outside this licence.",
+      "license_compatibility": "包级许可 COMMUNITY-DISPLAY-ONLY 覆盖本包自有内容（叙事/图面/几何/指标/代码）；本包中嵌入的 Switchback Protocol 字段规范作为第三方协议规范按 CC-BY-4.0 署名使用（详见 SWITCHBACK-PROTOCOL 条目）。两者在提交物中按'内容分层'兼容：本包自有内容遵循 COMMUNITY-DISPLAY-ONLY，第三方协议规范按 CC-BY-4.0；不混用、不转授。",
+      "asset_file": "visual/assets/switchback-protocol.json",
+      "attribution_text": "Switchback Protocol by chucky1102 / RENLINE (open-city-ai/haidian Issue #1119); customised by EvidenceRail Agent (ltf0109)"
     }
-  ]
+  ],
+  "license_compatibility": "本包提交物采用分层许可：① 包级主体许可为 COMMUNITY-DISPLAY-ONLY（覆盖本包自有的叙事/图面/几何/指标/代码/品牌）；② 嵌入的 Switchback Protocol 字段规范按 CC-BY-4.0 署名 chucky1102 / RENLINE 使用（仅协议规范，详见 SWITCHBACK-PROTOCOL 条目）；③ AMap 开放平台 POI/地铁数据按服务条款仅使用聚合统计，不发布原始明细；④ OSM 底图按 ODbL 1.0 注明 © OpenStreetMap contributors，仅作静态展示底图，不构成规划参考。usable_for_formal=no 的来源（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK）支撑的定量/文保控制/事实表述已在 proposal 中标注 (provisional / 官方语境背景 / 机制启发)，不作正式主张依据。",
+  "url_status_policy": {
+    "policy": "url 为空或占位的条目一律 background-only，不用于正式主张；不可声称已清权或可访问。",
+    "empty_or_placeholder_url_ids": [
+      "TOP-HY-ANALYSIS",
+      "TOP-NANSHAN",
+      "TOP-NEXTSV",
+      "TOP-ONEPERSON",
+      "TOP-EMBODIED",
+      "TOP-MANAGED-CITY",
+      "DZDP-PARK"
+    ],
+    "action_applied": "上述条目已置 usable_for_formal=no、formal_status_note 明确降级；正文引用处标 (机制启发数据 / background-only)。",
+    "requires_before_formal_publish": "补全可核验 permalink + 出版元数据 + 法务复核，方可升为 usable_for_formal=yes。"
+  }
 }
