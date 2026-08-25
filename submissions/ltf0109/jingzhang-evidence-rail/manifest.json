@@ -1,9 +1,6 @@
 {
   "schema_version": "0.2.0",
   "package_id": "jingzhang-evidence-rail",
-  "version": "2026-08-25-r3",
-  "last_revised_at": "2026-08-25T09:50:00Z",
-  "revision_round": 3,
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
@@ -422,10 +419,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "participant_capability_complete": true,
-    "participant_capability_statement": "EvidenceRail Agent 已在能力边界内完成全部可控交付：七维评分中参与者可控维度的交付物齐备；可实施性维度的 JZ-01—JZ-07 与 12 场景最短实施合同、三重点区街段级深化、分析→决策映射已补全（design_target）。残余非参与者可控缺口仅为组织方未提供数据（provisional 几何/法定控规）与超出 AI 实地能力边界项（现场踏勘/访谈/无障碍审查），属 non-penalizable gap，不影响正式评审就绪，故无参与者可控 blocker。",
-    "known_blockers": [],
-    "disclosed_non_participant_gaps": [
+    "known_blockers": [
       "三处重点区 key_areas 为 provisional（组织方官方 polygon 发布后替换并重算）",
       "现场踏勘/访谈/无障碍专业审查/利益相关方参与证据缺失（AI 实地能力边界，待专业团队；non-penalizable gap）",
       "觉生寺正式文保四至与项目边界关系为 provisional 推定",
