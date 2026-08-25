@@ -36,7 +36,7 @@
    "result": "pass",
    "severity": "minor",
    "target": "geometry/key_areas.geojson",
-   "message": "Three key areas remain provisional; replace with official polygons before professional scoring."
+   "message": "Three key areas remain provisional (provisional boundary, not official); they will be replaced when the organizer publishes official polygons and metrics recomputed; the data gap does not block content review."
   },
   {
    "check_id": "READABILITY",
@@ -99,7 +99,7 @@
    "觉生寺正式文保四至与项目边界关系为 provisional 推定",
    "法定控规（容积率/高度/红线/管线/消防/防洪）待组织方提供",
    "OSM 底图为尝试性叠加：当前渲染环境网络不可达，图件回退白底（风险声明见 sources.json OSM-BASEMAP）",
-   "drawings/a3-booklet.pdf 与 a0-boards.pdf 第一页'官方边界/official boundary'→'provisional' 文字修订（评审 P0）：当前 drawings/*.pdf 为提交包内二进制成品，工作区无对应可编辑生成源码（HTML/脚本缺失），无法直接修订；该修订属评审内容项，不影响确定性校验（manifest 哈希一致）。建议后续提供 drawings 生成脚本后修订，或接受为已知评审项"
+   "drawings/a3-booklet.pdf 与 a0-boards.pdf 第一页修订（r5，回应评审 P0+P1）：找到生成脚本 spatial_analysis/generate_boards.py；修正 ZH/EN 摘要中'正式专业评分须替换'/'正式专业评分要求'等前置条件表述为'几何数据缺口本身不影响内容评审'，'官方边界'→'provisional boundary'，'约 3m'标注为 provisional 推定；A3 字体 9.5→13、A0 24→32；图片放大 0.23→0.25；底部空白压缩；状态警示行加粗红色（#b42318）置顶；CJK 字体回退到 PingFang SC/Hiragino Sans GB/STHeiti。A3/A0 PDF 与 5 张 EN 图已重渲，manifest 哈希重算，self_check 确定性校验通过"
   ]
  }
 }
