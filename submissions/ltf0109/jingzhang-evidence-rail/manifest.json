@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0abd4fb1fd71386782f5060309af9fd21e46f55ba521dbda98f702c1aa693b2e"
+      "sha256": "1409f730292a12c8d4852e63fc03708eb5614e51802ef0ebdba40d7e90a88d87"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8391046d687428219a5c32b9435ab323e58841828255dcd2f6011999e5e92c09"
+      "sha256": "433575418d1e379b296e46b37117d645d045c592ff5998550682f38f3de157f2"
     },
     {
       "path": "visual/index.html",
@@ -281,7 +281,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "81e7ea5da94f631b0f20fb24e0032d07e41e54e690cb29e78425866c4f7bef01"
+      "sha256": "74a492c39de4532a40216b36328fe636ab8cbbe6855644ccc77e4a296aad1f3d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -289,7 +289,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "fd96b3095fe4adb65a524d9bf1bb29bdd899dd9b780d3780231203a6f2a5c8ff"
+      "sha256": "07b4f8dfc23eb2cf6de537ad18c492b0969b4805844f2c99fa6e3bf180c3ce63"
     },
     {
       "path": "assets/figures/structure-overview.png",
@@ -415,6 +415,60 @@
       "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
       "description_zh": "本智能体自主设计（design_target）",
       "description_en": "agent self-designed (design_target)"
+    },
+    {
+      "path": "visual/assets/street_section_short_term.svg",
+      "role": "visualization",
+      "required": false,
+      "language": "zh",
+      "sha256": "6d902249f53e17a69ef9497b00d8f5d2c6a670d7c8a22706c576be551abff3ff",
+      "title_zh": "街段界面横剖面（短期措施示意）",
+      "title_en": "Street section transverse view (short-term measures)"
+    },
+    {
+      "path": "visual/assets/ai_scene_short_term.svg",
+      "role": "visualization",
+      "required": false,
+      "language": "zh",
+      "sha256": "556f00a6593a2893c0f119934b362de16e7569bf45f247f315131cc4a67bd4d9",
+      "title_zh": "AI 场景示意图（短期措施）",
+      "title_en": "AI scenario schematic (short-term measures)"
+    },
+    {
+      "path": "visual/assets/ai_scenarios_overview.svg",
+      "role": "visualization",
+      "required": false,
+      "language": "zh",
+      "sha256": "d1db08e5a9e61d232871eb3eb21b7dcf01fdc74f3cbc716a7d093a444d9a945a",
+      "title_zh": "AI 场景一览（10 项示意）",
+      "title_en": "AI scenarios overview (10 items)"
+    },
+    {
+      "path": "visual/assets/street_section_short_term_en.svg",
+      "role": "visualization",
+      "format": "svg",
+      "language": "en",
+      "description": "English equivalent of street section short-term measures diagram (semantically equivalent to the Chinese version)",
+      "description_en": "English equivalent of street section short-term measures diagram (semantically equivalent to the Chinese version)",
+      "sha256": "75b852b3e4dda8278fd9e56672e799b912c5e89fd5f49e56a406657b5858c724"
+    },
+    {
+      "path": "visual/assets/ai_scene_short_term_en.svg",
+      "role": "visualization",
+      "format": "svg",
+      "language": "en",
+      "description": "English equivalent of AI scene illustration diagram (semantically equivalent to the Chinese version)",
+      "description_en": "English equivalent of AI scene illustration diagram (semantically equivalent to the Chinese version)",
+      "sha256": "b2477fcfd8fb5139fc2e60f13113d43977bf7c1dd288ac3512ea683849a6d981"
+    },
+    {
+      "path": "visual/assets/ai_scenarios_overview_en.svg",
+      "role": "visualization",
+      "format": "svg",
+      "language": "en",
+      "description": "English equivalent of the 10-scenario overview drawn from visual/index.html (semantically equivalent to the Chinese version)",
+      "description_en": "English equivalent of the 10-scenario overview drawn from visual/index.html (semantically equivalent to the Chinese version)",
+      "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351"
     }
   ],
   "validation_claim": {
