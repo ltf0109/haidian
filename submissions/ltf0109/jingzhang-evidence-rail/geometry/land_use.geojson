@@ -104,9 +104,9 @@
     "confidence": "medium",
     "geometry_role": "provisional_constraint",
     "name_zh": "商服与城市体验用地",
-    "land_use_code": "05",
+    "land_use_code": "09",
     "land_use_code_standard": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-    "land_use_code_note": "商业服务业用地（评审校验口径 05；main 分支已按国标修正为 09，见 open-city-ai/haidian PR #3017，两种枚举下本代码均合法）"
+    "land_use_code_note": "商业服务业用地（对齐官方 2026-08-16 枚举订正：09=商业服务业用地、05=湿地；本地校验器 land_use_code 白名单已同步为 09，与 proposal.md 大钟寺'09 商业服务业用地'一致；采用 09 以符合官方枚举，避免被机器误读为湿地）"
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -334,7 +334,7 @@
     "area_sqm_declared": 178387.546,
     "land_use_code": "16",
     "land_use_code_standard": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-    "land_use_code_note": "边界补片按留白用地（未定功能）"
+    "land_use_code_note": "边界补片按留白用地（未定功能）；国土空间规划体系无独立'留白'代码，暂列 16 待定，不计入指标复算，待控规确定功能"
    },
    "geometry": {
     "type": "Polygon",

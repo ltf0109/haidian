@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "source_id": "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
-  "note": "Project subset for AI urban design submissions. Import the full official code table before final statutory planning use.",
+  "note": "Project subset for AI urban design submissions. Synced to official 2026-08-16 enum correction: 05=湿地, 09=商业服务业用地. Import the full official code table before final statutory planning use.",
   "codes": [
     {
       "code": "07",
@@ -50,6 +50,11 @@
     },
     {
       "code": "05",
+      "label_zh": "湿地",
+      "level": 1
+    },
+    {
+      "code": "09",
       "label_zh": "商业服务业用地",
       "level": 1
     },

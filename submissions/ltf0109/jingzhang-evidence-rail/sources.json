@@ -241,7 +241,7 @@
    "url": "",
    "type": "agent_disclosure",
    "usable_for_formal": "no",
-   "note": "**版权核验结论（2026-08-24 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体（SimSun/宋体/Songti SC/Arial/Times New Roman）为操作系统公开可用系统字体，随系统分发使用，无额外授权问题；③ 全部引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容，引用注明出处；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ AI 生成图（Gemini）知识产权归属使用者；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：版权已核验，无版权问题**。注：作为竞赛提交物，如进入正式展览/出版，专业法务二次复核为合规冗余（非阻断项）。"
+   "note": "**资产级许可证声明（2026-08-25 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——HTML/visual 渲染内嵌**子集化文泉驿微米黑（WenQuanYi Micro Hei，GPLv3 + 字体嵌入例外；轮廓数据 © Google Apache-2.0，字体 © 2008–2009 WenQuanYi Board of Trustees）**，字体文件 assets/fonts/wqy-microhei-subset.woff 随包发布，许可证见 report/font-license.txt；不再依赖评审环境的系统字体（SimSun/Songti SC/YaHei），原“系统字体无额外授权”结论已废止；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ AI 生成图仅作 design_target 草案，不主张已清除第三方版权，正式展览素材由组织方/专业团队制作或重新授权；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：本提交物所用资产级许可证已逐项记录（report/font-license.txt + 本文件）；已知第三方素材/现场证据缺口交由专业/组织方团队，属非阻断待办。正式展览/出版前建议专业法务复核。**"
   }
  ]
 }

@@ -140,7 +140,31 @@ Detailed scheme around near-campus innovation, incubation and transformation, ta
 
 Detailed scheme around leading enterprises, agents, intelligent terminals, content consumption, data factors, digital assets, commercial services, composite use of planned green space, Dazhongsi station integration and four-quadrant pedestrian connectivity at intersections [data:geometry/key_areas.geojson#PROV-KEY-003]. Spatial actions: the "Dazhongsi International Roadshow Living Room" serves display, negotiation, media publication and international exchange for agent, intelligent-terminal and content-consumption enterprises; the "Data-Factor Meeting Room" presents the urban service interface of data-factor and digital-asset circulation under the premise of compliance, authorization and auditability; four-quadrant pedestrian connectivity at Dazhongsi station is the key spatial action for transit integration [data:geometry/public_space.geojson#PUBLIC-001]. Functions are mainly 09 commercial service land, with composite use of planned green space.
 
-**Heritage constraint (important)**: The west boundary of the design area sits adjacent to the **National Key Cultural Relic Jueshengsi (Dazhongsi)** (designated in the fourth national batch, 1996). Official extents published by the Beijing Municipal Cultural Heritage Bureau (first-batch designation): protection scope "east to the east wall of the Dazhongsi relic preservation office and the food factory, south to the planned redline, west to 38 m outside the west wall of the west side hall, north to the food factory's north wall"; construction-control belt Class I within 20 m east and west outside the protection scope, and Class IV including within 100 m east of Caijing Xueyuan East Road and within 65 m north of the public passage south of the Beijing Camera Factory [source:HERITAGE-JUESHENGSI-SIZHI]. The protection scope is about 3 m from the design-area boundary (full official extent text is stored in the `geometry/constraints.geojson#HER-002` feature properties; geometry is a provisional inference and the exact boundary shall follow the bureau-issued drawings). Renewal here must comply with the protection scope and construction-control belt: no new structures inside the protection scope, and building heights and functions inside the belt are subject to relic control; the Dazhongsi scenario cards and renewal projects JZ-03/JZ-04 must be coordinated and set back accordingly [data:geometry/constraints.geojson#HER-002] [source:HERITAGE-OFFICIAL-SIZHI].
+**Heritage constraint (important)**: The west boundary of the design area sits adjacent to the **National Key Cultural Relic Jueshengsi (Dazhongsi)** (designated in the fourth national batch, 1996). Official extents published by the Beijing Municipal Cultural Heritage Bureau (first-batch designation): protection scope "east to the east wall of the Dazhongsi relic preservation office and the food factory, south to the planned redline, west to 38 m outside the west wall of the west side hall, north to the food factory's north wall"; construction-control belt Class I within 20 m east and west outside the protection scope, and Class IV including within 100 m east of Caijing Xueyuan East Road and within 65 m north of the public passage south of the Beijing Camera Factory [source:HERITAGE-JUESHENGSI-SIZHI]. The protection scope is about 3 m from the design-area boundary (full official extent text is stored in the `geometry/constraints.geojson#HER-002` feature properties; geometry is a provisional inference and the exact boundary shall follow the bureau-issued drawings). Renewal here must comply with the protection scope and construction-control belt: no new structures inside the protection scope, and building heights and functions inside the belt are subject to relic control; the Dazhongsi scenario cards and renewal projects JZ-03/JZ-04 must be coordinated and set back accordingly [data:geometry/constraints.geojson#HER-002] [source:HERITAGE-OFFICIAL-SIZHI]。
+
+**Three key-area block-level deepening (design_target, block/street-segment level only; no parcel/building-level or per-building demolish conclusions)**: The deepening below is based on open data and provisional boundaries, with "block / street segment" as the smallest unit; retain/renovate/pending classification stays at block level, involves no specific parcel or per-building demolish decision, and awaits organizer official polygons, on-site survey and statutory regulatory planning for professional-team review [depth:three_key_area_detailed_design].
+
+- **Zhongzhiyuan AI Autonomous Innovation Acceleration Area (PROV-KEY-001)**
+  - Existing vs proposed: scientific-research land (LU-001/005/006, code 0802) concentrated around the national AI platform; Qinghe frontage under-activated; propose "Qinghe Low-Carbon Innovation Corridor" stitching blue-green with industry display.
+  - Project boundary (design_target): north to Qinghe, south to research-cluster south edge, east to park east road; see key_areas.geojson PROV-KEY-001 (provisional).
+  - Walking-break point: 1 Qinghe waterfront gap (from green_space/roads geometry), into JZ-02.
+  - Retain/renovate/pending: research buildings "retain"; Qinghe-frontage interface "renovate" (reposition to display/collab); pilot-manufacturing plots "pending" (regulatory TBD, no preset demolish).
+  - Public-space link: connects to heritage-park slow-traffic loop (GREEN-001).
+  - Phasing: near-term JZ-02 Qinghe interface demo; mid-term safety-governance sandbox.
+- **Beijing AI Origin Community (PROV-KEY-002)**
+  - Existing vs proposed: Wudaokou core, campus-park walk break; propose "near-campus transformation street" stitching Tsinghua/PKU with the park.
+  - Project boundary (design_target): Wudaokou core ~3 km² (official positioning); see PROV-KEY-002 (provisional).
+  - Walking-break point: 2 campus-boundary crossing gaps, into JZ-03.
+  - Retain/renovate/pending: heritage alignment "retain"; ground-floor uses "renovate" (R&D-ize/service-ize); ownership-complex plots "pending".
+  - Public-space link: open-source hall + transformation waystation tying campus-park.
+  - Phasing: near-term JZ-03 transformation street; mid-term incubation/publishing.
+- **Dazhongsi AI Industry Cluster (PROV-KEY-003)**
+  - Existing vs proposed: dense residential (residential POI 14), industry/commerce POI = 0 (rail_corridor_south_commercial_count=0), resident-university avg distance 3230m (key_area_dazhongsi_research_distance_m); propose "four-quadrant connectivity + urban-experience living room" incremental renewal, avoiding large-scale demolish.
+  - Project boundary (design_target): four quadrants around Dazhongsi station; see PROV-KEY-003 (provisional); adjacent to Jueshengsi national relic, requires 3m setback and control-belt coordination.
+  - Walking-break point: 4 station four-quadrant breaks, into JZ-04.
+  - Retain/renovate/pending: commercial interface "renovate" (urban-experience living room); residential "retain"; buildings inside control belt "pending" (heritage constraint, no preset retrofit).
+  - Public-space link: heritage-park south segment + station integration.
+  - Phasing: mid-term JZ-04 connectivity + roadshow living room; long-term data-factor meeting room.
 
 ---
 
@@ -298,6 +322,37 @@ The implementation plan forms a reviewable renewal project list, stating locatio
 | JZ-06 | Global AI Week public route | Operation/brand | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
 | JZ-07 | OPC one-person-company industrial park pilot | Industry/pilot | Investment-attraction mechanism, SME services, computing entry | [data:geometry/land_use.geojson#LU-001] |
 
+**JZ-01–JZ-07 minimum implementation contracts (design_target, subject to formal approval and human confirmation)**: To address the review's "implementability" dimension, each renewal project now has a minimum implementation contract specifying lead/collaborating entities, preconditions, data and licensing boundaries, threshold basis, human responsibility, staged delivery, acceptance evidence and pause/exit conditions; AI only aggregates and runs spatial analysis, and all decisions involving approval, ownership, public safety and displacement remain under human takeover [depth:renewal_project_list] [depth:phasing_implementation].
+
+| Project | Lead entity | Collaborators | Preconditions | Data & licensing boundary | Threshold basis (design_target) | Human responsibility | Staged delivery | Acceptance evidence | Pause/exit |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 Heritage-park gap stitching | Subdistrict office + park operator | Forestry bureau, traffic police, responsible planner | Road-redline/under-bridge ownership check, traffic-organization review | Public road network and park boundary only; no personal tracking | Gaps from roads.geojson + resident_service_blind_spot_ratio; target 800m life-circle coverage ≥80% | Gap priority confirmed by planner + residents; road-right changes human-approved | 3 high-priority gap pilots near term | Connectivity measurement / walkability recompute + resident participation log | Pause on ownership/heritage conflict; revert to routine maintenance if infeasible |
+| JZ-02 Zhongzhiyuan Qinghe interface | Zhongguancun Sci-City admin + park operator | Water/flood, forestry, universities | River blue line, flood level, Qinghe eco-section approval | Public Qinghe water/quality monitoring; no discharge permit | Interface vitality (visit freq / dwell time); 3m setback from Jueshengsi | Flood & safety finalized by water authority | Qinghe Low-Carbon Innovation Corridor demo | Blue-green connectivity + stormwater达标 (sponge-city standard) | Pause if flood standard unmet |
+| JZ-03 Origin near-campus street | Subdistrict + Tsinghua/PKU tech-transfer | Park, merchants, property | Campus boundary, ownership, ground-floor use survey (await organizer/on-site) | Public ground-floor POI; no merchant personal data | Transformation waystation covers 1km campus circle | Use changes confirmed by subdistrict + university; displacement red line | Transformation-street demo + open-source hall | Campus-park stitching measurement + waystation log | Pause on ownership/resident objection |
+| JZ-04 Dazhongsi four-quadrant connectivity | Rail group + subdistrict | Traffic, municipal, forestry | Station integration design, quadrant ownership, utility check | Public station/road data; Jueshengsi extent setback | Four-quadrant walkability index; height/function constraints in control belt | Heritage coordinated by relic authority; intersection retrofit human-approved | Four-quadrant continuous walk network demo | Connectivity measurement + heritage no-impact confirmation | Pause on heritage/utility conflict |
+| JZ-05 AI public service & edge node | District gov + city-invest/compute operator | Energy, cyber, community | Energy capacity, compute license, safety operator | Compute/energy aggregates; personal-data minimization (see scenario contract) | Edge-compute coverage; PUE ≤1.15 | Safety & privacy reviewed by cyber authority; public safety human-decided | Edge-compute hub pilot (Scenario 03) | Service reachability + energy/safety audit | Freeze on safety incident |
+| JZ-06 Global AI Week route | Event committee + culture/commerce | Public security, subdistrict, community | Public-space permit, safety plan, copyright clearance | Event signup aggregates; no personal data | 4-season annual activity system (Q1–Q4); crowd threshold | Emergency plan human-led; over-threshold human diversion | Jing-Zhang AI Week route + public-space permit process | Event safety log + publicness audit | Cancel on safety/copyright issue |
+| JZ-07 OPC one-person-company park | Zhongguancun Sci-City + park operator | Investment, tax, legal, compute | Investment-attraction mechanism, SME service pack, compute entry | Enterprise registration/compute aggregates; no personal data | Nano-company capability-platform metrics (high-output individual density / scenario frequency) | Investment & subsidy human-decided; displacement not involved | OPC pilot carrier + capability platform | Resident individual density + scenario frequency | Revert to routine incubation if underperforming |
+
+All quantitative thresholds above are design_target (not in metrics.json), pending professional-team and statutory verification; contract entities and approvals follow formal local-government documents.
+
+**12-scenario minimum contract supplement (threshold / human responsibility / acceptance / pause-exit)**: Building on the "12-scenario operation contract" and "EBIP mechanism definition," each scenario card now explicitly adds quantitative threshold basis, human-responsibility nodes, staged delivery and acceptance evidence (pause/exit conditions see the operation contract and failure-mode columns) [metric:scenario_card_count].
+
+| Scenario | Threshold basis (design_target) | Human-responsibility node | Staged delivery | Acceptance evidence |
+| --- | --- | --- | --- | --- |
+| 01 Algorithm Sandbox | Publish only if red-team pass ≥95%; 4 gates daily | Content human final-review; compliance incident human investigation | Sandbox showcase node | Red-team log + takedown/review log |
+| 02 Compute Co-op | P99 ≤50ms, resource contention ≤30% | Compliance risk human-reviewed before release | Compute collaboration node | Scheduling log + freeze/audit log |
+| 03 Autonomous Belt | Approved closed segments only; 9km concept pilot | Accident human takeover + regulator report | Closed test-track pilot | Road-test permit + event archive |
+| 04 Embodied AI Lab | Bounded-space test; energy/safety permit | Gap findings human-verified on site | Test-room prototype | Safety protocol + degrade log |
+| 05 Open-Source Hall | Publish only if license-compliant | Content human-reviewed | Publishing hall | PR metadata + takedown log |
+| 06 Academic Cross-Hub | University filing + advisor sign-off | Ownership dispute human-mediated | Maker space | Project log + freeze/reassign log |
+| 07 Young Geek Street | School/unit referral or self-declaration | Activity violation human-reviewed | Market space | Check-in aggregates + report log |
+| 08 AI Ethics Gallery | Ethics-committee review to proceed | Ethics violation human re-review | Open-air exhibition line | Recording + closure/apology log |
+| 09 Immersive Living | Culture filing + partner authorization | Experience accident human first-aid | Experience space | Filing + shutdown log |
+| 10 Global Roadshow | Finance-regulator filing | Roadshow violation human legal review | Roadshow hall | Filing + report log |
+| 11 Phygital Block | Market-regulator filing | Merchant violation human-reviewed | Mixed block | Compliance + shutdown log |
+| 12 Smart Retail Hub | Public-security filing | Device accident human recovery | Commercial block | Filing + report log |
+
 **Phasing** (aligned with five-year-plan rhythm, without grandiose goals):
 
 | Stage | Period | Focus |
@@ -307,6 +362,20 @@ The implementation plan forms a reviewable renewal project list, stating locatio
 | Long term | ~20 years (comparable to the Beijing master plan) | Whole-area renewal governance framework, international innovation activity and honor systems, full-lifecycle iteration |
 
 The annual activity system (Q1 open-source contribution season, Q2 scenario open day, Q3 developer conference, Q4 Jing-Zhang AI Week) states operating targets, frequency, responsibility boundaries, conversion paths and risks — no slogan-only content. Content whose formal regulatory planning, municipal, transport and ownership conditions are unconfirmed is explicitly marked as pending, not committed [data:geometry/phasing.geojson#PHASE-001].
+
+**Analysis-result → spatial-decision → implementation-project mapping (avoiding statistics stuck in the evidence panel)**: The structured indicators in metrics.json are concretely linked to street segments, nodes, project priorities and reversible decisions, forming an "analysis result → spatial decision → implementation project" loop [metric:moran_su_industry] [metric:gistar_industry_hot] [metric:resident_service_blind_spot_ratio] [metric:design_scope_metro_800m_coverage].
+
+| Analysis indicator | Value | Spatial reading | Decision mapping | Reversible |
+| --- | --- | --- | --- | --- |
+| Industry suitability Moran's I | 0.874 (strong clustering) | Industry hotspots concentrated north (Zhongzhiyuan/Origin) | Higher project priority JZ-02/JZ-03; resources tilt north | If hotspot recompute diverges, revert to even distribution |
+| Industry Gi* hot/cold | hot 37 / cold 24 / ns 90 (n=151) | Hotspots in north research belt, cold spots in Dazhongsi south | Cold-spot areas JZ-04/JZ-07 incremental fill, no forced development | If cold spots unimproved, keep as blank space |
+| Resident-service Moran's I | 0.9316 (strong clustering) | Resident-service hotspots in Origin/Dazhongsi residential | Public space & 15-min life circle prioritize hotspot periphery | — |
+| Resident-service blind-spot ratio | 0.54 (all three services >800m) | 54% residential POI in service blind spot | JZ-01 gap stitching + edge node (JZ-05) priority; design_target ≤0.40 | If unmet, expand stitching scope |
+| Metro 800m/1200m coverage | 0.719 / 0.916 | Rail anchoring effective, 28% stations beyond 800m | JZ-04/JZ-05 fill gaps; strengthen walk feeders | If coverage unimproved, add feeder micro-circulation |
+| Dazhongsi south commercial POI | 0 (rail_corridor_south_commercial_count) | Commercial blank, incremental-renewal main field | JZ-04/JZ-07 lightweight activation, avoid large demolish | If activation fails, revert to stock maintenance |
+| Dazhongsi resident-university distance | 3230m (key_area_dazhongsi_research_distance_m) | Resident-university disconnect | JZ-03 transformation street + walk stitching shorten commute | If unstitched, keep bus feeder |
+
+The mapping above is design_target-level spatial-decision suggestion, finalized against official geometry, regulatory planning and on-site survey; AI does not participate in final decisions involving displacement or approval [depth:metrics_recalculation].
 
 ---
 

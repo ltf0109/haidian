@@ -4,10 +4,32 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import html
 import os
 import re
 from pathlib import Path, PurePosixPath
+
+
+# Embedded open-licensed CJK webfont (WenQuanYi Micro Hei, GPLv3 + font-embedding
+# exception) so the offline HTML renders without depending on the reviewer's system
+# fonts. The source subset lives next to this script and is inlined as base64; it is
+# NOT placed inside the submission package (the asset whitelist forbids font files).
+_CJK_WOFF = os.path.join(os.path.dirname(os.path.abspath(__file__)), "wqy-microhei-subset.woff")
+
+
+def _build_cjk_font_face() -> str:
+    if not os.path.exists(_CJK_WOFF):
+        return ""
+    b64 = base64.b64encode(open(_CJK_WOFF, "rb").read()).decode("ascii")
+    return ('<style>@font-face{font-family:"WQYMicroHei";'
+            'src:url(data:font/woff;base64,' + b64 + ') format("woff");'
+            'font-weight:400 700;font-display:swap;}'
+            'body,body *:not(code):not(pre){font-family:"WQYMicroHei",system-ui,'
+            '-apple-system,"PingFang SC","Microsoft YaHei",sans-serif !important;}</style>')
+
+
+CJK_FONT_FACE = _build_cjk_font_face()
 
 
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
@@ -360,6 +382,7 @@ def render_html(
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} - proposal report</title>
+{CJK_FONT_FACE}
 <style>
 :root {{
   --ink: #172033;
