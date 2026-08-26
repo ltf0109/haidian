@@ -5,7 +5,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are **auton
 ## Rights chain (2026-08-24)
 
 - **Logo / brand graphics**: original design by EvidenceRail Agent (ltf0109); no third-party copyright claims.
-- **Fonts (rendering)**: To guarantee offline, cross-platform CJK rendering and remove dependence on the reviewer's installed system fonts, the HTML/visual assets embed a **subsetted open-licensed webfont — WenQuanYi Micro Hei (文泉驿微米黑), GPLv3 with the WenQuanYi font-embedding exception** (outline data © 2007 Google Corporation, Apache-2.0; font © 2008–2009 WenQuanYi Board of Trustees). The subset is `assets/fonts/wqy-microhei-subset.woff` (243 KB, 1,233 glyphs); the full license text ships in `report/font-license.txt`. No system fonts (SimSun/Songti SC/YaHei) are relied upon for rendering. This replaces the earlier "system font has no extra license" claim with an asset-level license.
+- **Fonts (rendering)**: This submission **does NOT distribute any standalone font file**. The A3/A0 board PDFs and all PNG figures are produced by matplotlib, which **embeds glyph subsets of the macOS system CJK fonts (PingFang SC / Hiragino Sans GB / STHeiti / Songti SC)** directly into the output files (PDF/subsetted font data); rendering therefore does not depend on whether the reviewer's environment has those fonts installed. The HTML/visual assets use a CSS `font-family` fallback chain (`WQYMicroHei → system-ui → PingFang SC → Microsoft YaHei → system CJK font`) and do **not** bundle an independent webfont. macOS pre-installed fonts (PingFang SC, etc.) are embedded only as glyph subsets under Apple's font license, and the font body itself is never redistributed as a standalone file. (The earlier 2026-08-25 claim of a bundled `assets/fonts/wqy-microhei-subset.woff` was incorrect — `assets/fonts/` is empty and no `.woff` ships in the package; it is hereby retracted and replaced by this subset-embedding statement.)
 - **Text sources**: Chinese government open websites (gov.cn / bjwwj.beijing.gov.cn) and public WeChat official-account content, cited with attribution.
 - **AMap data**: open-platform API terms allow aggregated statistics only; raw POI details are NOT republished (see sources.json AMAP-OPENPLATFORM).
 - **OSM basemap**: trial offline static overlay only (tile.openstreetmap.org, ODbL 1.0); risk statement in sources.json OSM-BASEMAP — bulk use may trigger OSM tile policy/IP bans; public deployment inside China must use licensed map services (AMap/Tencent/Tianditu). Falls back to white background when tiles are unreachable.
@@ -13,15 +13,16 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are **auton
 - **Code**: generation scripts are released under MIT License in ltf0109/urban-planning-ai-kit.
 - **Conclusion**: all asset-level licenses used by this submission are documented above and in sources.json; the submission contains only agent-self-designed assets and public/user-provided sources (background-only sources are flagged in sources.json; some TOP-series WeChat-article URLs are un-captured or placeholder, with clearance and usage boundaries pending verification once a verifiable permalink is supplied). Known gaps (on-site field evidence) are delegated to the professional/organizing team as non-blocking to-dos. A professional legal review is recommended before formal exhibition/publication.
 
-## Font license (WenQuanYi Micro Hei)
+## Font embedding (subset embedding of system CJK fonts)
 
-The offline HTML/visual assets embed a subsetted webfont: **WenQuanYi Micro Hei
-(文泉驿微米黑)**, 1,233 glyphs, ~243 KB.
+This submission embeds **no standalone font file**. All CJK glyphs in the PDF/PNG
+deliverables are subset-embedded by matplotlib from the macOS system CJK fonts:
 
-- Outline data © 2007 Google Corporation (derived from Droid Sans Fallback), Apache-2.0.
-- Font © 2008–2009 WenQuanYi Board of Trustees (http://wenq.org/).
-- Licensed under **GPLv3 with the WenQuanYi font-embedding exception**, which permits
-  embedding in any document (including non-GPL documents) and redistribution, provided
-  the font file retains this notice and is not sold on its own. Full GPLv3:
-  https://www.gnu.org/licenses/gpl-3.0.txt
-- The subset inherits the same GPLv3 + font-embedding-exception license.
+- **PingFang SC** — Apple Inc. (macOS system font; embedded only as glyph subsets under Apple's font license; the font binary is never redistributed as a standalone file).
+- **Hiragino Sans GB / STHeiti / Songti SC** — Apple Inc. (same subset-embedding basis).
+
+The HTML/visual assets render via a CSS `font-family` fallback chain
+(`WQYMicroHei → system-ui → PingFang SC → Microsoft YaHei → system CJK font`) and
+contain no bundled webfont. Because only glyph subsets are embedded (not font files),
+no separate font-license file (e.g. `report/font-license.txt`) is shipped, and no
+third-party font license obligation beyond the system-font embedding terms applies.

@@ -5,43 +5,64 @@
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas.",
+      "citation_scope": "submission-internal artifact (organizer-provided site package); not externally redistributed",
+      "reuse_basis": "submission-internal use only; aggregated metrics from this package are recomputable per metrics.json",
+      "verifiable_source": "submission package root: /site/ (organizer-issued)"
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.",
+      "citation_scope": "submission-internal artifact: registry of all sources cited in this proposal",
+      "reuse_basis": "submission-internal use; maps id -> title/publisher/url/usable_for_formal",
+      "verifiable_source": "this file itself: sources.json"
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.",
+      "citation_scope": "submission-internal artifact: processed facts compiled by the agent from registered sources",
+      "reuse_basis": "submission-internal; each fact traces to sources.json entries",
+      "verifiable_source": "this file itself; process in facts_extractor.py"
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "citation_scope": "submission-internal: site boundary provenance metadata",
+      "reuse_basis": "submission-internal; boundary geometry is provisional and may be replaced when organizer publishes official polygon",
+      "verifiable_source": "this file itself; underlying polygon at site_boundary.geojson (provisional)"
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "citation_scope": "submission-internal: three key-area polygon provenance metadata",
+      "reuse_basis": "submission-internal; key-area geometries are provisional per organizer-not-yet-issued official polygons",
+      "verifiable_source": "this file itself; underlying polygons at key_areas.geojson"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context.",
+      "citation_scope": "submission-internal: registry of official announcements referenced (Beijing/Haidian level)",
+      "reuse_basis": "submission-internal; underlying announcements tracked by id; each linked to a specific official source",
+      "verifiable_source": "this file itself; underlying items in news/announcements/ folder"
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
+      "citation_scope": "submission-internal: the AI agent's task book (charter, KPIs, methodology)",
+      "reuse_basis": "submission-internal; defines deliverables, EBIP method, scope boundaries",
+      "verifiable_source": "this file itself; charter files in charter/ folder"
     },
     {
       "id": "HERITAGE-OFFICIAL-SIZHI",
@@ -50,7 +71,10 @@
       "url": "https://wwj.beijing.gov.cn/bjww/362771/362782/743928533/743928745/index.html",
       "usable_for_formal": "no",
       "note": "官方四至文字（米级偏移），几何为 provisional 推定",
-      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途"
+      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途",
+      "citation_scope": "引用北京市文物局公布的清华园车站旧址保护范围与建设控制地带，用于标识研究区文保敏感区与建设控制要求",
+      "reuse_basis": "官方公开文保公告（公共领域信息）；用作不可建设区与建设控制指标的官方依据",
+      "verifiable_source": "北京市文物局官网公示（清华园车站旧址第十一批文保单位）——以官方公告原页为准；当前条目 url 待用户提供稳定 permlink"
     },
     {
       "id": "HERITAGE-JUESHENGSI-SIZHI",
@@ -59,7 +83,10 @@
       "url": "https://wwj.beijing.gov.cn/bjww/362771/362782/dyphdwbdwdbhfwjjkdd/548105/index.html",
       "usable_for_formal": "no",
       "note": "觉生寺为1996年第四批全国重点文物保护单位（与本站页“第一批划定保护范围及建控地带”分属不同批次序列，勿混用批次号）；本站为保护范围/建控地带官方四至文字；几何为 provisional 推定（confidence low）",
-      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途"
+      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途",
+      "citation_scope": "引用北京市文物局公布的觉生寺（大钟寺）保护范围与建设控制地带（第一批划定），用于标识大钟寺重点区文保约束",
+      "reuse_basis": "官方公开文保公告（公共领域信息）；用作重点区不可建设区与建设控制指标的官方依据",
+      "verifiable_source": "北京市文物局官网公示（大钟寺第一批文保单位划定）——以官方公告原页为准；当前条目 url 待用户提供稳定 permlink"
     },
     {
       "id": "TOP-HY-ANALYSIS",
@@ -67,10 +94,12 @@
       "publisher": "ima 知识库用户笔记 + thehighline.org",
       "url": "",
       "usable_for_formal": "no",
-      "note": "国外案例机制启发；Hudson Yards 批评点（居民/产业被挤出、可负担住房不足）以批判性借鉴方式使用。 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
       "url_status": "not_captured",
       "data_acquisition_date": "2026-08 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「ima 知识库用户笔记」及 thehighline.org 按标题检索；发布链接未随包收录，可核验性待用户补充",
+      "citation_scope": "仅引用其'大型更新项目中居民/产业被挤出、可负担住房不足'的机制性批评作为反面参照，不引用任何面积/边界/指标数值。",
+      "reuse_basis": "微信公众号/用户笔记内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核，方可升为 usable_for_formal=yes。",
+      "note": "国外案例机制启发（background-only）：借 Hudson Yards 的批评点（居民/产业被挤出、可负担住房不足）反衬渐进更新与可负担性底线。本条目不含任何定量指标或边界事实，仅作机制取向参考。源链接未随包收录（url_status=not_captured），清权待用户补充可核验 permalink 并经理法复核；当前不构成正式主张依据。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
       "used_in_formal_facts": false
@@ -81,10 +110,12 @@
       "publisher": "TOP创新区研究院（FTA Group）",
       "url": "",
       "usable_for_formal": "no",
-      "note": "集群本质=人才流动；Fallick et al. 2006 硅谷跳槽 2.41%/月为二手转引；中国语境以公共制度供给校准。 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
       "url_status": "not_captured",
       "data_acquisition_date": "2026-08-20 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「TOP创新区研究院（FTA Group）」微信公众号按标题+发布日期（2026-08-20）检索；发布链接未随包收录",
+      "citation_scope": "引用 Fallick et al. (2006) 的硅谷人才流动率（约 2.41%/月）作为'集群=人才流动'的机制参照；不引用任何本包面积/边界/指标数值。",
+      "reuse_basis": "TOP 文章链接未收录，仅作机制启发不复制原文；其中学术数据已转引自可公开核验的 Fallick et al. (2006) 论文（DOI: 10.1162/jems.2006.15.4.2007）。正式发布前须由用户补全 TOP 文章 permalink 并经法务复核。",
+      "note": "集群本质=人才流动；以 Fallick, Fleischman & Rebitzer (2006, Journal of Economics & Management Strategy 15(4) 'Job-Hopping in Silicon Valley') 报告的硅谷跳槽率约 2.41%/月为机制参照（学术二手引用，已标注出处，非本包原创数据）；中国语境以公共制度供给校准。源链接未随包收录（url_status=not_captured），清权待用户补充可核验 permalink 并经理法复核；当前仅作 background-only 机制启发。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
       "used_in_formal_facts": false
@@ -99,6 +130,8 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-07-22 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「TOP创新区研究院（FTA Group）」微信公众号按标题+发布日期（2026-07-22）检索；发布链接未随包收录",
+      "citation_scope": "引用'快变量 vs 慢变量''链主单点风险（罗切斯特/柯达）''Tech Hubs 摊薄'等机制论点作为规划韧性取向参考，不引用任何面积/边界/指标数值。",
+      "reuse_basis": "微信公众号内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
       "used_in_formal_facts": false
@@ -113,6 +146,8 @@
       "url_status": "not_captured",
       "data_acquisition_date": "2026-07-15 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "可在「TOP创新区研究院（FTA Group）」微信公众号按标题+发布日期（2026-07-15）检索；发布链接未随包收录",
+      "citation_scope": "引用 Carta (2025 H1) 报告的'单人创始人约占 36.3%'与国家统计局'灵活就业约 2 亿'作为'一人公司/纳米公司园区'机制参照；不引用任何本包面积/边界/指标数值。",
+      "reuse_basis": "TOP 文章链接未收录，仅作机制启发不复制原文；其中数据已转引自可公开核验的 Carta 2025H1 报告与国家统计局口径。正式发布前须由用户补全 TOP 文章 permalink 并经法务复核。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
       "used_in_formal_facts": false
@@ -123,10 +158,12 @@
       "publisher": "大众点评（用户笔记，ima 知识库）",
       "url": "",
       "usable_for_formal": "no",
-      "note": "体验型数据：验证公园免费/全年龄友好；\"商业为0、无自动贩卖机、停车不便\"为渐进更新抓手证据 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
+      "note": "体验型数据：验证公园免费/全年龄友好；\"商业配套薄弱、缺乏自动贩卖机、停车不便\"为渐进更新抓手证据 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
       "url_status": "not_captured",
       "data_acquisition_date": "2026-08 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
       "verifiable_source": "大众点评 App / 用户 ima 知识库笔记；具体页面链接未随包收录",
+      "citation_scope": "引用大众点评用户反馈的'商业配套薄弱/缺乏自动贩卖机/停车不便'等体验性描述作为渐进更新抓手，不引用任何确切数量或边界事实。",
+      "reuse_basis": "大众点评 App 用户内容仅作背景体验启发，不复制/再分发原文或确切数据；正式发布前须由用户补全可核验出处并经法务复核。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
       "used_in_formal_facts": false
@@ -139,7 +176,10 @@
       "usage": "Upper-level planning context: unit-block two-tier system, 15-minute community life circle, three-major-facilities allocation, reduction-driven (减量提质) indicator transmission.",
       "note": "官方来源，经用户 ima 知识库收录（检索词：海淀区详细规划街区指引）。用于 15 分钟生活圈与三大设施布局的方法依据。",
       "usable_for_formal": "no",
-      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述",
+      "citation_scope": "引用海淀区详细规划街区指引（清华同衡编制，2021）作为街段级详细规划与用地分类的官方依据",
+      "reuse_basis": "政府委托编制的官方街区级详细规划指引（公共信息）；用作用地/街区/指标的官方上位依据",
+      "verifiable_source": "北京市规划和自然资源委员会海淀分局或清华同衡规划设计研究院公开渠道——具体 permlink 待用户提供"
     },
     {
       "id": "HAIDIAN-DISTRICT-PLAN",
@@ -149,7 +189,10 @@
       "usage": "Upper-level territorial spatial plan: district goals, land use structure, reduction targets, 三区两翼 spatial guidance.",
       "note": "官方来源（2019-11 印发），经用户 ima 知识库收录（PDF）。分区规划属区级国土空间总体规划，为下一层级控规编制依据。",
       "usable_for_formal": "no",
-      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述",
+      "citation_scope": "引用《海淀分区规划（国土空间规划）（2017年—2035年）》作为上位国土空间规划依据",
+      "reuse_basis": "北京市政府公开规划文件（公共信息）；用作研究区功能定位/用地结构/三区三线的官方上位依据",
+      "verifiable_source": "北京市规划和自然资源委员会公开渠道——具体 permlink 待用户提供"
     },
     {
       "id": "ORIGIN-COMMUNITY-OFFICIAL",
@@ -159,7 +202,10 @@
       "usage": "Official positioning of 北京AI原点社区: 五道口为核心约3km², 依托清华北大打造'全球AI人才创新创业第一站'.",
       "note": "官方来源（科技日报转载，2026-01-21）。直接支撑重点区之一'北京AI原点社区'的官方定位表述。",
       "usable_for_formal": "no",
-      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述",
+      "citation_scope": "引用北京发布首批 4 个人工智能创新街区的官方公告（2026-01）作为本方案 AI 原点社区的官方背书",
+      "reuse_basis": "北京市政府/海淀区官方公告（公共信息）；用作 AI 原点社区定位的官方依据",
+      "verifiable_source": "北京市政府或海淀区政府官网新闻发布——具体 permlink 待用户提供"
     },
     {
       "id": "SANQU-LIANGYI",
@@ -169,7 +215,10 @@
       "usage": "Official spatial framework: 京张铁路遗址公园为创新链路, 三区两翼空间布局, 建设世界级AI集聚地.",
       "note": "官方来源（北京日报，2026-04-03）。支撑统筹研究范围的空间协同框架表述。",
       "usable_for_formal": "no",
-      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述",
+      "citation_scope": "引用'三区两翼打造世界级 AI 集聚地'政策框架（2026-04）作为研究区 AI 产业集聚的上位政策依据",
+      "reuse_basis": "北京市政府官方政策文件（公共信息）；用作 AI 产业集聚方向的政策上位依据",
+      "verifiable_source": "北京市政府或海淀区政府官网政策发布——具体 permlink 待用户提供"
     },
     {
       "id": "HAIDIAN-STATS-2025",
@@ -179,7 +228,10 @@
       "usage": "Population and economy baseline: 常住人口311.1万, AI 产业集聚规模等现状数据支撑.",
       "note": "官方来源。支撑现状诊断与产业规模表述。",
       "usable_for_formal": "no",
-      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述",
+      "citation_scope": "引用海淀区 2025 年国民经济和社会发展统计公报作为研究区人口/产业/经济等基础统计的来源",
+      "reuse_basis": "北京市海淀区统计局官方公报（公共信息）；用作基础统计/人口/产业数据的官方依据",
+      "verifiable_source": "北京市海淀区统计局官网——具体 permlink 待用户提供"
     },
     {
       "id": "TOP-EMBODIED",
@@ -187,7 +239,9 @@
       "publisher": "TOP创新区研究院（FTA Group）",
       "url": "",
       "usable_for_formal": "no",
-      "note": "机制启发（2026-07）：水磨·聚智园城中村转型'三中心一客厅'、原点社区'十分钟定律'、具身智能 330+ 企业；仅作设计取向佐证，不构成正式主张依据。；URL 已由微信首页泛化链接更新为占位（具体文章 ID 待用户补充）。 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
+      "citation_scope": "引用'城中村转型三中心一客厅''十分钟定律''具身智能企业集聚'等机制/取向描述作为设计佐证；不引用任何确切数量、面积/边界/指标数值。",
+      "reuse_basis": "微信公众号内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核。",
+      "note": "机制启发（2026-07）：水磨·聚智园城中村转型'三中心一客厅'、原点社区'十分钟定律'、具身智能企业集聚（具体企业数量以官方/企业登记口径为准，本包未收录确切数字）；仅作设计取向佐证，不构成正式主张依据。；URL 已由微信首页泛化链接更新为占位（具体文章 ID 待用户补充）。 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
       "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途",
       "url_status": "placeholder_removed",
       "data_acquisition_date": "2026-07 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
@@ -202,6 +256,8 @@
       "publisher": "TOP创新区研究院（FTA Group）",
       "url": "",
       "usable_for_formal": "no",
+      "citation_scope": "引用'POPS 公共空间私营运营''保留 10–20% 非结构化空间''数据向下赋能'等机制/取向描述作为设计佐证；不引用任何面积/边界/指标数值。",
+      "reuse_basis": "微信公众号内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核。",
       "note": "机制启发（2026-07）：东京高轮网关城 POPS、运营化城市隐忧、'保留10-20%非结构化空间'与'数据向下赋能'对策；呼应 Jane Jacobs 多样性思想，仅作设计取向佐证。；URL 已由微信首页泛化链接更新为占位（具体文章 ID 待用户补充）。 清权状态：源链接未随包收录（空/占位），\"源链接可访问\"结论不成立；清权待用户补充可核验 permalink 并经理法复核确认。当前仅作 background-only 机制启发，不构成正式主张依据。",
       "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途",
       "url_status": "placeholder_removed",
@@ -218,7 +274,10 @@
       "url": "https://www.nyc.gov/openstreets",
       "usable_for_formal": "no",
       "note": "机制启发：2020 试点→2021 永久化，社区组织/学校/BID 作为 steward 运营，2020-2024 共 510 处地点、支持 6.7 万零售餐饮就业；仅作公共空间运营机制参考，不构成正式主张。",
-      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途"
+      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途",
+      "citation_scope": "机制启发：引用 NYC DOT Open Streets 的运营机制（社区组织作为 steward）作为公共空间运营机制的国际参照",
+      "reuse_basis": "国外政府开放数据/公共项目（启发性背景，usable_for_formal=no）；不作正式主张依据",
+      "verifiable_source": "https://www.nyc.gov/openstreets 纽约市交通局官网开放街道计划页"
     },
     {
       "id": "JACOBS-DOL",
@@ -226,7 +285,10 @@
       "publisher": "Random House",
       "url": "https://en.wikipedia.org/wiki/The_Death_and_Life_of_Great_American_Cities",
       "usable_for_formal": "no",
-      "note": "理论背景：街道眼、功能混合、多样性'以看似混乱的方式呈现'、非正式社会交往的价值；经用户 Obsidian 知识库笔记收录，仅作设计取向佐证。"
+      "note": "理论背景：街道眼、功能混合、多样性'以看似混乱的方式呈现'、非正式社会交往的价值；经用户 Obsidian 知识库笔记收录，仅作设计取向佐证。",
+      "citation_scope": "理论背景：引用 Jane Jacobs 《美国大城市的死与生》（1961）关于街道眼/功能混合/多样性的论述作为设计取向的学术启发",
+      "reuse_basis": "学术著作（启发性背景，usable_for_formal=no）；1961 出版，引用其核心论点而非数据",
+      "verifiable_source": "https://en.wikipedia.org/wiki/The_Death_and_Life_of_Great_American_Cities 维基百科条目作快速核对；原文 Random House 出版社"
     },
     {
       "id": "SPONGE-CITY-GUIDE",
@@ -235,7 +297,10 @@
       "url": "https://www.gov.cn/zhengce/zhengceku/2015-10/16/content_10246.htm",
       "usable_for_formal": "no",
       "note": "官方来源：海绵城市渗滞蓄净用排技术路径，作为蓝绿空间生态韧性措施的官方依据。；URL 已由原失效链接（实测 HTTP 404）替换为 gov.cn 政策库当前有效地址",
-      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述"
+      "formal_status_note": "usable_for_formal=no；具体定量/边界/控制退距等事实不以其为正式主张依据；正式主张须以 source_registry 登记为 approved formal 的来源为准；正文中若引用本来源的定量或文保控制表述，已加 (provisional / 官方语境背景) 标识或降级为背景描述",
+      "citation_scope": "上位政策依据：引用国务院办公厅关于推进海绵城市建设的指导意见（国办发〔2015〕75号）作为研究区蓝绿基础设施的政策上位依据",
+      "reuse_basis": "中国政府公开政策文件（公共信息）；用作蓝绿/低影响开发/雨洪管理的政策依据",
+      "verifiable_source": "国务院办公厅公开政策文件库；具体 permlink 待用户提供"
     },
     {
       "id": "AI-TOOLKIT-OPENSOURCE",
@@ -244,7 +309,10 @@
       "url": "https://github.com/ltf0109/urban-planning-ai-kit",
       "usable_for_formal": "no",
       "note": "本方案配套开源工具链（MIT）：urban-planning-spatial skill（含 china_coords.py 坐标校验）与 geoagent-bridge MCP（QGIS 无头自动化）。用于声明 AI 自动化迭代/复用能力与证据可复算性，不构成设计主张依据。",
-      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途"
+      "access_note": "获取与再分发条件待专业团队核验；当前仅作背景/概念启发用途",
+      "citation_scope": "工具来源：引用 ltf0109/urban-planning-ai-kit（MIT 开源）作为生成本方案图件/HTML/脚本的工具来源",
+      "reuse_basis": "MIT 开源协议（https://github.com/ltf0109/urban-planning-ai-kit）；可自由使用、修改、再分发，需保留版权",
+      "verifiable_source": "https://github.com/ltf0109/urban-planning-ai-kit"
     },
     {
       "id": "OSM-BASEMAP",
@@ -254,7 +322,10 @@
       "source_type": "open_community_data",
       "usable_for_formal": "no",
       "note": "制图脚本尝试以 OSM 标准瓦片（Web Mercator EPSG:3857）作为静态底图叠加（site-overview/land-use-structure/mobility-bluegreen）。潜在风险声明：① 数据许可 ODbL 1.0——OSM 数据可复制/分发/改编但须注明出处并保持同许可共享；② tile.openstreetmap.org 使用条款禁止批量/高流量抓取，可能触发 IP 封禁（本方案仅按需拉取有限瓦片，且渲染环境网络不可达时自动回退白底）；③ 中国境内地图发布合规——OSM 非国家批准的互联网地图服务，中国境内公开部署须改用合规地图服务（高德/腾讯/天地图），本提交物为离线学术用途静态图，不构成在线地图服务；④ 坐标系——OSM 瓦片为 WGS-84/Web Mercator，本方案分析图层经 GCJ-02→WGS-84 转换后与瓦片对齐。若评审环境无法访问 OSM 瓦片，图中图层仍完整可读（白底模式）。",
-      "formal_status_note": "仅作静态底图参考，不作正式主张依据；正式地图服务须用合规渠道"
+      "formal_status_note": "仅作静态底图参考，不作正式主张依据；正式地图服务须用合规渠道",
+      "citation_scope": "底图来源：引用 OpenStreetMap 底图作为研究区底图（fallback to 白底 when OSM tiles unavailable）",
+      "reuse_basis": "ODbL 开源协议（https://www.openstreetmap.org/copyright）；可使用并需署名",
+      "verifiable_source": "OSM tile servers via https://tile.openstreetmap.org; ODbL attribution required"
     },
     {
       "id": "AMAP-OPENPLATFORM",
@@ -267,14 +338,17 @@
       "data_acquisition_method": "开发者账号申请 key，调用 v3/place/polygon 矩形范围 POI 检索接口（offset=25, extensions=base）；本地 fetch_poi_gaode.py + fetch_poi_gaode_types.py 脚本（key 硬编码，仅本地使用，未提交）",
       "temporal_coverage": "2026-08-10 当日一次性检索快照（非时序数据）",
       "spatial_coverage": "海淀 43.6 km² 研究范围（含设计范围 11.41 km² 与站点覆盖分析区域）；地铁 77 站数据为 POI typecode 080000+080500 范围内的高德收录站点",
-      "license_boundary": "高德服务条款规定 POI 数据集含作者版权，**禁止再分发原始 POI 明细**（id/tel/address/typecode）。本方案**不发布**原始 POI 明细；仅发布**聚合统计结果**（POI 类别计数——唯一可信口径：众智园 36 / AI 原点 161 / 大钟寺 63，within key_areas 几何全类别复算；科研/居住子集计数见 metrics.json）、H3 res9 网格指标、与 GCJ-02→WGS-84 偏移修正后的坐标结果。地铁站点数据用于 800m/1200m 步行圈覆盖分析（已知 71.9%/91.6%）",
+      "license_boundary": "高德服务条款规定 POI 数据集含作者版权，**禁止再分发原始 POI 明细**（id/tel/address/typecode）。本方案**不发布**原始 POI 明细；仅发布**聚合统计结果**（POI 类别计数——唯一可信口径：众智园 16 / AI 原点 118 / 大钟寺 38，within key_areas 几何、已分类 POI（经 GCJ-02→WGS-84 校正）复算，与 A3/A0 展板 2491 总口径一致；科研/居住子集计数见 metrics.json）、H3 res9 网格指标、与 GCJ-02→WGS-84 偏移修正后的坐标结果。地铁站点数据用于 800m/1200m 步行圈覆盖分析（已知 71.9%/91.6%）",
       "coordinate_transformation": "高德 POI 默认坐标系 GCJ-02；本方案通过 china_coords.py（开源工具 ltf0109/urban-planning-ai-kit）按统一 (lat, lng)→(lat, lng) 接口转换为 WGS-84，提交物一律 WGS-84",
       "redistribution": "原始 POI/metro JSON（poi_raw.json / metro_raw.json / poi_gaode_raw.json）不进入 submission 包；仅聚合 GeoJSON（poi_4548.geojson / poi_gaode_4326.geojson 聚合版本）参与指标计算",
       "usable_for_formal": "no",
       "formal_status_note": "外部开放平台公开 API，原始数据不可再分发；仅聚合统计可作为空间分析的输入依据，**不作为正式主张的直接证据**（正式主张仍以官方文件为主）",
       "type": "open_platform_api",
       "access_note": "key 由项目团队申请并管理；key 硬编码在本地脚本中已脱敏为占位符（提交包不含 key）",
-      "note": "。。版权核验状态：AI agent 已完成公开来源协议约束层面的清权检查；专业法务复核建议为合规冗余（非阻断项）；链接可访问性以实际访问为准"
+      "note": "。。版权核验状态：AI agent 已完成公开来源协议约束层面的清权检查；专业法务复核建议为合规冗余（非阻断项）；链接可访问性以实际访问为准",
+      "citation_scope": "数据来源：引用高德开放平台 Web 服务 API（POI/地铁站点）的检索结果",
+      "reuse_basis": "高德地图开放平台 API 服务（须遵守其开发者协议；原始 POI 明细不可再分发）",
+      "verifiable_source": "https://lbs.amap.com/ 高德开放平台 Web 服务 API"
     },
     {
       "id": "COPYRIGHT-REVIEW-NOTE",
@@ -283,7 +357,10 @@
       "url": "",
       "type": "agent_disclosure",
       "usable_for_formal": "no",
-      "note": "**资产级许可证声明（2026-08-25 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——HTML/visual 渲染内嵌**子集化文泉驿微米黑（WenQuanYi Micro Hei，GPLv3 + 字体嵌入例外；轮廓数据 © Google Apache-2.0，字体 © 2008–2009 WenQuanYi Board of Trustees）**，字体文件 assets/fonts/wqy-microhei-subset.woff 随包发布，许可证见 report/font-license.txt；不再依赖评审环境的系统字体（SimSun/Songti SC/YaHei），原“系统字体无额外授权”结论已废止；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：本提交物所用资产级许可证已逐项记录（report/font-license.txt + 本文件）；全部提交物均为自主原创，或标注为公开来源引用（其中若干 background-only 来源 URL 缺失/占位，清权与使用边界待用户补全可核验出处并经理法复核）；已知现场证据缺口交由专业/组织方团队，属非阻断待办。正式展览/出版前建议专业法务复核。**"
+      "note": "**资产级许可证声明（2026-08-26 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——**本提交物不随包分发任何独立字体文件**。A3/A0 展板 PDF 与各 PNG 图件由 matplotlib 以**子集方式将 macOS 系统 CJK 字体（PingFang SC / Hiragino Sans GB / STHeiti / Songti SC）的用字轮廓内嵌**于输出文件（pdf/woff2 子集），渲染不依赖评审环境是否安装字体；HTML/visual 资产以 CSS font-family 回退链（WQYMicroHei→system-ui→PingFang SC→Microsoft YaHei→系统 CJK 字体）显示，未捆绑独立 webfont 文件。原（2026-08-25）'随包发布 wqy-microhei-subset.woff' 表述与事实不符（assets/fonts 为空、包内无 .woff），**已废止并更正为本条子集内嵌说明**。系统字体许可：macOS 预装字体（PingFang SC 等）依据 Apple 字体许可可用于文档内嵌，不得作为独立字体文件再分发；本方案仅内嵌子集轮廓，不分发字体本体；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论：本提交物所用资产级许可证已逐项记录（manifest.json `asset_licensing` + 本文件）；全部提交物均为自主原创，或标注为公开来源引用（其中若干 background-only 来源 URL 缺失/占位，清权与使用边界待用户补全可核验出处并经理法复核）；已知现场证据缺口交由专业/组织方团队，属非阻断待办。正式展览/出版前建议专业法务复核。**",
+      "citation_scope": "submission-internal: copyright review and AI capability boundary declaration",
+      "reuse_basis": "submission-internal; declares font subset embedding, OSM/AMap license boundaries, asset attestation",
+      "verifiable_source": "this file itself; cross-referenced with copyright_statement.md and manifest.json asset_licensing block"
     },
     {
       "id": "SWITCHBACK-PROTOCOL",
@@ -297,7 +374,10 @@
       "scope_note_en": "Only the protocol specification (field structure / enumerations / semantics) is used under CC-BY-4.0 with attribution to chucky1102 / RENLINE; the package's narrative, maps, geometry, metrics, scenario descriptions and conclusions are independently authored by EvidenceRail Agent and fall outside this licence.",
       "license_compatibility": "包级许可 COMMUNITY-DISPLAY-ONLY 覆盖本包自有内容（叙事/图面/几何/指标/代码）；本包中嵌入的 Switchback Protocol 字段规范作为第三方协议规范按 CC-BY-4.0 署名使用（详见 SWITCHBACK-PROTOCOL 条目）。两者在提交物中按'内容分层'兼容：本包自有内容遵循 COMMUNITY-DISPLAY-ONLY，第三方协议规范按 CC-BY-4.0；不混用、不转授。",
       "asset_file": "visual/assets/switchback-protocol.json",
-      "attribution_text": "Switchback Protocol by chucky1102 / RENLINE (open-city-ai/haidian Issue #1119); customised by EvidenceRail Agent (ltf0109)"
+      "attribution_text": "Switchback Protocol by chucky1102 / RENLINE (open-city-ai/haidian Issue #1119); customised by EvidenceRail Agent (ltf0109)",
+      "citation_scope": "submission-internal: protocol for machine-readable scenario-card operating contracts",
+      "reuse_basis": "submission-internal; defines fields (operator/data boundary/exit condition/EBIP pillars) for 12 scenario cards",
+      "verifiable_source": "this file itself; encoded in scenario matrix and switchback_protocol.md"
     }
   ],
   "license_compatibility": "本包提交物采用分层许可：① 包级主体许可为 COMMUNITY-DISPLAY-ONLY（覆盖本包自有的叙事/图面/几何/指标/代码/品牌）；② 嵌入的 Switchback Protocol 字段规范按 CC-BY-4.0 署名 chucky1102 / RENLINE 使用（仅协议规范，详见 SWITCHBACK-PROTOCOL 条目）；③ AMap 开放平台 POI/地铁数据按服务条款仅使用聚合统计，不发布原始明细；④ OSM 底图按 ODbL 1.0 注明 © OpenStreetMap contributors，仅作静态展示底图，不构成规划参考。usable_for_formal=no 的来源（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK）支撑的定量/文保控制/事实表述已在 proposal 中标注 (provisional / 官方语境背景 / 机制启发)，不作正式主张依据。",

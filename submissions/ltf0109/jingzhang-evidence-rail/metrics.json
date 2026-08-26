@@ -290,7 +290,7 @@
    "assumptions": [
     "AI 原点社区科研 POI 密度最高（107.9/km² 当量）"
    ],
-   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 161 / 大钟寺 63（众智园 36）；口径与 within key_areas 几何一致"
+   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 118 / 大钟寺 38（众智园 16）；口径与 within key_areas 几何一致（已分类 POI，经 GCJ-02→WGS-84 校正，与 2491 总口径一致）"
   },
   "key_area_dazhongsi_residential_poi_count": {
    "status": "known",
@@ -304,7 +304,7 @@
    "assumptions": [
     "大钟寺居住密集但产业/科研/商业 POI 为 0 → 渐进更新主战场"
    ],
-   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 161 / 大钟寺 63（众智园 36）；口径与 within key_areas 几何一致"
+   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 118 / 大钟寺 38（众智园 16）；口径与 within key_areas 几何一致（已分类 POI，经 GCJ-02→WGS-84 校正，与 2491 总口径一致）"
   },
   "building_height_m": {
    "status": "unknown",
@@ -473,6 +473,40 @@
    "source": "AMAP-OPENPLATFORM",
    "data_date": "2026-08-10",
    "status": "known"
+  },
+  "poi_total_study_area": {
+   "id": "poi_total_study_area",
+   "value": 2491,
+   "unit": "count",
+   "status": "known",
+   "source_files": [
+    "spatial_analysis/poi_gaode_4326.geojson"
+   ],
+   "generator": "spatial_analysis/fetch_poi_gaode.py（高德 POI 多边形检索 API）+ generate_boards.py:poi_cat() 分类管线",
+   "data_source": "高德地图开放平台（AMap）POI 多边形检索 API",
+   "data_date": "2026-08-10",
+   "spatial_scope": "研究区 43.6 km²（3×3 网格覆盖组织方临时 site_boundary）",
+   "coordinate_system": "GCJ-02（API 原生）→ WGS-84（提交几何，gcj2wgs 偏移校正，见 generate_boards.py）",
+   "dedup_rule": "按 AMap POI id 去重；源文件 3919 要素 id 唯一，去重后仍 3919",
+   "classification_rule": "poi_cat(type)：医疗保健→Medical / 科教文化→Research / 风景名胜·体育休闲→Green / 餐饮·购物·住宿→Commercial / 商务住宅→Residential / 公司企业→Industry；其余（无关键词匹配）→ 未分类剔除",
+   "aggregation_formula": "count(poi where poi_cat(type) is not null) over study-area 43.6 km² polygon",
+   "category_breakdown": {
+    "Residential": 1119,
+    "Research": 234,
+    "Commercial": 390,
+    "Green": 375,
+    "Medical": 192,
+    "Industry": 181
+   },
+   "uncategorized_dropped": 1428,
+   "consistency": "与 A3/A0 展板 metrics 行 '3 key areas · 2491 POIs (aggregated, study area)' 一致（generate_boards.py: TOTAL_POI = len(poi_plot) = 2491）",
+   "license_boundary": "数据来自高德地图开放平台聚合检索；依据《高德地图开放平台服务条款》，原始 POI 明细不得再分发，仅以聚合统计与脱敏几何形式用于本研究",
+   "reproducibility": "可复算：在 pandas<3 + geopandas 隔离环境下重新运行 generate_boards.py 的 poi_cat 管线即得 2491（已实机复核：3919 要素 → 分类 2491 / 未分类 1428）",
+   "confidence": "medium",
+   "assumptions": [
+    "研究区范围基于 provisional site_boundary（组织方官方 polygon 未发布），官方几何发布后须重算聚合",
+    "POI 分类依据 AMap type 字段关键词映射，可能随平台分类体系变化而变动"
+   ]
   }
  }
 }

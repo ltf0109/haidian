@@ -19,14 +19,17 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true
+      "required": true,
+      "sha256": "405834fb537012f5ec739fede73a40ab0cb47833088b2ee23cf4c9bb1a485a1f",
+      "size_bytes": 20388
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1d1fe9857348f097684d8a80708aab1670ae070d4c9a0541b09507cc2e4859e4"
+      "sha256": "a17bf2fec821ea5d7917569bd1f7dca692cec47e8f434b6fd546701ad30fdaed",
+      "size_bytes": 84656
     },
     {
       "path": "agent.json",
@@ -38,25 +41,29 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "e9fa66226c9ebd621696441979520db88259f0a13e162b5952ffe1a7f5c2e540"
+      "sha256": "797a178c9b96cbf815b3bc58fb89ea6612e69915103901e1fe4169c36ea7eac9",
+      "size_bytes": 17583
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "d14548ddf8f74bb2607635028c84b9f9357af0f65e96f6cdd7b47db462513d7d"
+      "sha256": "ce9acbf3fc45970420e17db850b3d6f2fef229cc064e884c23d5f3ff6d716043",
+      "size_bytes": 5753
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "557e5aa6d1a87611c817cb1a2be67dae90196fb78e29656584fd305c324b36cd"
+      "sha256": "0ce111f084549fe5bf2ac9615fa22300ab3c16054c697e2ec2b7e9d3302dd217",
+      "size_bytes": 42989
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "6686263992212ee7ea18c5523f19629c86d397c567b157e89f4cff809cd8c183"
+      "sha256": "f72586e73490337250235316ecb19737f03963cc6186392b7b871e71ca05c1d2",
+      "size_bytes": 8689
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +88,8 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6ede7d0ba42904560071f29603aa8e3287140371eb401b4255c62915e670e73b"
+      "sha256": "ed52c0353e83ac9882be6e9dd7443ad5445cad9c09d11c4da24f7239a0587b5b",
+      "size_bytes": 427181
     },
     {
       "path": "report/narrative.md",
@@ -93,21 +101,24 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "8131b78a00faf3efde68a13ce3b6c0a9eedad98343f4dc05d2d6e471d605de36"
+      "sha256": "3ae580415a2b2e7b471228228dccdba7aafc674ff0875081e39d4e3722df6bd5",
+      "size_bytes": 4424
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1409f730292a12c8d4852e63fc03708eb5614e51802ef0ebdba40d7e90a88d87"
+      "sha256": "859348c5d79dc2e610a8013834404f3545a918c6b9aad3dd945f4da10d99eb58",
+      "size_bytes": 3271739
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "433575418d1e379b296e46b37117d645d045c592ff5998550682f38f3de157f2"
+      "sha256": "0f5a76b2bf5f654af5ce60a97b9b2ef25c556b2f57d3b777036fd3a60ba54e02",
+      "size_bytes": 3444012
     },
     {
       "path": "visual/index.html",
@@ -121,35 +132,40 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "15a9d89475338b4b785e93d917bb528723ee17e85e4f00f766f21e04ae89aa8e"
+      "sha256": "794f2faa1117a23dcb75ddaa590d96565ca8838698c69a2099c86300c449dfd5",
+      "size_bytes": 99272
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "3e8aebf38576091a54a53d4d6c2731642b95370a4e23f0c24a60200dff03b627"
+      "sha256": "a317edb9479f7dc1375af0cc440af39d0a0c2b299debaaf80e2e5e7ebbd6f634",
+      "size_bytes": 135936
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "7e37e8f5dff5de872b158bc95c5c24689cabd8954545cab3b91c9ef5b7c9d61a"
+      "sha256": "90f9f58519d0b0a505c66a93c3729aa03a4767576f3e7d0c203d9688215d51e6",
+      "size_bytes": 309948
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8a572ee79702344c805f628e3fb8ff8fdd4926183b951c43524e52336dae5550"
+      "sha256": "1ab891aa4199d28989731ff4e36bb7b97f57f0bebc7565edb826b24407f661a0",
+      "size_bytes": 117049
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "0275f941fed16194d3ef08fef6cf5155cba9ba526f2bfd5e5e9a9722e0c4c10f"
+      "sha256": "82eae73cb7b670b2a322806c2411bce2945caed49a845fbf392bc15dba0e4484",
+      "size_bytes": 163086
     },
     {
       "path": "geometry/buildings.geojson",
@@ -217,7 +233,8 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e7ae37d41bba0058c74867884b9d4b17221035e4987a6e7a7338c69330d7b5c9"
+      "sha256": "070d18251bf3832cdc008b6d7e2d2cd2b51e41aed7545a3659b9a4d896905b5e",
+      "size_bytes": 99331
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +242,8 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b71cf32409122f82b45f658234f0a9b3c916a9ae0e7769f356f9b530cc464cb8"
+      "sha256": "1f162841f401216b31d9ad12e04f7758ee520973f663e5c730b27250b94fb738",
+      "size_bytes": 440405
     },
     {
       "path": "visual/index.en.html",
@@ -241,7 +259,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "0651a55098150eefad827f09cf2e53a4a445c0a61871d5d9eea942691d11407f"
+      "sha256": "d4f8c781424e1d0577659768ebc22651fea41ccfcab7a67b24d3f46819815d30",
+      "size_bytes": 151157
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -249,7 +268,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "34624f51e9be67e3f16b965310672ea63f1fc53c377990ed41abbcab2d967e0f"
+      "sha256": "d3f514416529edd0257780c97e6cbfc9014e859f1fa3735f783bafeb7b40866b",
+      "size_bytes": 117274
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -257,7 +277,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "d1b70f01ba28b9d86f86e4f66f578f6fa0b77e7f59f14b6d98390638088a038c"
+      "sha256": "5862b47dade2e1ab7d442495d74524a709afdbc75d5f44ae6054af2c50b397af",
+      "size_bytes": 97505
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -265,7 +286,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "e075d68d479203320ec6637faeb95369538b3b5f413ecc7381598781a520f592"
+      "sha256": "c106a397594328115d44db1a57f338bd5827c8c05380a26638b1087b846134a9",
+      "size_bytes": 104560
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -273,7 +295,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "530ade88d6459ebc2146c048892f80a8898cbd1836d4396b05b9e404fd481955"
+      "sha256": "96f0adad671312c7462df9d20d242d12fb33decc7408cbe2856dc9e99d49a5d6",
+      "size_bytes": 279868
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -281,7 +304,8 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "74a492c39de4532a40216b36328fe636ab8cbbe6855644ccc77e4a296aad1f3d"
+      "sha256": "4b51983451203d165b063731ee887ec49cc393ce8055a288860fd8399c6a0604",
+      "size_bytes": 3104727
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -289,53 +313,58 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "07b4f8dfc23eb2cf6de537ad18c492b0969b4805844f2c99fa6e3bf180c3ce63"
+      "sha256": "9a4985840c6d370a86388e348e165385045aab38e74b08c45fe17a4a00996792",
+      "size_bytes": 3278314
     },
     {
       "path": "assets/figures/structure-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8eb8c6fdcd0b2f26cb587081a5ffefa2d8aa31122a1d340bbdf3d59f74953488",
+      "sha256": "aa9d0a4ab5582bcb7684f76d41893575328981b661707968308283d0b0d4ee4b",
       "language": "zh",
       "title_zh": "总体空间结构图",
       "title_en": "Overall Spatial Structure",
       "description_zh": "总体空间结构图（真实几何 matplotlib 重绘；数字均来自 metrics.json 复算）",
-      "description_en": "Overall Spatial Structure (re-drawn from real geometry via matplotlib; all figures reproducible from metrics.json)"
+      "description_en": "Overall Spatial Structure (re-drawn from real geometry via matplotlib; all figures reproducible from metrics.json)",
+      "size_bytes": 251331
     },
     {
       "path": "assets/figures/scenario-matrix.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "948ba0b7b8f4d45d7e402b9584e69252af27e88b920baf85b4e6f3c9401b5d18",
+      "sha256": "e4c40daaf4c519899fa7b718fb6b67772c250a1ec8188364aed892eefa72bc21",
       "language": "zh",
       "title_zh": "场景-空间-运营协同矩阵",
       "title_en": "Scenario-Space-Operation Matrix",
       "description_zh": "12 场景-空间-运营协同矩阵（真实契约数据表渲染）",
-      "description_en": "Scenario-Space-Operation Matrix (rendered from real contract table)"
+      "description_en": "Scenario-Space-Operation Matrix (rendered from real contract table)",
+      "size_bytes": 288554
     },
     {
       "path": "assets/figures/structure-overview.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "e774ba8fd4b658d14eca63ffa7a45e467a2d79785227eea82471e6ddb9a667b1",
+      "sha256": "260c078625dca38ce1aafa9d18dbf2eae478c01b9bb887680db0d39d5e9884b8",
       "language": "en",
       "title_zh": "总体空间结构图（英文版，真实几何重绘）",
       "title_en": "Overall Spatial Structure (English, real geometry)",
       "description_zh": "英文版（与中文版同数据同布局，严格实质等价；非占位）",
       "description_en": "English version (same data & layout as Chinese, strictly equivalent; no longer a placeholder)",
-      "translation_of": "assets/figures/structure-overview.png"
+      "translation_of": "assets/figures/structure-overview.png",
+      "size_bytes": 211663
     },
     {
       "path": "assets/figures/scenario-matrix.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "be05dc8ddb5c412019e78baf3c5c43926ca7d64f7bdea50add9b0388d6734c33",
+      "sha256": "325bb4e6e4a42224468cf1e50aa80154bb2f8cb558daebce21d32359843cad65",
       "language": "en",
       "title_zh": "场景-空间-运营协同矩阵（英文版）",
       "title_en": "Scenario-Space-Operation Matrix (English)",
       "description_zh": "英文版（与中文版同数据同布局，严格实质等价；非占位）",
       "description_en": "English version (same data & layout as Chinese, strictly equivalent; no longer a placeholder)",
-      "translation_of": "assets/figures/scenario-matrix.png"
+      "translation_of": "assets/figures/scenario-matrix.png",
+      "size_bytes": 183144
     },
     {
       "path": "assets/figures/ecosystem-map.png",
@@ -343,10 +372,11 @@
       "language": "zh",
       "title_zh": "AI 创新生态图谱（真实 POI 分布）",
       "title_en": "AI Innovation Ecosystem (Real POI Distribution)",
-      "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一口径 36/161/63 可从 key_areas 几何 within 复算",
-      "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); single caliber 36/161/63 reproducible from key_areas geometry",
-      "sha256": "82cf06087706bff30d771e4e4e54771b73a12745f6d17e6d53b5fbfe65c377e2",
-      "required": true
+      "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一口径 16/118/38（众智园/AI 原点/大钟寺，已分类 POI 经 GCJ-02→WGS-84 校正 within key_areas 几何，与 2491 总口径一致）可从 key_areas 几何复算",
+      "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); single caliber 16/118/38 (Zhongzhiyuan/AI Origin/Dazhongsi, categorized POI within key_areas geometry after GCJ-02→WGS-84, consistent with the 2491 total) reproducible from key_areas geometry",
+      "sha256": "179c879a800c43c17aa7c7a68adf68ad781514db2929c98d1590d771d47b5770",
+      "required": true,
+      "size_bytes": 188042
     },
     {
       "path": "assets/figures/ecosystem-map.en.png",
@@ -357,64 +387,70 @@
       "description_zh": "英文版（与中文版同数据同布局）",
       "description_en": "English version (same data & layout as Chinese)",
       "translation_of": "assets/figures/ecosystem-map.png",
-      "sha256": "2ddf47ed887c79709f8f5186c29dfe5bef828dc98578617be038efcb191d77db",
-      "required": true
+      "sha256": "c531c4588953eeb1cd0a3829478faca12fbb2e351e8bcf2ff4f7f7e593224a99",
+      "required": true,
+      "size_bytes": 153837
     },
     {
       "path": "assets/figures/landmark-honor.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "cebcbb09eef8a5f4957f23cb2639e814bfffac172cc9ed906b63b4f3ba3dff4a",
+      "sha256": "c009dd9207f1c80a951c4afc7183e121dc90f85ee3889ba0aa5ce55df4243f44",
       "title_zh": "三朝圣地标与贡献者荣誉体系（自主设计）",
       "title_en": "Three Pilgrimage Landmarks & Honor System (agent self-designed)",
       "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
+      "description_en": "agent self-designed (design_target)",
+      "size_bytes": 535242
     },
     {
       "path": "assets/figures/landmark-honor.en.png",
       "role": "proposal_figure",
       "required": true,
       "language": "en",
-      "sha256": "2354612be99d3801b8e441f4092346966e4236492fc6764012e936c3563eda28",
+      "sha256": "d83f9fbb912ba6bda858ca83aa94a569238f67a589c667cd71b21380f79424fc",
       "title_zh": "同上（英文版）",
       "title_en": "Same (EN)",
       "description_zh": "本智能体自主设计（design_target）",
       "description_en": "agent self-designed (design_target)",
-      "translation_of": "assets/figures/landmark-honor.png"
+      "translation_of": "assets/figures/landmark-honor.png",
+      "size_bytes": 409387
     },
     {
       "path": "assets/figures/ka-detail-zhongzhiyuan.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "da1630728839393666b806ab7db0001efb4cb62bac8a960559d9963c6d8d5771",
+      "sha256": "0c6565f7618a85df8cb6f308399c848030f51c162f71f2c3e48bb25e2ead219b",
       "title_zh": "众智园概念详细设计图（provisional 警示）",
       "title_en": "Zhongzhiyuan conceptual detailed design (provisional warning)",
       "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
+      "description_en": "agent self-designed (design_target)",
+      "size_bytes": 125142
     },
     {
       "path": "assets/figures/ka-detail-origin.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "a27dd2487c08d29e99bd4826dcaab96e279eeb0186227d9a2cc3c147940c234e",
+      "sha256": "23c1a5d7b433d9e026c91d58e3c0753f62a4f37f505809fa426eea807257727e",
       "title_zh": "AI 原点社区概念详细设计图（provisional 警示）",
       "title_en": "AI Origin conceptual detailed design (provisional warning)",
       "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
+      "description_en": "agent self-designed (design_target)",
+      "size_bytes": 122635
     },
     {
       "path": "assets/figures/ka-detail-dazhongsi.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "00e9c23c371abaad650704e24600315561eec9baf7bd3aef6a94af1dff79f998",
+      "sha256": "732accfb0136ce95889bb1e7583ad4de8205fdd6b8ef84383603dbcb8c908a29",
       "title_zh": "大钟寺概念详细设计图（provisional 警示）",
       "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
       "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
+      "description_en": "agent self-designed (design_target)",
+      "size_bytes": 135491
     },
     {
       "path": "visual/assets/street_section_short_term.svg",
@@ -469,8 +505,58 @@
       "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351",
       "title_zh": "AI 场景一览（10 项示意·英文版）",
       "title_en": "AI scenarios overview (10 items) — English"
+    },
+    {
+      "path": "report/bilingual_equivalence_check.md",
+      "size_bytes": 6105,
+      "sha256": "13365de6c17109576136f53d8b73835c7373b70c92d4a7cc4830dad729668833",
+      "role": "audit_record",
+      "description_zh": "E1/E2 中英文逐页等价与图件裁切审计记录",
+      "description_en": "E1/E2 bilingual page-by-page equivalence & figure crop audit record"
+    },
+    {
+      "path": "report/figure_crop_audit.md",
+      "size_bytes": 6921,
+      "sha256": "332854af4240377ee2b43c22ca0fa1563bc7ff144bb0d21c18df3b75e0911930",
+      "role": "audit_record",
+      "description_zh": "E1/E2 中英文逐页等价与图件裁切审计记录",
+      "description_en": "E1/E2 bilingual page-by-page equivalence & figure crop audit record"
     }
   ],
+  "asset_licensing": {
+    "font_distribution": "none_standalone_font_file",
+    "font_embedding_method": "matplotlib subset-embedding of macOS system CJK fonts into PDF/PNG outputs; HTML uses CSS font-family fallback chain (no bundled webfont)",
+    "embedded_font_sources": [
+      {
+        "name": "PingFang SC",
+        "owner": "Apple Inc.",
+        "role": "macOS system CJK font",
+        "embedding_basis": "Glyph subsets embedded by matplotlib under Apple's font license; font binary NOT redistributed as a standalone file"
+      },
+      {
+        "name": "Hiragino Sans GB",
+        "owner": "Apple Inc. (Hiragino, based on Screen GFT)',",
+        "role": "macOS system CJK font",
+        "embedding_basis": "Glyph subsets embedded by matplotlib under Apple's font license; font binary NOT redistributed as a standalone file"
+      },
+      {
+        "name": "STHeiti",
+        "owner": "Apple Inc.",
+        "role": "macOS system CJK font",
+        "embedding_basis": "Glyph subsets embedded by matplotlib under Apple's font license; font binary NOT redistributed as a standalone file"
+      },
+      {
+        "name": "Songti SC",
+        "owner": "Apple Inc.",
+        "role": "macOS system CJK font",
+        "embedding_basis": "Glyph subsets embedded by matplotlib under Apple's font license; font binary NOT redistributed as a standalone file"
+      }
+    ],
+    "bundled_font_files": [],
+    "font_license_note": "No standalone .woff/.ttf/.otf font file is distributed in this package (assets/fonts/ is empty). Only glyph subsets are embedded in the generated PDF/PNG; the macOS system font binaries are never redistributed. HTML/visual assets reference a CSS font-family fallback chain and bundle no webfont.",
+    "retraction": "The 2026-08-25 claim of a bundled 'assets/fonts/wqy-microhei-subset.woff' (WenQuanYi Micro Hei) was incorrect and is hereby retracted; see sources.json COPYRIGHT-REVIEW-NOTE and report/copyright_statement.md.",
+    "code_license": "Generation scripts released under MIT License in ltf0109/urban-planning-ai-kit."
+  },
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],

@@ -36,7 +36,7 @@
   {
    "id": "A-MULTIMODAL-ORIGIN",
    "status": "agent_self_designed_artifacts",
-   "statement": "本方案全部多模态设计图（02 总体结构图、04 场景矩阵、01 VI、05—07 组件/符号/荣誉体系、08 离线交互沙盒等）与所有正文、几何、代码、指标，均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体（subagent）自主设计完成，使用本智能体自写的 Python/SVG 渲染脚本与 HTML 生成，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**。不存在任何第三方生成式 AI 生成、且权属未清的资产。图中叙述性设计要素（场景卡命名、空间形式、运营治理机制、EBIP 指标交付）均来自本方案 EBIP 方法论与 12 场景设计；精确数字来源见 metrics.json 注释；唯一可信 POI 口径 36/161/63，未列入 metrics 的为 design_target（设计建议值，待专业团队核验）",
+   "statement": "本方案全部多模态设计图（02 总体结构图、04 场景矩阵、01 VI、05—07 组件/符号/荣誉体系、08 离线交互沙盒等）与所有正文、几何、代码、指标，均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体（subagent）自主设计完成，使用本智能体自写的 Python/SVG 渲染脚本与 HTML 生成，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**。不存在任何第三方生成式 AI 生成、且权属未清的资产。图中叙述性设计要素（场景卡命名、空间形式、运营治理机制、EBIP 指标交付）均来自本方案 EBIP 方法论与 12 场景设计；精确数字来源见 metrics.json 注释；唯一可信 POI 口径 16/118/38，未列入 metrics 的为 design_target（设计建议值，待专业团队核验）",
    "impact": "多模态图作为设计可视化与跨学科沟通工具，由本智能体自主绘制，不替代规划图纸；设计建议值与已知值的边界在图中明确标注。资产权利闭环：全部提交物均为自主原创或已清权公开来源，详见 sources.json COPYRIGHT-REVIEW-NOTE",
    "artifacts": [
     "01 VI 视觉识别总图（自主设计 Logo/几何规范/色卡）",
