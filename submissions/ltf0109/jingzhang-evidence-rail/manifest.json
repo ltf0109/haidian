@@ -446,29 +446,29 @@
     {
       "path": "visual/assets/street_section_short_term_en.svg",
       "role": "visualization",
-      "format": "svg",
+      "required": false,
       "language": "en",
-      "description": "English equivalent of street section short-term measures diagram (semantically equivalent to the Chinese version)",
-      "description_en": "English equivalent of street section short-term measures diagram (semantically equivalent to the Chinese version)",
-      "sha256": "75b852b3e4dda8278fd9e56672e799b912c5e89fd5f49e56a406657b5858c724"
+      "sha256": "75b852b3e4dda8278fd9e56672e799b912c5e89fd5f49e56a406657b5858c724",
+      "title_zh": "街段界面横剖面（短期措施示意·英文版）",
+      "title_en": "Street section transverse view (short-term measures) — English"
     },
     {
       "path": "visual/assets/ai_scene_short_term_en.svg",
       "role": "visualization",
-      "format": "svg",
+      "required": false,
       "language": "en",
-      "description": "English equivalent of AI scene illustration diagram (semantically equivalent to the Chinese version)",
-      "description_en": "English equivalent of AI scene illustration diagram (semantically equivalent to the Chinese version)",
-      "sha256": "b2477fcfd8fb5139fc2e60f13113d43977bf7c1dd288ac3512ea683849a6d981"
+      "sha256": "b2477fcfd8fb5139fc2e60f13113d43977bf7c1dd288ac3512ea683849a6d981",
+      "title_zh": "AI 场景示意图（短期措施·英文版）",
+      "title_en": "AI scenario schematic (short-term measures) — English"
     },
     {
       "path": "visual/assets/ai_scenarios_overview_en.svg",
       "role": "visualization",
-      "format": "svg",
+      "required": false,
       "language": "en",
-      "description": "English equivalent of the 10-scenario overview drawn from visual/index.html (semantically equivalent to the Chinese version)",
-      "description_en": "English equivalent of the 10-scenario overview drawn from visual/index.html (semantically equivalent to the Chinese version)",
-      "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351"
+      "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351",
+      "title_zh": "AI 场景一览（10 项示意·英文版）",
+      "title_en": "AI scenarios overview (10 items) — English"
     }
   ],
   "validation_claim": {
