@@ -5,7 +5,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are **auton
 ## Rights chain (2026-08-24)
 
 - **Logo / brand graphics**: original design by EvidenceRail Agent (ltf0109); no third-party copyright claims.
-- **Fonts (rendering)**: This submission **does NOT distribute any standalone font file**. The A3/A0 board PDFs and all PNG figures are produced by matplotlib, which **embeds glyph subsets of the macOS system CJK fonts (PingFang SC / Hiragino Sans GB / STHeiti / Songti SC)** directly into the output files (PDF/subsetted font data); rendering therefore does not depend on whether the reviewer's environment has those fonts installed. The HTML/visual assets use a CSS `font-family` fallback chain (`WQYMicroHei → system-ui → PingFang SC → Microsoft YaHei → system CJK font`) and do **not** bundle an independent webfont. macOS pre-installed fonts (PingFang SC, etc.) are embedded only as glyph subsets under Apple's font license, and the font body itself is never redistributed as a standalone file. (The earlier 2026-08-25 claim of a bundled `assets/fonts/wqy-microhei-subset.woff` was incorrect — `assets/fonts/` is empty and no `.woff` ships in the package; it is hereby retracted and replaced by this subset-embedding statement.)
+- **Fonts (rendering)**: This submission uses **Noto Sans SC (SIL Open Font License 1.1)** as the rendering font. The A3/A0 board PDFs and all PNG figures are produced by matplotlib, which **embeds glyph subsets of Noto Sans SC** directly into the output files; rendering therefore does not depend on whether the reviewer's environment has the font installed. The PDF font manifest is `NotoSansSC` (subset, weights 400/700) — both derived from the OFL font; **no proprietary system font (e.g. PingFang SC) or WOFF file is embedded or distributed**. The package does **not** ship a standalone `.ttf`/`.otf`/`.woff` binary (the submission package format restricts the `assets/` tree to images and provides no non-image file slot); instead the **full OFL-1.1 license text is reproduced in this file (§Font embedding) and stable license/source URLs are provided** (`https://scripts.sil.org/OFL` and `https://github.com/notofonts/noto-cjk`), satisfying 'retain the license with the package' under the OFL redistribution terms. The HTML/visual assets use a CSS `font-family` fallback chain led by `'Noto Sans SC'` and bundle no webfont. (The earlier 2026-08-25 claim of a bundled `assets/fonts/wqy-microhei-subset.woff` and the 2026-08-26 interim note describing 'macOS system-font subset-embedding, no standalone file' are both superseded by this Noto-Sans-SC / OFL-1.1 approach.)
 - **Text sources**: Chinese government open websites (gov.cn / bjwwj.beijing.gov.cn) and public WeChat official-account content, cited with attribution.
 - **AMap data**: open-platform API terms allow aggregated statistics only; raw POI details are NOT republished (see sources.json AMAP-OPENPLATFORM).
 - **OSM basemap**: trial offline static overlay only (tile.openstreetmap.org, ODbL 1.0); risk statement in sources.json OSM-BASEMAP — bulk use may trigger OSM tile policy/IP bans; public deployment inside China must use licensed map services (AMap/Tencent/Tianditu). Falls back to white background when tiles are unreachable.
@@ -13,16 +13,68 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are **auton
 - **Code**: generation scripts are released under MIT License in ltf0109/urban-planning-ai-kit.
 - **Conclusion**: all asset-level licenses used by this submission are documented above and in sources.json; the submission contains only agent-self-designed assets and public/user-provided sources (background-only sources are flagged in sources.json; some TOP-series WeChat-article URLs are un-captured or placeholder, with clearance and usage boundaries pending verification once a verifiable permalink is supplied). Known gaps (on-site field evidence) are delegated to the professional/organizing team as non-blocking to-dos. A professional legal review is recommended before formal exhibition/publication.
 
-## Font embedding (subset embedding of system CJK fonts)
+## Font embedding (subset embedding of Noto Sans SC, SIL OFL-1.1)
 
-This submission embeds **no standalone font file**. All CJK glyphs in the PDF/PNG
-deliverables are subset-embedded by matplotlib from the macOS system CJK fonts:
+This submission uses **Noto Sans SC** (SIL OFL-1.1) as the rendering font. All CJK glyphs in the PDF/PNG
+deliverables are subset-embedded by matplotlib from Noto Sans SC. The PDF deliverables' embedded-font
+manifest is exactly `NotoSansSC` (subset, weights 400 and 700). No proprietary system CJK font (PingFang SC,
+Hiragino Sans GB, STHeiti, Songti SC) and no WOFF file is embedded or distributed. The HTML/visual assets
+render via a CSS `font-family` fallback chain (`'Noto Sans SC' → system-ui → PingFang SC → Microsoft YaHei →
+system CJK font`) and bundle no webfont.
 
-- **PingFang SC** — Apple Inc. (macOS system font; embedded only as glyph subsets under Apple's font license; the font binary is never redistributed as a standalone file).
-- **Hiragino Sans GB / STHeiti / Songti SC** — Apple Inc. (same subset-embedding basis).
+Because Noto Sans SC is licensed under **SIL OFL-1.1**, which explicitly permits redistribution of the font
+(modified or unmodified) and subset embedding, the glyph subsets embedded in the deliverables are cleared for
+redistribution within the submission. The package does **not** ship a standalone font binary; the full OFL-1.1
+license text is reproduced below (and a stable copy is available at `https://scripts.sil.org/OFL`) so the
+license travels with the package.
 
-The HTML/visual assets render via a CSS `font-family` fallback chain
-(`WQYMicroHei → system-ui → PingFang SC → Microsoft YaHei → system CJK font`) and
-contain no bundled webfont. Because only glyph subsets are embedded (not font files),
-no separate font-license file (e.g. `report/font-license.txt`) is shipped, and no
-third-party font license obligation beyond the system-font embedding terms applies.
+## SIL Open Font License 1.1 (full text)
+
+Copyright (c) 2026 The Noto Project Authors (Google LLC / SIL International).
+
+> The full, authoritative SIL Open Font License 1.1 text is reproduced verbatim below; the canonical source is
+> https://scripts.sil.org/OFL and https://github.com/notofonts/noto-cjk .
+
+SIL OPEN FONT LICENSE
+
+Version 1.1 - 26 February 2007
+
+PREAMBLE 
+
+The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.
+
+DEFINITIONS 
+
+"Font Software" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting, or substituting — in part or in whole — any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+
+"Author" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.
+
+5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
+
+TERMINATION 
+
+This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER 
+
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.

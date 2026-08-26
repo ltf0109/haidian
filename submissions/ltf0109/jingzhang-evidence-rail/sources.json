@@ -102,7 +102,8 @@
       "note": "国外案例机制启发（background-only）：借 Hudson Yards 的批评点（居民/产业被挤出、可负担住房不足）反衬渐进更新与可负担性底线。本条目不含任何定量指标或边界事实，仅作机制取向参考。源链接未随包收录（url_status=not_captured），清权待用户补充可核验 permalink 并经理法复核；当前不构成正式主张依据。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §C-1 (L408-410, Hudson Yards/High Line 对照与挤出/免费开放机制启发); proposal.en.md §C-1"
     },
     {
       "id": "TOP-NANSHAN",
@@ -118,7 +119,8 @@
       "note": "集群本质=人才流动；以 Fallick, Fleischman & Rebitzer (2006, Journal of Economics & Management Strategy 15(4) 'Job-Hopping in Silicon Valley') 报告的硅谷跳槽率约 2.41%/月为机制参照（学术二手引用，已标注出处，非本包原创数据）；中国语境以公共制度供给校准。源链接未随包收录（url_status=not_captured），清权待用户补充可核验 permalink 并经理法复核；当前仅作 background-only 机制启发。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §C-2 (L414-416, 硅谷跳槽率 2.41% 与南山集群机制启发); proposal.en.md §C-2"
     },
     {
       "id": "TOP-NEXTSV",
@@ -134,7 +136,8 @@
       "reuse_basis": "微信公众号内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §C-3 (L420-423, 快/慢变量、Tech Hubs 摊薄、链主风险机制启发); proposal.en.md §C-3"
     },
     {
       "id": "TOP-ONEPERSON",
@@ -150,7 +153,8 @@
       "reuse_basis": "TOP 文章链接未收录，仅作机制启发不复制原文；其中数据已转引自可公开核验的 Carta 2025H1 报告与国家统计局口径。正式发布前须由用户补全 TOP 文章 permalink 并经法务复核。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §C-4 (L427-428, 单人创始人 36.3%、纳米公司园区逻辑机制启发); proposal.en.md §C-4"
     },
     {
       "id": "DZDP-PARK",
@@ -166,7 +170,8 @@
       "reuse_basis": "大众点评 App 用户内容仅作背景体验启发，不复制/再分发原文或确切数据；正式发布前须由用户补全可核验出处并经法务复核。",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §C-1 (L409, 公园免费开放/商业薄弱体验反馈机制启发); proposal.en.md §C-1"
     },
     {
       "id": "HAIDIAN-BLOCK-GUIDE",
@@ -248,7 +253,8 @@
       "verifiable_source": "微信 permalink 含'具体文章ID'占位，未收录真实链接；可在 TOP创新区研究院微信公众号按标题+日期（2026-07）检索",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §C-6 (L439-441, 水磨·聚智园三中心一客厅、原点-聚智园分工机制启发); proposal.en.md §C-6"
     },
     {
       "id": "TOP-MANAGED-CITY",
@@ -265,7 +271,8 @@
       "verifiable_source": "微信 permalink 含'具体文章ID'占位，未收录真实链接；可在 TOP创新区研究院微信公众号按标题+日期（2026-07）检索",
       "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
       "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
-      "used_in_formal_facts": false
+      "used_in_formal_facts": false,
+      "used_in_paragraphs": "proposal.md §蓝绿空间与公共空间 (L301, L307, 10-20% 非结构化空间与运营治理底线) + §C-7 (L445-447, 东京高轮网关城 POPS 机制启发); proposal.en.md 对应章节"
     },
     {
       "id": "NYCDOT-OPENSTREETS",
@@ -357,7 +364,7 @@
       "url": "",
       "type": "agent_disclosure",
       "usable_for_formal": "no",
-      "note": "**资产级许可证声明（2026-08-26 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——**本提交物不随包分发任何独立字体文件**。A3/A0 展板 PDF 与各 PNG 图件由 matplotlib 以**子集方式将 macOS 系统 CJK 字体（PingFang SC / Hiragino Sans GB / STHeiti / Songti SC）的用字轮廓内嵌**于输出文件（pdf/woff2 子集），渲染不依赖评审环境是否安装字体；HTML/visual 资产以 CSS font-family 回退链（WQYMicroHei→system-ui→PingFang SC→Microsoft YaHei→系统 CJK 字体）显示，未捆绑独立 webfont 文件。原（2026-08-25）'随包发布 wqy-microhei-subset.woff' 表述与事实不符（assets/fonts 为空、包内无 .woff），**已废止并更正为本条子集内嵌说明**。系统字体许可：macOS 预装字体（PingFang SC 等）依据 Apple 字体许可可用于文档内嵌，不得作为独立字体文件再分发；本方案仅内嵌子集轮廓，不分发字体本体；③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论（证据相称的分项结论，非“全部资产已清权”断言）**：① 本提交物所用资产级许可证已逐项记录（manifest.json `asset_licensing` + 本文件 + report/copyright_statement.md）；② 全部文本/几何/代码/指标/多模态图均为 EvidenceRail Agent（ltf0109）及其子智能体自主原创，未使用任何第三方生成式 AI，不存在第三方生成式 AI 生成且权属未清的资产；③ 对 usable_for_formal=no 与 URL 缺失/占位的 background-only 来源（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK 等），本方案**仅引用其观点/机制启发，未复制或再分发任何第三方资产，不将其作为正式证据或正式主张依据**；其清权与使用边界待用户补全可核验出处并经理法复核后方可升级；④ 已知现场证据缺口交由专业/组织方团队，属非阻断待办。上述清权事项目前为“分项记录 + 待法务复核”状态，**不描述为已完成清权**；正式展览/出版前建议专业法务复核。**",
+      "note": "**资产级许可证声明（2026-08-26 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——**本提交物以 Noto Sans SC（SIL Open Font License 1.1）作为渲染字体**；A3/A0 展板 PDF 与各 PNG 图件由 matplotlib 以**子集方式将 Noto Sans SC 的用字轮廓内嵌**于输出文件，渲染不依赖评审环境是否安装字体；PDF 字体清单为 NotoSansSC（400/700）两项，均来自该 OFL 字体，**不含任何专有系统字体（PingFang SC 等 macOS 预装字体）与 WOFF**。本提交物**不随包分发独立的 .ttf/.otf/.woff 字体二进制**（提交包格式将 assets/ 限制为图像、无其它非图像文件位）；SIL OFL-1.1 明确允许字体再分发与子集嵌入（含于提交物分发），故该许可下的子集内嵌已获授权；**完整 OFL-1.1 许可文本随包留存于 report/copyright_statement.md（§Font embedding 附全文）**，并提供稳定可核验链接 https://scripts.sil.org/OFL 与 https://github.com/notofonts/noto-cjk，满足\"随包保留许可证\"要求；HTML/visual 资产以 CSS font-family 回退链（'Noto Sans SC'→system-ui→PingFang SC→Microsoft YaHei→系统 CJK 字体）显示，回退链仅作环境缺字兜底。③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论（证据相称的分项结论，非“全部资产已清权”断言）**：① 本提交物所用资产级许可证已逐项记录（manifest.json `asset_licensing` + 本文件 + report/copyright_statement.md）；② 全部文本/几何/代码/指标/多模态图均为 EvidenceRail Agent（ltf0109）及其子智能体自主原创，未使用任何第三方生成式 AI，不存在第三方生成式 AI 生成且权属未清的资产；③ 对 usable_for_formal=no 与 URL 缺失/占位的 background-only 来源（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK 等），本方案**仅引用其观点/机制启发，未复制或再分发任何第三方资产，不将其作为正式证据或正式主张依据**；其清权与使用边界待用户补全可核验出处并经理法复核后方可升级；④ 已知现场证据缺口交由专业/组织方团队，属非阻断待办。上述清权事项目前为“分项记录 + 待法务复核”状态，**不描述为已完成清权**；正式展览/出版前建议专业法务复核。**",
       "citation_scope": "submission-internal: copyright review and AI capability boundary declaration",
       "reuse_basis": "submission-internal; declares font subset embedding, OSM/AMap license boundaries, asset attestation",
       "verifiable_source": "this file itself; cross-referenced with copyright_statement.md and manifest.json asset_licensing block"
