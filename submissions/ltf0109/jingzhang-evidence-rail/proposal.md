@@ -240,11 +240,11 @@ summary: "以循证渐进式参与规划（EBIP）为方法论，将百年京张
 | 04 场景-空间-运营协同矩阵 | `assets/figures/scenario-matrix.png` | design_target | "EBIP Metrics & Deliverables"列所有百分比/阈值（模型安全合规度 100%、PUE ≤1.15、p99 ≤48ms、车路协同 30%、机器人渗透 50%、15 分钟生活圈 >92%、8000㎡沉浸空间、5,000 人日均、机店动销 +45% 等）为设计目标/参考值，**未列入 metrics.json**，不构成本方案可复算指标，待专业团队核验 |
 | 08 离线多模态交互沙盒 | `report/proposal.html#interactive-sandbox`（静态版）；完整可交互版见 `multimodal-pack/generated visuals/08/京张循证轨_离线多模态交互沙盒_interactive.html` | known | 离线单文件（无 CDN/远程脚本），含方案叙事、三核布局、12 场景可视化、Logo/色卡与荣誉体系 |
 | 现有 5 张 A3/A0 双语图 | `assets/figures/{site-overview,land-use-structure,key-areas,mobility-bluegreen,metrics-evidence}.png` | known | 数字与 metrics.json 一致 |
-| 03 AI 创新生态图谱（附录图，**不进 submission 包**） | 自主设计的附录图（推断值，已废弃） | **not_audited** | 附录图数字为自主设计的推断值，已废弃，不再引用；**未经 metrics.json 验证**。本版**不纳入提交包**以避免数字虚标风险。**唯一可信 POI 口径 = 16/118/38**（众智园/AI 原点/大钟寺，基于 AMap POI 经 GCJ-02→WGS-84 校正、within key_areas 几何复算，见 assets/figures/ecosystem-map.png 与 metrics.json 注释；总 POI 2491 口径见 A3/A0 展板与 metrics.json） |
+| 03 AI 创新生态图谱（附录图，**不进 submission 包**） | 自主设计的附录图（推断值，已废弃） | **not_audited** | 附录图数字为自主设计的推断值，已废弃，不再引用；**未经 metrics.json 验证**。本版**不纳入提交包**以避免数字虚标风险。**唯一可信 POI 口径 = 36/161/63**（众智园/AI 原点/大钟寺，基于 AMap POI 经 GCJ-02→WGS-84 校正、within key_areas 几何、全类别复算，见 assets/figures/ecosystem-map.png 与 metrics.json 注释） |
 
 **声明（指标复算边界，分级）**：
 - **包内可端到端复算**：边界面积、绿地率、公共空间比、建筑基底、分期面积，以及基于 `geometry/site_boundary.geojson` 的 800m/1200m 地铁覆盖等空间指标，可直接由 `metrics.json` 与 `geometry/*.geojson` 复算（聚合脚本 `spatial_analysis/generate_boards.py` 的几何管线可本地重放）。
-- **需外部授权数据复核（非包内可复算）**：POI 口径（16/118/38 与 2491）、地铁站点本体清单（77 站，来自高德开放平台）、产业/居住空间自相关（Moran's I）与热点/冷点（Getis-Ord Gi*）等指标，其原始数据与中间栅格受数据许可与体积限制**未随包分发**，仅以聚合统计与参数摘要形式记录于 `metrics.json`；它们只能在**高德开放平台授权**或 **QGIS/GeoAgent MCP 授权环境**下凭外部数据复算，不能仅由包内 GeoJSON 端到端复算。本方案不主张这些数字可由包内数据独立复现。
+- **需外部授权数据复核（非包内可复算）**：POI 口径（36/161/63 与 全量 POI 总数）、地铁站点本体清单（77 站，来自高德开放平台）、产业/居住空间自相关（Moran's I）与热点/冷点（Getis-Ord Gi*）等指标，其原始数据与中间栅格受数据许可与体积限制**未随包分发**，仅以聚合统计与参数摘要形式记录于 `metrics.json`；它们只能在**高德开放平台授权**或 **QGIS/GeoAgent MCP 授权环境**下凭外部数据复算，不能仅由包内 GeoJSON 端到端复算。本方案不主张这些数字可由包内数据独立复现。
 - "design_target"数字作为设计参考，**不作为正式主张依据**；"not_audited"数字仅作设计启发；"pending"指待官方/专业团队确认。
 
 **P2 深化：12 场景 EBIP 机制定义（AI 原生运行，非"传统+AI 标签"）**：每张场景卡在运营主体/数据边界/退出条件基础上，**额外定义 AI 怎么运行**——证据分级、反事实检验、自检闭环、失败模式，构成 AI 原生城市设计的四个支柱；这是 EBIP 方法论对 charter.4（AI 与城市规划创新）的直接回应 [depth:scenario_and_user_profile] [ass:EBIP-AI-NATIVE-001]：

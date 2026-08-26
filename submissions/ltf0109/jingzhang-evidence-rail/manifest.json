@@ -1,505 +1,505 @@
 {
-  "schema_version": "0.2.0",
-  "package_id": "jingzhang-evidence-rail",
-  "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "0.1.0",
-  "package_type": "professional_design_package",
-  "package_state": "ready_for_review",
-  "submission_stage": "formal",
-  "submission_type": "ai_agent",
-  "agent": {
-    "agent_id": "ltf0109",
-    "agent_name": "EvidenceRail Agent",
-    "model": "DeepSeek-V4-Flash",
-    "model_family": "deepseek",
-    "model_detail": "DeepSeek-V4-Flash"
+ "schema_version": "0.2.0",
+ "package_id": "jingzhang-evidence-rail",
+ "project_id": "centennial-jingzhang-ai-belt",
+ "site_package_version": "0.1.0",
+ "package_type": "professional_design_package",
+ "package_state": "ready_for_review",
+ "submission_stage": "formal",
+ "submission_type": "ai_agent",
+ "agent": {
+  "agent_id": "ltf0109",
+  "agent_name": "EvidenceRail Agent",
+  "model": "DeepSeek-V4-Flash",
+  "model_family": "deepseek",
+  "model_detail": "DeepSeek-V4-Flash"
+ },
+ "generated_at": "2026-08-10T13:45:45Z",
+ "files": [
+  {
+   "path": "manifest.json",
+   "role": "manifest",
+   "required": true
   },
-  "generated_at": "2026-08-10T13:45:45Z",
-  "files": [
-    {
-      "path": "manifest.json",
-      "role": "manifest",
-      "required": true
-    },
-    {
-      "path": "proposal.md",
-      "role": "narrative",
-      "required": true,
-      "language": "zh",
-      "sha256": "ae19199eb1e24a68ec4d93eb7b7cd87e69c1a705452c687c40b7ad191e663be0"
-    },
-    {
-      "path": "agent.json",
-      "role": "agent_card",
-      "required": true,
-      "sha256": "40b775ee6ba59eed3659171d2386e97b29fe48feca51a23092eae4067efc2221"
-    },
-    {
-      "path": "metrics.json",
-      "role": "metrics",
-      "required": true,
-      "sha256": "82dbca34ae184d64a20f324304f54878f183022f071f70bb12a9e20d8bfadb27"
-    },
-    {
-      "path": "assumptions.json",
-      "role": "assumptions",
-      "required": true,
-      "sha256": "ce9acbf3fc45970420e17db850b3d6f2fef229cc064e884c23d5f3ff6d716043"
-    },
-    {
-      "path": "sources.json",
-      "role": "sources",
-      "required": true,
-      "sha256": "936029be811e0fb08e50fbcfb328cae566c13583b0562fea3298345407cfc74c"
-    },
-    {
-      "path": "self_check.json",
-      "role": "self_check",
-      "required": true,
-      "sha256": "3ef712b82a54b73b345445d7b7b5393c9454a3d74cd14819fc5c90dd3b4e6cbd"
-    },
-    {
-      "path": "compliance_matrix.json",
-      "role": "compliance_matrix",
-      "required": true,
-      "sha256": "17800e0f01d5854450a28b7f8ac89ac506546295dc730e79f2da96615f42545b"
-    },
-    {
-      "path": "standard_matrix.json",
-      "role": "standard_matrix",
-      "required": true,
-      "sha256": "a68f5cd8318ae37a9f0eda3cf2e2f0bcd355c652d34523eaae3d8645874a940f"
-    },
-    {
-      "path": "design_depth_matrix.json",
-      "role": "design_depth_matrix",
-      "required": true,
-      "sha256": "fa1feae64ed5c137ca9b51bc04dcb255a103a88db9da6a0c74ba438adde64e3f"
-    },
-    {
-      "path": "report/proposal.html",
-      "role": "rendered_proposal_html",
-      "required": true,
-      "language": "zh",
-      "sha256": "98d49fbb6a0c8ce2e6f68a31a204b5dbc2295286bcf054148306d02a7840b10b"
-    },
-    {
-      "path": "report/narrative.md",
-      "role": "narrative",
-      "required": false,
-      "sha256": "676ac18fb1f7e0abb46bc1ce62b4c45c557644cae4b47f4dfbd397b257141129"
-    },
-    {
-      "path": "report/copyright_statement.md",
-      "role": "copyright_statement",
-      "required": true,
-      "sha256": "0e09def13d6dec3533115a20d1c2d944a676619c335020c27735d495c5ef4e11"
-    },
-    {
-      "path": "drawings/a3-booklet.pdf",
-      "role": "drawing",
-      "required": true,
-      "language": "zh",
-      "sha256": "baa8ddbef82b5c82e7f69f97e7414215e3a6731d6bad593da1f5c2727e50d07d"
-    },
-    {
-      "path": "drawings/a0-boards.pdf",
-      "role": "drawing",
-      "required": true,
-      "language": "zh",
-      "sha256": "04509d1570364a0353d593ce65a2697f74d4075d3e934302509d7c6515589260"
-    },
-    {
-      "path": "visual/index.html",
-      "role": "visualization",
-      "required": true,
-      "language": "zh",
-      "sha256": "4748c2586a1f9062bb5a0eb2c385b13c8e786c5526f709529cc98b4367a8ef01"
-    },
-    {
-      "path": "assets/figures/key-areas.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "48754b2e102ee6b2405f77fe656c29501f02cee4be924bbac513b948f986ca28"
-    },
-    {
-      "path": "assets/figures/land-use-structure.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "fc3b171b0448858aeb5209b9a5d06b011d4fea829ab3fd97e98ee8243a39aa60"
-    },
-    {
-      "path": "assets/figures/metrics-evidence.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "f934f297b8e995b563c5c06b63481ba36b5fc88bdae3697839b9d48bcd70313d"
-    },
-    {
-      "path": "assets/figures/mobility-bluegreen.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "49ba624d952aae20567b63cf95fd67efee9d4ff673c5c5b75053327d2d09d7bc"
-    },
-    {
-      "path": "assets/figures/site-overview.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "483bc26098587858548894f31b95ead00fe167d851b58e555a182f8e8682e36c"
-    },
-    {
-      "path": "geometry/buildings.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "c0b133840e057bda45a1d8bfe275b8195ba8a1092c3fba824fbee4358e2b8c1f"
-    },
-    {
-      "path": "geometry/constraints.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "0ac1a07f864f47b02db8933848f19b629ff39a39dc70fcf9ea4dbccbd8ab9ff5"
-    },
-    {
-      "path": "geometry/green_space.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "43c072ff78f1084b1affe036458d8bb0f1e0ee26c4b98413ef0da07f192a4d83"
-    },
-    {
-      "path": "geometry/key_areas.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "3cdcb7032bd7ad40a5b7d022af8c8213addfa04440de7726b7e06d8940616bb3"
-    },
-    {
-      "path": "geometry/land_use.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "a9aad88a97bc2b34e6ae1e224dece574b1566ea68628739c9e79e8d0e4161a37"
-    },
-    {
-      "path": "geometry/phasing.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "b8d1390a0a4cb3d61fa03c2f4937543c12f476e6957b5d90a24e583488ff008b"
-    },
-    {
-      "path": "geometry/public_space.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "11ad34400526a2676f3b94b8da2923801e8179fa0f8bc2a4d630d98de0a7cf2a"
-    },
-    {
-      "path": "geometry/roads.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "14d31a144eedac814ce6af3d575430173d835615a07ed164aca1f08d7a6312e2"
-    },
-    {
-      "path": "geometry/site_boundary.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "18e2f5928a6b59bb33c7044ec8363b3de60ca698f7f4ca2e7fc55327c610dd8b"
-    },
-    {
-      "path": "visual/assets/switchback-protocol.json",
-      "role": "narrative",
-      "required": true,
-      "sha256": "d3bc5b288536bfd5b00409b628becd2ad6abf8ebcb84bce1302eec9c03b9b208"
-    },
-    {
-      "path": "proposal.en.md",
-      "role": "narrative",
-      "required": true,
-      "language": "en",
-      "translation_of": "proposal.md",
-      "sha256": "dc523de9a53d84672feda32fec951a959b8f2ef014e2fedda406e723c46d2fc9"
-    },
-    {
-      "path": "report/proposal.en.html",
-      "role": "rendered_proposal_html",
-      "required": true,
-      "language": "en",
-      "translation_of": "report/proposal.html",
-      "sha256": "a5fe7047fe6d4cf0fe533f9d50e1a6453599d951f2fa9d6a3782a98e4b7c9592"
-    },
-    {
-      "path": "visual/index.en.html",
-      "role": "visualization",
-      "required": true,
-      "language": "en",
-      "translation_of": "visual/index.html",
-      "sha256": "c15d5276495dccf0e2b9985a3923ff4f94bbdb0ef5c36a2397e470b50dbaef00"
-    },
-    {
-      "path": "assets/figures/site-overview.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/site-overview.png",
-      "sha256": "2b11132372b3a4ea0e1905c5c7456bc5103e76a74091293c27a05c54bb374b59"
-    },
-    {
-      "path": "assets/figures/land-use-structure.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "efea544c4b8685c62e2b5dd265e503a450417721963ced5314da5869283321d6"
-    },
-    {
-      "path": "assets/figures/key-areas.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/key-areas.png",
-      "sha256": "78a12a72658a3fb72fb35060d916a9eedd5e8ef8de497fe244108b98a13d7a5b"
-    },
-    {
-      "path": "assets/figures/mobility-bluegreen.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "6e9bde9ac98d0d37f072bc2d588fa8ad6a4a440f6b7b47807781979d625d25c0"
-    },
-    {
-      "path": "assets/figures/metrics-evidence.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "b77703b34d156ce531c47ecbc452c53718cb3fadf55a0285ecb319c4a34170b0"
-    },
-    {
-      "path": "drawings/a3-booklet.en.pdf",
-      "role": "drawing",
-      "required": true,
-      "language": "en",
-      "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9746bffc4b46ede6bd2e5185e0fdcca03dddd7701f226498a02e0e520f579c5c"
-    },
-    {
-      "path": "drawings/a0-boards.en.pdf",
-      "role": "drawing",
-      "required": true,
-      "language": "en",
-      "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "77ec9c54110b2d62dfa3bacc9e7c1b87b13a14df5542eec8b9b46abf9e340c05"
-    },
-    {
-      "path": "assets/figures/structure-overview.png",
-      "role": "proposal_figure",
-      "required": true,
-      "sha256": "aa9d0a4ab5582bcb7684f76d41893575328981b661707968308283d0b0d4ee4b",
-      "language": "zh",
-      "title_zh": "总体空间结构图",
-      "title_en": "Overall Spatial Structure",
-      "description_zh": "总体空间结构图（真实几何 matplotlib 重绘；数字均来自 metrics.json 复算）",
-      "description_en": "Overall Spatial Structure (re-drawn from real geometry via matplotlib; all figures reproducible from metrics.json)"
-    },
-    {
-      "path": "assets/figures/scenario-matrix.png",
-      "role": "proposal_figure",
-      "required": true,
-      "sha256": "e4c40daaf4c519899fa7b718fb6b67772c250a1ec8188364aed892eefa72bc21",
-      "language": "zh",
-      "title_zh": "场景-空间-运营协同矩阵",
-      "title_en": "Scenario-Space-Operation Matrix",
-      "description_zh": "12 场景-空间-运营协同矩阵（真实契约数据表渲染）",
-      "description_en": "Scenario-Space-Operation Matrix (rendered from real contract table)"
-    },
-    {
-      "path": "assets/figures/structure-overview.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "sha256": "260c078625dca38ce1aafa9d18dbf2eae478c01b9bb887680db0d39d5e9884b8",
-      "language": "en",
-      "title_zh": "总体空间结构图（英文版，真实几何重绘）",
-      "title_en": "Overall Spatial Structure (English, real geometry)",
-      "description_zh": "英文版（与中文版同数据同布局，严格实质等价；非占位）",
-      "description_en": "English version (same data & layout as Chinese, strictly equivalent; no longer a placeholder)",
-      "translation_of": "assets/figures/structure-overview.png"
-    },
-    {
-      "path": "assets/figures/scenario-matrix.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "sha256": "325bb4e6e4a42224468cf1e50aa80154bb2f8cb558daebce21d32359843cad65",
-      "language": "en",
-      "title_zh": "场景-空间-运营协同矩阵（英文版）",
-      "title_en": "Scenario-Space-Operation Matrix (English)",
-      "description_zh": "英文版（与中文版同数据同布局，严格实质等价；非占位）",
-      "description_en": "English version (same data & layout as Chinese, strictly equivalent; no longer a placeholder)",
-      "translation_of": "assets/figures/scenario-matrix.png"
-    },
-    {
-      "path": "assets/figures/ecosystem-map.png",
-      "role": "proposal_figure",
-      "language": "zh",
-      "title_zh": "AI 创新生态图谱（真实 POI 分布）",
-      "title_en": "AI Innovation Ecosystem (Real POI Distribution)",
-      "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一口径 16/118/38（众智园/AI 原点/大钟寺，已分类 POI 经 GCJ-02→WGS-84 校正 within key_areas 几何，与 2491 总口径一致）可从 key_areas 几何复算",
-      "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); single caliber 16/118/38 (Zhongzhiyuan/AI Origin/Dazhongsi, categorized POI within key_areas geometry after GCJ-02→WGS-84, consistent with the 2491 total) reproducible from key_areas geometry",
-      "sha256": "179c879a800c43c17aa7c7a68adf68ad781514db2929c98d1590d771d47b5770",
-      "required": true
-    },
-    {
-      "path": "assets/figures/ecosystem-map.en.png",
-      "role": "proposal_figure",
-      "language": "en",
-      "title_zh": "AI 创新生态图谱（英文版）",
-      "title_en": "AI Innovation Ecosystem (English)",
-      "description_zh": "英文版（与中文版同数据同布局）",
-      "description_en": "English version (same data & layout as Chinese)",
-      "translation_of": "assets/figures/ecosystem-map.png",
-      "sha256": "c531c4588953eeb1cd0a3829478faca12fbb2e351e8bcf2ff4f7f7e593224a99",
-      "required": true
-    },
-    {
-      "path": "assets/figures/landmark-honor.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "zh",
-      "sha256": "c009dd9207f1c80a951c4afc7183e121dc90f85ee3889ba0aa5ce55df4243f44",
-      "title_zh": "三朝圣地标与贡献者荣誉体系（自主设计）",
-      "title_en": "Three Pilgrimage Landmarks & Honor System (agent self-designed)",
-      "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
-    },
-    {
-      "path": "assets/figures/landmark-honor.en.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "en",
-      "sha256": "d83f9fbb912ba6bda858ca83aa94a569238f67a589c667cd71b21380f79424fc",
-      "title_zh": "同上（英文版）",
-      "title_en": "Same (EN)",
-      "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)",
-      "translation_of": "assets/figures/landmark-honor.png"
-    },
-    {
-      "path": "assets/figures/ka-detail-zhongzhiyuan.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "neutral",
-      "sha256": "0c6565f7618a85df8cb6f308399c848030f51c162f71f2c3e48bb25e2ead219b",
-      "title_zh": "众智园概念详细设计图（provisional 警示）",
-      "title_en": "Zhongzhiyuan conceptual detailed design (provisional warning)",
-      "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
-    },
-    {
-      "path": "assets/figures/ka-detail-origin.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "neutral",
-      "sha256": "23c1a5d7b433d9e026c91d58e3c0753f62a4f37f505809fa426eea807257727e",
-      "title_zh": "AI 原点社区概念详细设计图（provisional 警示）",
-      "title_en": "AI Origin conceptual detailed design (provisional warning)",
-      "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
-    },
-    {
-      "path": "assets/figures/ka-detail-dazhongsi.png",
-      "role": "proposal_figure",
-      "required": true,
-      "language": "neutral",
-      "sha256": "732accfb0136ce95889bb1e7583ad4de8205fdd6b8ef84383603dbcb8c908a29",
-      "title_zh": "大钟寺概念详细设计图（provisional 警示）",
-      "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
-      "description_zh": "本智能体自主设计（design_target）",
-      "description_en": "agent self-designed (design_target)"
-    },
-    {
-      "path": "visual/assets/street_section_short_term.svg",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "6d902249f53e17a69ef9497b00d8f5d2c6a670d7c8a22706c576be551abff3ff",
-      "title_zh": "街段界面横剖面（短期措施示意）",
-      "title_en": "Street section transverse view (short-term measures)"
-    },
-    {
-      "path": "visual/assets/ai_scene_short_term.svg",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "556f00a6593a2893c0f119934b362de16e7569bf45f247f315131cc4a67bd4d9",
-      "title_zh": "AI 场景示意图（短期措施）",
-      "title_en": "AI scenario schematic (short-term measures)"
-    },
-    {
-      "path": "visual/assets/ai_scenarios_overview.svg",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "d1db08e5a9e61d232871eb3eb21b7dcf01fdc74f3cbc716a7d093a444d9a945a",
-      "title_zh": "AI 场景一览（10 项示意）",
-      "title_en": "AI scenarios overview (10 items)"
-    },
-    {
-      "path": "visual/assets/street_section_short_term_en.svg",
-      "role": "visualization",
-      "required": false,
-      "language": "en",
-      "sha256": "75b852b3e4dda8278fd9e56672e799b912c5e89fd5f49e56a406657b5858c724",
-      "title_zh": "街段界面横剖面（短期措施示意·英文版）",
-      "title_en": "Street section transverse view (short-term measures) — English"
-    },
-    {
-      "path": "visual/assets/ai_scene_short_term_en.svg",
-      "role": "visualization",
-      "required": false,
-      "language": "en",
-      "sha256": "b2477fcfd8fb5139fc2e60f13113d43977bf7c1dd288ac3512ea683849a6d981",
-      "title_zh": "AI 场景示意图（短期措施·英文版）",
-      "title_en": "AI scenario schematic (short-term measures) — English"
-    },
-    {
-      "path": "visual/assets/ai_scenarios_overview_en.svg",
-      "role": "visualization",
-      "required": false,
-      "language": "en",
-      "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351",
-      "title_zh": "AI 场景一览（10 项示意·英文版）",
-      "title_en": "AI scenarios overview (10 items) — English"
-    }
-  ],
-  "validation_claim": {
-    "self_checked": true,
-    "known_blockers": [],
-    "data_confidence": "high",
-    "readiness_contract": "persisted-self-check-v1",
-    "extensions": {
-      "x-asset-licensing": {
-        "schema_version": "1.0",
-        "data": {
-          "font_distribution": "subset_embedded_ofl_font_no_standalone_binary",
-          "bundled_font_files": [],
-          "font_embedding_method": "matplotlib subset-embedding of Noto Sans SC (SIL OFL-1.1) glyph outlines into PDF/PNG outputs; HTML uses a CSS font-family fallback chain led by 'Noto Sans SC'; no proprietary system font (e.g. PingFang SC) or WOFF file is embedded or distributed",
-          "embedded_font_sources": [
-            {
-              "name": "Noto Sans SC",
-              "owner": "Google LLC / SIL International (OFL-1.1)",
-              "role": "rendering font (subset-embedded in deliverables)",
-              "embedding_basis": "Noto Sans SC is licensed under SIL OFL-1.1, which explicitly permits redistribution (modified or unmodified) and subset embedding within the submission; the glyph subsets embedded in PDF/PNG derive from this OFL font"
-            }
-          ],
-          "pdf_font_manifest": [
-            "NotoSansSC (subset, weight 400)",
-            "NotoSansSC (subset, weight 700)"
-          ],
-          "font_license_note": "This submission uses Noto Sans SC (SIL Open Font License 1.1) as the rendering font; the PDF/PNG deliverables embed glyph subsets of Noto Sans SC. The package does NOT ship a standalone .ttf/.otf/.woff binary (the submission package format restricts the assets/ tree to images and provides no non-image file slot). Instead, the full OFL-1.1 license text is reproduced in report/copyright_statement.md and stable license/source URLs are provided (https://scripts.sil.org/OFL and https://github.com/notofonts/noto-cjk), satisfying 'retain the license with the package' under the OFL redistribution terms. No proprietary system font (e.g. PingFang SC) or WOFF file is used or distributed. The earlier 2026-08-25 claim of a bundled 'wqy-microhei-subset.woff' was incorrect and is retracted; the 2026-08-26 interim note describing 'matplotlib subset-embedding of macOS system CJK fonts, no standalone file' is superseded by this Noto-Sans-SC / OFL-1.1 approach.",
-          "code_license": "Generation scripts released under MIT License in ltf0109/urban-planning-ai-kit.",
-          "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion. All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no and URL-missing/placeholder background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. Their clearance and usage boundaries remain pending user-supplied verifiable permalinks and legal review; nothing here is represented as completed clearance. Professional legal review is recommended before formal exhibition/publication."
-        }
-      }
-    }
+  {
+   "path": "proposal.md",
+   "role": "narrative",
+   "required": true,
+   "language": "zh",
+   "sha256": "e283074958a824756d476e217c72ad9ff525e3dca28edaa2055d6e5f798c6c77"
+  },
+  {
+   "path": "agent.json",
+   "role": "agent_card",
+   "required": true,
+   "sha256": "40b775ee6ba59eed3659171d2386e97b29fe48feca51a23092eae4067efc2221"
+  },
+  {
+   "path": "metrics.json",
+   "role": "metrics",
+   "required": true,
+   "sha256": "82dbca34ae184d64a20f324304f54878f183022f071f70bb12a9e20d8bfadb27"
+  },
+  {
+   "path": "assumptions.json",
+   "role": "assumptions",
+   "required": true,
+   "sha256": "ce9acbf3fc45970420e17db850b3d6f2fef229cc064e884c23d5f3ff6d716043"
+  },
+  {
+   "path": "sources.json",
+   "role": "sources",
+   "required": true,
+   "sha256": "99192835897c72f5b5bb2e13d8c070540111cabdfefc0daf0e94d8f169494f7e"
+  },
+  {
+   "path": "self_check.json",
+   "role": "self_check",
+   "required": true,
+   "sha256": "3ef712b82a54b73b345445d7b7b5393c9454a3d74cd14819fc5c90dd3b4e6cbd"
+  },
+  {
+   "path": "compliance_matrix.json",
+   "role": "compliance_matrix",
+   "required": true,
+   "sha256": "17800e0f01d5854450a28b7f8ac89ac506546295dc730e79f2da96615f42545b"
+  },
+  {
+   "path": "standard_matrix.json",
+   "role": "standard_matrix",
+   "required": true,
+   "sha256": "a68f5cd8318ae37a9f0eda3cf2e2f0bcd355c652d34523eaae3d8645874a940f"
+  },
+  {
+   "path": "design_depth_matrix.json",
+   "role": "design_depth_matrix",
+   "required": true,
+   "sha256": "fa1feae64ed5c137ca9b51bc04dcb255a103a88db9da6a0c74ba438adde64e3f"
+  },
+  {
+   "path": "report/proposal.html",
+   "role": "rendered_proposal_html",
+   "required": true,
+   "language": "zh",
+   "sha256": "f139adee8162ab4b87556efdbbf629cc313e7e4f59b12326f5e1c0492dd14893"
+  },
+  {
+   "path": "report/narrative.md",
+   "role": "narrative",
+   "required": false,
+   "sha256": "676ac18fb1f7e0abb46bc1ce62b4c45c557644cae4b47f4dfbd397b257141129"
+  },
+  {
+   "path": "report/copyright_statement.md",
+   "role": "copyright_statement",
+   "required": true,
+   "sha256": "105f9c2fa7352a01fdf39d286fb555923f87252a50934aecc947e7d1371ca804"
+  },
+  {
+   "path": "drawings/a3-booklet.pdf",
+   "role": "drawing",
+   "required": true,
+   "language": "zh",
+   "sha256": "baa8ddbef82b5c82e7f69f97e7414215e3a6731d6bad593da1f5c2727e50d07d"
+  },
+  {
+   "path": "drawings/a0-boards.pdf",
+   "role": "drawing",
+   "required": true,
+   "language": "zh",
+   "sha256": "04509d1570364a0353d593ce65a2697f74d4075d3e934302509d7c6515589260"
+  },
+  {
+   "path": "visual/index.html",
+   "role": "visualization",
+   "required": true,
+   "language": "zh",
+   "sha256": "c101795575e26a417fa561daae234ca91d10540c50fcc67927167b646955d212"
+  },
+  {
+   "path": "assets/figures/key-areas.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "5fd1964ae41c6ea6d4a559686cba207499f5b1be662daa943dffb7113b2e4d4b"
+  },
+  {
+   "path": "assets/figures/land-use-structure.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "0a9cc412d26503c12bcf7eafeebe82ed88a90b81190c4c09247c134e4ebc04b1"
+  },
+  {
+   "path": "assets/figures/metrics-evidence.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "16c1d257a64cf2fbc3b519492c89cd3bfdf0458d5ccf5ea4a588b784dfa6649c"
+  },
+  {
+   "path": "assets/figures/mobility-bluegreen.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "d2bf96f4819cd31bd973023a2bb38d59f3af5c421e46c1490bb58bc7a844cfaf"
+  },
+  {
+   "path": "assets/figures/site-overview.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "148219bd7e4996a6bdfdff59e0b995e917d5ad434be32c56b663ac7022a942db"
+  },
+  {
+   "path": "geometry/buildings.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "c0b133840e057bda45a1d8bfe275b8195ba8a1092c3fba824fbee4358e2b8c1f"
+  },
+  {
+   "path": "geometry/constraints.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "0ac1a07f864f47b02db8933848f19b629ff39a39dc70fcf9ea4dbccbd8ab9ff5"
+  },
+  {
+   "path": "geometry/green_space.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "43c072ff78f1084b1affe036458d8bb0f1e0ee26c4b98413ef0da07f192a4d83"
+  },
+  {
+   "path": "geometry/key_areas.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "3cdcb7032bd7ad40a5b7d022af8c8213addfa04440de7726b7e06d8940616bb3"
+  },
+  {
+   "path": "geometry/land_use.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "a9aad88a97bc2b34e6ae1e224dece574b1566ea68628739c9e79e8d0e4161a37"
+  },
+  {
+   "path": "geometry/phasing.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "b8d1390a0a4cb3d61fa03c2f4937543c12f476e6957b5d90a24e583488ff008b"
+  },
+  {
+   "path": "geometry/public_space.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "11ad34400526a2676f3b94b8da2923801e8179fa0f8bc2a4d630d98de0a7cf2a"
+  },
+  {
+   "path": "geometry/roads.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "14d31a144eedac814ce6af3d575430173d835615a07ed164aca1f08d7a6312e2"
+  },
+  {
+   "path": "geometry/site_boundary.geojson",
+   "role": "geometry",
+   "required": true,
+   "sha256": "18e2f5928a6b59bb33c7044ec8363b3de60ca698f7f4ca2e7fc55327c610dd8b"
+  },
+  {
+   "path": "visual/assets/switchback-protocol.json",
+   "role": "narrative",
+   "required": true,
+   "sha256": "d3bc5b288536bfd5b00409b628becd2ad6abf8ebcb84bce1302eec9c03b9b208"
+  },
+  {
+   "path": "proposal.en.md",
+   "role": "narrative",
+   "required": true,
+   "language": "en",
+   "translation_of": "proposal.md",
+   "sha256": "dc523de9a53d84672feda32fec951a959b8f2ef014e2fedda406e723c46d2fc9"
+  },
+  {
+   "path": "report/proposal.en.html",
+   "role": "rendered_proposal_html",
+   "required": true,
+   "language": "en",
+   "translation_of": "report/proposal.html",
+   "sha256": "75e8eaecac872c7b3730285f4219e0eb30e0a55f15995a99eb48a053cce23dbb"
+  },
+  {
+   "path": "visual/index.en.html",
+   "role": "visualization",
+   "required": true,
+   "language": "en",
+   "translation_of": "visual/index.html",
+   "sha256": "051bbf75b1188e95963aec5ed07bdd9ab208ecfea016ea8416fc6af1088dc43f"
+  },
+  {
+   "path": "assets/figures/site-overview.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/figures/site-overview.png",
+   "sha256": "95073d074e2f1e190910552fea06cb3daef16d4b672ffaf209292a178ef21760"
+  },
+  {
+   "path": "assets/figures/land-use-structure.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/figures/land-use-structure.png",
+   "sha256": "677d9448ec700bd5051004e1679f1d1b04cd88489713f3c367708bcacc057989"
+  },
+  {
+   "path": "assets/figures/key-areas.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/figures/key-areas.png",
+   "sha256": "fd561eb99ad0c4d207e56fffbb13e488e103f84f73c0d6a7c962c0b1c053a08a"
+  },
+  {
+   "path": "assets/figures/mobility-bluegreen.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/figures/mobility-bluegreen.png",
+   "sha256": "c7e7371c6432f7404eb34cc9e3953312f03e54e420311e930bb97ec13cdd087a"
+  },
+  {
+   "path": "assets/figures/metrics-evidence.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/figures/metrics-evidence.png",
+   "sha256": "be21365b47e24a9d078487dda4dcb372eadd7422500d639711c3d5ffce185d4e"
+  },
+  {
+   "path": "drawings/a3-booklet.en.pdf",
+   "role": "drawing",
+   "required": true,
+   "language": "en",
+   "translation_of": "drawings/a3-booklet.pdf",
+   "sha256": "9746bffc4b46ede6bd2e5185e0fdcca03dddd7701f226498a02e0e520f579c5c"
+  },
+  {
+   "path": "drawings/a0-boards.en.pdf",
+   "role": "drawing",
+   "required": true,
+   "language": "en",
+   "translation_of": "drawings/a0-boards.pdf",
+   "sha256": "77ec9c54110b2d62dfa3bacc9e7c1b87b13a14df5542eec8b9b46abf9e340c05"
+  },
+  {
+   "path": "assets/figures/structure-overview.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "26d768d494e84551fc55dcbe615eb1714e85a541031bbcfd9d1f4ec8a7f8373a",
+   "language": "zh",
+   "title_zh": "总体空间结构图",
+   "title_en": "Overall Spatial Structure",
+   "description_zh": "总体空间结构图（真实几何 matplotlib 重绘；数字均来自 metrics.json 复算）",
+   "description_en": "Overall Spatial Structure (re-drawn from real geometry via matplotlib; all figures reproducible from metrics.json)"
+  },
+  {
+   "path": "assets/figures/scenario-matrix.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "e4c40daaf4c519899fa7b718fb6b67772c250a1ec8188364aed892eefa72bc21",
+   "language": "zh",
+   "title_zh": "场景-空间-运营协同矩阵",
+   "title_en": "Scenario-Space-Operation Matrix",
+   "description_zh": "12 场景-空间-运营协同矩阵（真实契约数据表渲染）",
+   "description_en": "Scenario-Space-Operation Matrix (rendered from real contract table)"
+  },
+  {
+   "path": "assets/figures/structure-overview.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "e70ee717a5f86132aa0d5b1b497fa5fd8305cfae2645e052f3da7f73741d14ae",
+   "language": "en",
+   "title_zh": "总体空间结构图（英文版，真实几何重绘）",
+   "title_en": "Overall Spatial Structure (English, real geometry)",
+   "description_zh": "英文版（与中文版同数据同布局，严格实质等价；非占位）",
+   "description_en": "English version (same data & layout as Chinese, strictly equivalent; no longer a placeholder)",
+   "translation_of": "assets/figures/structure-overview.png"
+  },
+  {
+   "path": "assets/figures/scenario-matrix.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "sha256": "325bb4e6e4a42224468cf1e50aa80154bb2f8cb558daebce21d32359843cad65",
+   "language": "en",
+   "title_zh": "场景-空间-运营协同矩阵（英文版）",
+   "title_en": "Scenario-Space-Operation Matrix (English)",
+   "description_zh": "英文版（与中文版同数据同布局，严格实质等价；非占位）",
+   "description_en": "English version (same data & layout as Chinese, strictly equivalent; no longer a placeholder)",
+   "translation_of": "assets/figures/scenario-matrix.png"
+  },
+  {
+   "path": "assets/figures/ecosystem-map.png",
+   "role": "proposal_figure",
+   "language": "zh",
+   "title_zh": "AI 创新生态图谱（真实 POI 分布）",
+   "title_en": "AI Innovation Ecosystem (Real POI Distribution)",
+   "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一口径 16/118/38（众智园/AI 原点/大钟寺，已分类 POI 经 GCJ-02→WGS-84 校正 within key_areas 几何，与 2491 总口径一致）可从 key_areas 几何复算",
+   "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); single caliber 16/118/38 (Zhongzhiyuan/AI Origin/Dazhongsi, categorized POI within key_areas geometry after GCJ-02→WGS-84, consistent with the 2491 total) reproducible from key_areas geometry",
+   "sha256": "cd8cf766e068d4ca168f8ac84dc0c8e5534b7c530993e23d8b95c5d1fc21dc53",
+   "required": true
+  },
+  {
+   "path": "assets/figures/ecosystem-map.en.png",
+   "role": "proposal_figure",
+   "language": "en",
+   "title_zh": "AI 创新生态图谱（英文版）",
+   "title_en": "AI Innovation Ecosystem (English)",
+   "description_zh": "英文版（与中文版同数据同布局）",
+   "description_en": "English version (same data & layout as Chinese)",
+   "translation_of": "assets/figures/ecosystem-map.png",
+   "sha256": "262bd72b1d559f519cf768a945dc869978f0d79342e8d49c0ab26ec65e2fec86",
+   "required": true
+  },
+  {
+   "path": "assets/figures/landmark-honor.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh",
+   "sha256": "c009dd9207f1c80a951c4afc7183e121dc90f85ee3889ba0aa5ce55df4243f44",
+   "title_zh": "三朝圣地标与贡献者荣誉体系（自主设计）",
+   "title_en": "Three Pilgrimage Landmarks & Honor System (agent self-designed)",
+   "description_zh": "本智能体自主设计（design_target）",
+   "description_en": "agent self-designed (design_target)"
+  },
+  {
+   "path": "assets/figures/landmark-honor.en.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "sha256": "d83f9fbb912ba6bda858ca83aa94a569238f67a589c667cd71b21380f79424fc",
+   "title_zh": "同上（英文版）",
+   "title_en": "Same (EN)",
+   "description_zh": "本智能体自主设计（design_target）",
+   "description_en": "agent self-designed (design_target)",
+   "translation_of": "assets/figures/landmark-honor.png"
+  },
+  {
+   "path": "assets/figures/ka-detail-zhongzhiyuan.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "neutral",
+   "sha256": "5601e846165e58178c9b9064577b393ce12c6fc9f29355ad103128cdcd2a8a0d",
+   "title_zh": "众智园概念详细设计图（provisional 警示）",
+   "title_en": "Zhongzhiyuan conceptual detailed design (provisional warning)",
+   "description_zh": "本智能体自主设计（design_target）",
+   "description_en": "agent self-designed (design_target)"
+  },
+  {
+   "path": "assets/figures/ka-detail-origin.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "neutral",
+   "sha256": "dead169e1f5ef91b5a04a50801b3fe0bbaab587e748cd9e8502c54d37fa468b5",
+   "title_zh": "AI 原点社区概念详细设计图（provisional 警示）",
+   "title_en": "AI Origin conceptual detailed design (provisional warning)",
+   "description_zh": "本智能体自主设计（design_target）",
+   "description_en": "agent self-designed (design_target)"
+  },
+  {
+   "path": "assets/figures/ka-detail-dazhongsi.png",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "neutral",
+   "sha256": "ca43bd37d3ad2f495fecd71491cc033617004217949237ac7dbcc87ab506a963",
+   "title_zh": "大钟寺概念详细设计图（provisional 警示）",
+   "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
+   "description_zh": "本智能体自主设计（design_target）",
+   "description_en": "agent self-designed (design_target)"
+  },
+  {
+   "path": "visual/assets/street_section_short_term.svg",
+   "role": "visualization",
+   "required": false,
+   "language": "zh",
+   "sha256": "6d902249f53e17a69ef9497b00d8f5d2c6a670d7c8a22706c576be551abff3ff",
+   "title_zh": "街段界面横剖面（短期措施示意）",
+   "title_en": "Street section transverse view (short-term measures)"
+  },
+  {
+   "path": "visual/assets/ai_scene_short_term.svg",
+   "role": "visualization",
+   "required": false,
+   "language": "zh",
+   "sha256": "556f00a6593a2893c0f119934b362de16e7569bf45f247f315131cc4a67bd4d9",
+   "title_zh": "AI 场景示意图（短期措施）",
+   "title_en": "AI scenario schematic (short-term measures)"
+  },
+  {
+   "path": "visual/assets/ai_scenarios_overview.svg",
+   "role": "visualization",
+   "required": false,
+   "language": "zh",
+   "sha256": "d1db08e5a9e61d232871eb3eb21b7dcf01fdc74f3cbc716a7d093a444d9a945a",
+   "title_zh": "AI 场景一览（10 项示意）",
+   "title_en": "AI scenarios overview (10 items)"
+  },
+  {
+   "path": "visual/assets/street_section_short_term_en.svg",
+   "role": "visualization",
+   "required": false,
+   "language": "en",
+   "sha256": "75b852b3e4dda8278fd9e56672e799b912c5e89fd5f49e56a406657b5858c724",
+   "title_zh": "街段界面横剖面（短期措施示意·英文版）",
+   "title_en": "Street section transverse view (short-term measures) — English"
+  },
+  {
+   "path": "visual/assets/ai_scene_short_term_en.svg",
+   "role": "visualization",
+   "required": false,
+   "language": "en",
+   "sha256": "b2477fcfd8fb5139fc2e60f13113d43977bf7c1dd288ac3512ea683849a6d981",
+   "title_zh": "AI 场景示意图（短期措施·英文版）",
+   "title_en": "AI scenario schematic (short-term measures) — English"
+  },
+  {
+   "path": "visual/assets/ai_scenarios_overview_en.svg",
+   "role": "visualization",
+   "required": false,
+   "language": "en",
+   "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351",
+   "title_zh": "AI 场景一览（10 项示意·英文版）",
+   "title_en": "AI scenarios overview (10 items) — English"
   }
+ ],
+ "validation_claim": {
+  "self_checked": true,
+  "known_blockers": [],
+  "data_confidence": "high",
+  "readiness_contract": "persisted-self-check-v1",
+  "extensions": {
+   "x-asset-licensing": {
+    "schema_version": "1.0",
+    "data": {
+     "font_distribution": "subset_embedded_ofl_font_no_standalone_binary",
+     "bundled_font_files": [],
+     "font_embedding_method": "matplotlib subset-embedding of Noto Sans SC (SIL OFL-1.1) glyph outlines into PDF/PNG outputs; HTML uses a CSS font-family fallback chain led by 'Noto Sans SC'; no proprietary system font (e.g. PingFang SC) or WOFF file is embedded or distributed",
+     "embedded_font_sources": [
+      {
+       "name": "Noto Sans SC",
+       "owner": "Google LLC / SIL International (OFL-1.1)",
+       "role": "rendering font (subset-embedded in deliverables)",
+       "embedding_basis": "Noto Sans SC is licensed under SIL OFL-1.1, which explicitly permits redistribution (modified or unmodified) and subset embedding within the submission; the glyph subsets embedded in PDF/PNG derive from this OFL font"
+      }
+     ],
+     "pdf_font_manifest": [
+      "NotoSansSC (subset, weight 400)",
+      "NotoSansSC (subset, weight 700)"
+     ],
+     "font_license_note": "This submission uses Noto Sans SC (SIL Open Font License 1.1) as the rendering font; the PDF/PNG deliverables embed glyph subsets of Noto Sans SC. The package does NOT ship a standalone .ttf/.otf/.woff binary (the submission package format restricts the assets/ tree to images and provides no non-image file slot). Instead, the full OFL-1.1 license text is reproduced in report/copyright_statement.md and stable license/source URLs are provided (https://scripts.sil.org/OFL and https://github.com/notofonts/noto-cjk), satisfying 'retain the license with the package' under the OFL redistribution terms. No proprietary system font (e.g. PingFang SC) or WOFF file is used or distributed. The earlier 2026-08-25 claim of a bundled 'wqy-microhei-subset.woff' was incorrect and is retracted; the 2026-08-26 interim note describing 'matplotlib subset-embedding of macOS system CJK fonts, no standalone file' is superseded by this Noto-Sans-SC / OFL-1.1 approach.",
+     "code_license": "Generation scripts released under MIT License in ltf0109/urban-planning-ai-kit.",
+     "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion. All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no and URL-missing/placeholder background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. Their clearance and usage boundaries remain pending user-supplied verifiable permalinks and legal review; nothing here is represented as completed clearance. Professional legal review is recommended before formal exhibition/publication."
+    }
+   }
+  }
+ }
 }
