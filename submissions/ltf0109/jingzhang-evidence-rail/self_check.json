@@ -43,7 +43,7 @@
    "result": "pass",
    "severity": "blocking",
    "target": "report/proposal.html + visual/index.html + visual/index.en.html + all SVG",
-   "message": "中文字体内嵌：HTML/visual 通过 assets/fonts/wqy-microhei-subset.woff（文泉驿微米黑 WenQuanYi Micro Hei，GPLv3+字体嵌入例外，243KB）自包含渲染，不再依赖评审环境系统字体，彻底消除方框字；OSM 底图尝试性叠加，网络不可达回退白底；HTML charset=utf-8；visual/index.en.html 为纯英文版；关键图已按 A3/A0 实际输出尺寸重排放大。可读性自检报告见 readability_check.md。"
+   "message": "中文字体内嵌（已更正）：本提交物不随包分发任何独立字体文件（assets/fonts/ 为空，包内无 .woff）；A3/A0 展板 PDF 与各 PNG 图件由 matplotlib 以子集方式将 macOS 系统 CJK 字体（PingFang SC / Hiragino Sans GB / STHeiti / Songti SC）的用字轮廓内嵌于输出文件，渲染不依赖评审环境是否安装字体；HTML/visual 以 CSS font-family 回退链（WQYMicroHei→system-ui→PingFang SC→Microsoft YaHei→系统 CJK 字体）显示，未捆绑独立 webfont（原 2026-08-25 'wqy-microhei-subset.woff 自包含渲染' 表述与事实不符，已废止，以 copyright_statement.md 与 sources.json 资产级许可证声明为准）。OSM 底图尝试性叠加，网络不可达回退白底；HTML charset=utf-8；visual/index.en.html 为纯英文版；关键图已按 A3/A0 实际输出尺寸重排放大。可读性自检报告见 readability_check.md。"
   },
   {
    "check_id": "REVIEW_RESPONSE_62",
@@ -83,7 +83,7 @@
    "英文 A3/A0 PDF 嵌入中文图 → 改用 .en.png 重排（放大关键图）",
    "POI 口径统一：55/262/62（不可复算）→ 36/161/63（初版 within 几何、未校正）→ 16/118/38（GCJ-02→WGS-84 校正，最终可信口径）",
    "sources.json 335 旧指标名残留清理；版权表述统一（无矛盾）",
-   "中文字体内嵌（文泉驿微米黑 WenQuanYi Micro Hei 子集 woff，离线自包含，资产级 GPLv3+字体嵌入例外；废止原系统字体栈依赖，消除评审环境方框字）",
+   "中文字体内嵌更正（r5）：原（2026-08-25）'随包发布 wqy-microhei-subset.woff 自包含渲染' 表述与事实不符（assets/fonts 为空、包内无 .woff），已废止并更正为 matplotlib 子集内嵌 macOS 系统 CJK 字体（PingFang SC 等）说明；实际成品以 copyright_statement.md 与 sources.json 资产级许可证声明记录的字体清单与嵌入方式为准，不再作 WQY WOFF 捆绑断言",
    "metrics.json 地铁 77/18 口径说明 + site_area provisional 精度声明",
    "OSM 底图尝试 + 风险声明（sources.json OSM-BASEMAP）",
    "用地代码订正（r4）：LU-003 由 09 回退至 05（商业服务业用地），与当前受信校验枚举及全包文本/图例一致；先前 09 改动经评审确认不在受信枚举内，已撤销",

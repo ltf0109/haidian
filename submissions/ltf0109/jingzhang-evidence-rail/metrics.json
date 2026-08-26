@@ -4,6 +4,11 @@
   "length": "m",
   "area": "sqm"
  },
+ "_recompute_boundary": {
+  "package_recomputable": "边界面积/绿地率/公共空间比/建筑基底/分期面积/基于 site_boundary 的 800m·1200m 地铁覆盖等可由 geometry/*.geojson 直接复算",
+  "external_authorized_only": "POI 口径(16/118/38 与 2491)、77 站地铁本体清单、产业/居住 Moran's I 与 Getis-Ord Gi* 的原始数据与中间栅格受数据许可与体积限制未随包分发，仅以聚合统计+参数摘要记录；须在高德开放平台授权或 QGIS/GeoAgent MCP 授权环境下凭外部数据复算，不能仅由包内 GeoJSON 端到端复算",
+  "implication": "本方案不主张 external_authorized_only 类指标可由包内数据独立复现；其 status=known 表示数值来自授权环境计算结果，非包内可复算"
+ },
  "metrics": {
   "site_area_sqm": {
    "status": "known",
