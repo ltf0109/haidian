@@ -19,9 +19,7 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "405834fb537012f5ec739fede73a40ab0cb47833088b2ee23cf4c9bb1a485a1f",
-      "size_bytes": 20388
+      "required": true
     },
     {
       "path": "proposal.md",
@@ -505,22 +503,6 @@
       "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351",
       "title_zh": "AI 场景一览（10 项示意·英文版）",
       "title_en": "AI scenarios overview (10 items) — English"
-    },
-    {
-      "path": "report/bilingual_equivalence_check.md",
-      "size_bytes": 6105,
-      "sha256": "13365de6c17109576136f53d8b73835c7373b70c92d4a7cc4830dad729668833",
-      "role": "audit_record",
-      "description_zh": "E1/E2 中英文逐页等价与图件裁切审计记录",
-      "description_en": "E1/E2 bilingual page-by-page equivalence & figure crop audit record"
-    },
-    {
-      "path": "report/figure_crop_audit.md",
-      "size_bytes": 6921,
-      "sha256": "332854af4240377ee2b43c22ca0fa1563bc7ff144bb0d21c18df3b75e0911930",
-      "role": "audit_record",
-      "description_zh": "E1/E2 中英文逐页等价与图件裁切审计记录",
-      "description_en": "E1/E2 bilingual page-by-page equivalence & figure crop audit record"
     }
   ],
   "asset_licensing": {
