@@ -50,7 +50,7 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "99192835897c72f5b5bb2e13d8c070540111cabdfefc0daf0e94d8f169494f7e"
+   "sha256": "98df30728b5ae1e23d60ce03c92fd078b212c9e27a1a648282ca0199cbd6de35"
   },
   {
    "path": "self_check.json",
@@ -100,14 +100,14 @@
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "baa8ddbef82b5c82e7f69f97e7414215e3a6731d6bad593da1f5c2727e50d07d"
+   "sha256": "e0e845efdc0ada79495f115131bc02a0a1e2eb7ee9ab7ff6b2ace3c2a0d31a07"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "04509d1570364a0353d593ce65a2697f74d4075d3e934302509d7c6515589260"
+   "sha256": "40f2076f2d18047d60e9e134f213fa4a9e67d73d9a084d16076f851253c9201f"
   },
   {
    "path": "visual/index.html",
@@ -128,7 +128,7 @@
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "0a9cc412d26503c12bcf7eafeebe82ed88a90b81190c4c09247c134e4ebc04b1"
+   "sha256": "32c9ae53ea1426615ecb722579820c42260ed58da2035b142303699daa22e4d6"
   },
   {
    "path": "assets/figures/metrics-evidence.png",
@@ -241,7 +241,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/site-overview.png",
-   "sha256": "95073d074e2f1e190910552fea06cb3daef16d4b672ffaf209292a178ef21760"
+   "sha256": "ba4116df5202589952fbf68a29785e8549063f5a9b7b28e4e84be69197e7d75e"
   },
   {
    "path": "assets/figures/land-use-structure.en.png",
@@ -249,7 +249,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/land-use-structure.png",
-   "sha256": "677d9448ec700bd5051004e1679f1d1b04cd88489713f3c367708bcacc057989"
+   "sha256": "c6724697871adadf1b2c4dc36c62c9bf71e6f41c8f8ae1ae8ec90e2c09e7fec4"
   },
   {
    "path": "assets/figures/key-areas.en.png",
@@ -281,7 +281,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "9746bffc4b46ede6bd2e5185e0fdcca03dddd7701f226498a02e0e520f579c5c"
+   "sha256": "8626d2192a21d5fcd6104e26bef778244e7eebfa080ed8ebecf54519dd50cfe2"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -289,13 +289,13 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "77ec9c54110b2d62dfa3bacc9e7c1b87b13a14df5542eec8b9b46abf9e340c05"
+   "sha256": "c181519b99eb0bb6a1e3599087cc935ba344cac07b730d49e8233badc67b7c2a"
   },
   {
    "path": "assets/figures/structure-overview.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "26d768d494e84551fc55dcbe615eb1714e85a541031bbcfd9d1f4ec8a7f8373a",
+   "sha256": "5765030097cce8d12c68d3e0b66c157744b3d7309b19e631b7f9bb8860c57daa",
    "language": "zh",
    "title_zh": "总体空间结构图",
    "title_en": "Overall Spatial Structure",
@@ -317,7 +317,7 @@
    "path": "assets/figures/structure-overview.en.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "e70ee717a5f86132aa0d5b1b497fa5fd8305cfae2645e052f3da7f73741d14ae",
+   "sha256": "905cef31d7d185086a63c1d3adaacde0ca8864a252b202a591e09fe81ca7109d",
    "language": "en",
    "title_zh": "总体空间结构图（英文版，真实几何重绘）",
    "title_en": "Overall Spatial Structure (English, real geometry)",
@@ -388,7 +388,7 @@
    "role": "proposal_figure",
    "required": true,
    "language": "neutral",
-   "sha256": "5601e846165e58178c9b9064577b393ce12c6fc9f29355ad103128cdcd2a8a0d",
+   "sha256": "f2e1a2b707349b4c98dfcbfb71ec5b64adce9496811742cb19b59afb955a0701",
    "title_zh": "众智园概念详细设计图（provisional 警示）",
    "title_en": "Zhongzhiyuan conceptual detailed design (provisional warning)",
    "description_zh": "本智能体自主设计（design_target）",
@@ -399,7 +399,7 @@
    "role": "proposal_figure",
    "required": true,
    "language": "neutral",
-   "sha256": "dead169e1f5ef91b5a04a50801b3fe0bbaab587e748cd9e8502c54d37fa468b5",
+   "sha256": "66237f4c852463a64c75856093f4b7266cd8427df596d4787e468681d1a4605d",
    "title_zh": "AI 原点社区概念详细设计图（provisional 警示）",
    "title_en": "AI Origin conceptual detailed design (provisional warning)",
    "description_zh": "本智能体自主设计（design_target）",
@@ -410,7 +410,7 @@
    "role": "proposal_figure",
    "required": true,
    "language": "neutral",
-   "sha256": "ca43bd37d3ad2f495fecd71491cc033617004217949237ac7dbcc87ab506a963",
+   "sha256": "a3a04bd32d3f1f34148d27b2243ad32068e08d7b957fb650ab281ba3f62d1ae2",
    "title_zh": "大钟寺概念详细设计图（provisional 警示）",
    "title_en": "Dazhongsi conceptual detailed design (provisional warning)",
    "description_zh": "本智能体自主设计（design_target）",
