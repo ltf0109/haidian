@@ -242,8 +242,8 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1f162841f401216b31d9ad12e04f7758ee520973f663e5c730b27250b94fb738",
-      "size_bytes": 440405
+      "sha256": "164e22078234af338698f98714390ced43be7184a0728376af4275a11212f1a7",
+      "size_bytes": 440429
     },
     {
       "path": "visual/index.en.html",
