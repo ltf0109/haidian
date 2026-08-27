@@ -56,7 +56,7 @@
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "f30f3c35980ccb715513182face64c5ec273d5eab07013e0b0cda377f952613a"
+   "sha256": "9e0e6562444b48d51cf5f5c61a3aa7c58982d7402b97eaf402ac8a9f58640789"
   },
   {
    "path": "compliance_matrix.json",
@@ -469,6 +469,101 @@
    "sha256": "6a727e4f8c0502b83ef3c8eaf98ba3969a021c71dc6024b85d7d2d85af48d351",
    "title_zh": "AI 场景一览（10 项示意·英文版）",
    "title_en": "AI scenarios overview (10 items) — English"
+  },
+  {
+   "path": "assets/screenshots/zh-proposal-home.png",
+   "description_zh": "中文 proposal 首页渲染（nolocal 模拟评审环境）",
+   "description_en": "Chinese proposal 首页render(nolocal simulating review env)",
+   "sha256": "89f596209e9b90f063e859baab011638bb8ff724580adbae8a7055442370c032",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh"
+  },
+  {
+   "path": "assets/screenshots/zh-proposal-body.png",
+   "description_zh": "中文 proposal 正文密集页渲染",
+   "description_en": "Chinese proposal 正文密集页render",
+   "sha256": "ef216b0b36d57e94d1e3c7fcc11416ee4477a517a8b1afb7eb1a2cb03bc2cba5",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh"
+  },
+  {
+   "path": "assets/screenshots/zh-proposal-table.png",
+   "description_zh": "中文 proposal 表格/引用页渲染",
+   "description_en": "Chinese proposal 表格/引用页render",
+   "sha256": "c550af16286579aeca8024823489588896ff2a999819079dc85361bf27b76d7a",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh"
+  },
+  {
+   "path": "assets/screenshots/zh-proposal-warning.png",
+   "description_zh": "中文 proposal 含风险警示页渲染",
+   "description_en": "Chinese proposal 含风险警示页render",
+   "sha256": "1d1de137011c7784c0120a23d5a030b9930e824d4b1854e43986b87f14776b35",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh"
+  },
+  {
+   "path": "assets/screenshots/en-proposal-home.png",
+   "description_zh": "英文 proposal 首页渲染（nolocal）",
+   "description_en": "English proposal 首页render（nolocal）",
+   "sha256": "f4d7a30965ce1cc8c4d4759bf062d397a20e8bfc0a17661a6abb256945e64e2f",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/screenshots/zh-proposal-home.png"
+  },
+  {
+   "path": "assets/screenshots/en-proposal-body.png",
+   "description_zh": "英文 proposal 正文密集页渲染",
+   "description_en": "English proposal 正文密集页render",
+   "sha256": "4453946bda9fa91496e07637d8f0cf8896b15c04f88262f74d9e4a6d8efba05f",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/screenshots/zh-proposal-body.png"
+  },
+  {
+   "path": "assets/screenshots/en-proposal-table.png",
+   "description_zh": "英文 proposal 表格/引用页渲染",
+   "description_en": "English proposal 表格/引用页render",
+   "sha256": "08a735b0aff222c6c15360d5a179fac78c7d3fb06f481046cd311073a22f9fa0",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/screenshots/zh-proposal-table.png"
+  },
+  {
+   "path": "assets/screenshots/en-proposal-warning.png",
+   "description_zh": "英文 proposal 含风险警示页渲染",
+   "description_en": "English proposal 含风险警示页render",
+   "sha256": "2281aaa1c27e28902f55568406bcc6578e19e0863298f2f81c44bde0a10746b3",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/screenshots/zh-proposal-warning.png"
+  },
+  {
+   "path": "assets/screenshots/zh-index-home.png",
+   "description_zh": "中文 visual index 首页渲染",
+   "description_en": "Chinese visual index 首页render",
+   "sha256": "0c85ec7cddb94067da363048547e65414368887fc3f7f79f8e28e61802de5bed",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "zh"
+  },
+  {
+   "path": "assets/screenshots/en-index-home.png",
+   "description_zh": "英文 visual index 首页渲染",
+   "description_en": "English visual index 首页render",
+   "sha256": "e937ae6f1639d9e3edb2812bf16970714ad7d0342ebc101a05c76d2920035311",
+   "role": "proposal_figure",
+   "required": true,
+   "language": "en",
+   "translation_of": "assets/screenshots/zh-index-home.png"
   }
  ],
  "validation_claim": {
