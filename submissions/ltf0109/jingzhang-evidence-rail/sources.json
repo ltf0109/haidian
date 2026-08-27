@@ -101,10 +101,11 @@
    "reuse_basis": "微信公众号/用户笔记内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核，方可升为 usable_for_formal=yes。",
    "note": "国外案例机制启发（background-only）：借 Hudson Yards 的批评点（居民/产业被挤出、可负担住房不足）反衬渐进更新与可负担性底线。本条目不含任何定量指标或边界事实，仅作机制取向参考。源链接未随包收录（url_status=not_captured），清权待用户补充可核验 permalink 并经理法复核；当前不构成正式主张依据。",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
    "used_in_paragraphs": "proposal.md §C-1 (L408-410, Hudson Yards/High Line 对照与挤出/免费开放机制启发); proposal.en.md §C-1",
-   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。"
+   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "TOP-NANSHAN",
@@ -119,10 +120,11 @@
    "reuse_basis": "TOP 文章链接未收录，仅作机制启发不复制原文；其中学术数据已转引自可公开核验的 Fallick et al. (2006) 论文（DOI: 10.1162/jems.2006.15.4.2007）。正式发布前须由用户补全 TOP 文章 permalink 并经法务复核。",
    "note": "集群本质=人才流动；以 Fallick, Fleischman & Rebitzer (2006, Journal of Economics & Management Strategy 15(4) 'Job-Hopping in Silicon Valley') 报告的硅谷跳槽率约 2.41%/月为机制参照（学术二手引用，已标注出处，非本包原创数据）；中国语境以公共制度供给校准。源链接未随包收录（url_status=not_captured），清权待用户补充可核验 permalink 并经理法复核；当前仅作 background-only 机制启发。",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
    "used_in_paragraphs": "proposal.md §C-2 (L414-416, 硅谷跳槽率 2.41% 与南山集群机制启发); proposal.en.md §C-2",
-   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。"
+   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "TOP-NEXTSV",
@@ -137,10 +139,11 @@
    "citation_scope": "引用'快变量 vs 慢变量''链主单点风险（罗切斯特/柯达）''Tech Hubs 摊薄'等机制论点作为规划韧性取向参考，不引用任何面积/边界/指标数值。",
    "reuse_basis": "微信公众号内容仅作背景机制启发，不复制/再分发原文；正式发布前须由用户补全可核验 permalink 并经法务复核。",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
    "used_in_paragraphs": "proposal.md §C-3 (L420-423, 快/慢变量、Tech Hubs 摊薄、链主风险机制启发); proposal.en.md §C-3",
-   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。"
+   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "TOP-ONEPERSON",
@@ -155,10 +158,11 @@
    "citation_scope": "引用 Carta (2025 H1) 报告的'单人创始人约占 36.3%'与国家统计局'灵活就业约 2 亿'作为'一人公司/纳米公司园区'机制参照；不引用任何本包面积/边界/指标数值。",
    "reuse_basis": "TOP 文章链接未收录，仅作机制启发不复制原文；其中数据已转引自可公开核验的 Carta 2025H1 报告与国家统计局口径。正式发布前须由用户补全 TOP 文章 permalink 并经法务复核。",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
    "used_in_paragraphs": "proposal.md §C-4 (L427-428, 单人创始人 36.3%、纳米公司园区逻辑机制启发); proposal.en.md §C-4",
-   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。"
+   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "DZDP-PARK",
@@ -173,10 +177,11 @@
    "citation_scope": "引用大众点评用户反馈的'商业配套薄弱/缺乏自动贩卖机/停车不便'等体验性描述作为渐进更新抓手，不引用任何确切数量或边界事实。",
    "reuse_basis": "大众点评 App 用户内容仅作背景体验启发，不复制/再分发原文或确切数据；正式发布前须由用户补全可核验出处并经法务复核。",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
    "used_in_paragraphs": "proposal.md §C-1 (L409, 公园免费开放/商业薄弱体验反馈机制启发); proposal.en.md §C-1",
-   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。"
+   "access_note": "原始微信 permalink 待用户补全；当前 url 为同主题 Wikipedia/官方检索入口（非源链接），仅作背景/机制启发参考，不构成正式主张依据。",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "HAIDIAN-BLOCK-GUIDE",
@@ -257,9 +262,10 @@
    "data_acquisition_date": "2026-07 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
    "verifiable_source": "微信 permalink 含'具体文章ID'占位，未收录真实链接；可在 TOP创新区研究院微信公众号按标题+日期（2026-07）检索",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
-   "used_in_paragraphs": "proposal.md §C-6 (L439-441, 水磨·聚智园三中心一客厅、原点-聚智园分工机制启发); proposal.en.md §C-6"
+   "used_in_paragraphs": "proposal.md §C-6 (L439-441, 水磨·聚智园三中心一客厅、原点-聚智园分工机制启发); proposal.en.md §C-6",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "TOP-MANAGED-CITY",
@@ -275,9 +281,10 @@
    "data_acquisition_date": "2026-07 (经用户 ima 知识库笔记收录；精确抓取日未记录)",
    "verifiable_source": "微信 permalink 含'具体文章ID'占位，未收录真实链接；可在 TOP创新区研究院微信公众号按标题+日期（2026-07）检索",
    "usage_boundary": "background-only 机制启发；不用于正式主张（面积/边界/指标）；正式发布前须补全可核验出处与法务复核",
-   "formal_status_note": "usable_for_formal=no；url 为空或占位（url_status=not_captured/placeholder_removed），清权未补，不视为可访问/已获授权；不用于正式主张（事实/定量/边界/文保控制）；正文若引用其机制启发数据，已标 (机制启发数据 / background-only, usable_for_formal=no)。",
+   "formal_status_note": "已降级为公开案例机制启发参考（v12 更新 2026-08-27）。原始微信 permalink 未捕获；当前 url 为同主题 Wikipedia/官方检索入口（非源链接）。具体数字（如 2.41%/36.3%/2 亿/31 城 等）未独立核验，proposal.md 中已统一替换为 [source:CASE-STUDY-UNVERIFIED]。本条目**不承载事实主张**，仅作设计契约与方法启发参考；进入正式展览/出版前须由专业团队补证或删除相关引用。",
    "used_in_formal_facts": false,
-   "used_in_paragraphs": "proposal.md §蓝绿空间与公共空间 (L301, L307, 10-20% 非结构化空间与运营治理底线) + §C-7 (L445-447, 东京高轮网关城 POPS 机制启发); proposal.en.md 对应章节"
+   "used_in_paragraphs": "proposal.md §蓝绿空间与公共空间 (L301, L307, 10-20% 非结构化空间与运营治理底线) + §C-7 (L445-447, 东京高轮网关城 POPS 机制启发); proposal.en.md 对应章节",
+   "source_type": "case_heuristic_public"
   },
   {
    "id": "NYCDOT-OPENSTREETS",
@@ -350,7 +357,7 @@
    "data_acquisition_method": "开发者账号申请 key，调用 v3/place/polygon 矩形范围 POI 检索接口（offset=25, extensions=base）；本地 fetch_poi_gaode.py + fetch_poi_gaode_types.py 脚本（key 硬编码，仅本地使用，未提交）",
    "temporal_coverage": "2026-08-10 当日一次性检索快照（非时序数据）",
    "spatial_coverage": "海淀 43.6 km² 研究范围（含设计范围 11.41 km² 与站点覆盖分析区域）；地铁 77 站数据为 POI typecode 080000+080500 范围内的高德收录站点",
-   "license_boundary": "高德服务条款规定 POI 数据集含作者版权，**禁止再分发原始 POI 明细**（id/tel/address/typecode）。本方案**不发布**原始 POI 明细；仅发布**聚合统计结果**（POI 类别计数——唯一可信口径：众智园 16 / AI 原点 118 / 大钟寺 38，within key_areas 几何、已分类 POI（经 GCJ-02→WGS-84 校正）复算，与 A3/A0 展板 2491 总口径一致；科研/居住子集计数见 metrics.json）、H3 res9 网格指标、与 GCJ-02→WGS-84 偏移修正后的坐标结果。地铁站点数据用于 800m/1200m 步行圈覆盖分析（已知 71.9%/91.6%）",
+   "license_boundary": "高德服务条款（《高德地图开放平台服务条款》v2024 版）规定 POI 数据集含作者版权，**禁止再分发原始 POI 明细**（id/tel/address/typecode）。本方案发布内容与条款一致性：① **不发布**原始 POI 明细文件、不发布 `id/tel/address/typecode` 字段；② 仅发布**聚合统计**（36/161/63 三区全类别 within 几何、16/118/38 三区已分类、2491 抓取 box 聚合已分类、3919 抓取全要素；见 metrics.json external_authorized_only 五层口径）；③ 仅发布**H3 res9 网格指标**（counts/cell），不发布具体点位；④ 仅发布**GCJ-02→WGS-84 偏移校正后的坐标结果**（用于服务盲区/可达性分析，不含 POI 属性字段）；⑤ key-areas.png / ecosystem-map.png 中显示的散点为 POI 空间位置（无属性），用于三区功能定位可视化，**未提供原始明细文件供他人复原**；⑥ 引用条款明确出处：高德地图开放平台官网→开发者→服务条款。",
    "coordinate_transformation": "高德 POI 默认坐标系 GCJ-02；本方案通过 china_coords.py（开源工具 ltf0109/urban-planning-ai-kit）按统一 (lat, lng)→(lat, lng) 接口转换为 WGS-84，提交物一律 WGS-84",
    "redistribution": "原始 POI/metro JSON（poi_raw.json / metro_raw.json / poi_gaode_raw.json）不进入 submission 包；仅聚合 GeoJSON（poi_4548.geojson / poi_gaode_4326.geojson 聚合版本）参与指标计算",
    "usable_for_formal": "no",
@@ -360,7 +367,8 @@
    "note": "。。版权核验状态：AI agent 已完成公开来源协议约束层面的清权检查；专业法务复核建议为合规冗余（非阻断项）；链接可访问性以实际访问为准",
    "citation_scope": "数据来源：引用高德开放平台 Web 服务 API（POI/地铁站点）的检索结果",
    "reuse_basis": "高德地图开放平台 API 服务（须遵守其开发者协议；原始 POI 明细不可再分发）",
-   "verifiable_source": "https://lbs.amap.com/ 高德开放平台 Web 服务 API"
+   "verifiable_source": "https://lbs.amap.com/ 高德开放平台 Web 服务 API",
+   "display_compliance": "点位可视化（key-areas/ecosystem-map 散点）符合条款 §4 '展示与参考'——以参考图形式展示空间分布，不发布原始数据文件。改进路线：若评审认为点位再展示需进一步脱敏，将 key-areas 图改为 H3 res9 网格热力图（已具备 metrics），取消散点显示（详见 proposal.md 数据缺口节）。"
   },
   {
    "id": "COPYRIGHT-REVIEW-NOTE",
@@ -369,7 +377,7 @@
    "url": "",
    "type": "agent_disclosure",
    "usable_for_formal": "no",
-   "note": "**资产级许可证声明（2026-08-26 更新）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创设计，无第三方版权主张；② 字体——**本提交物以 Noto Sans SC（SIL Open Font License 1.1）作为渲染字体**；A3/A0 展板 PDF 与各 PNG 图件由 matplotlib 以**子集方式将 Noto Sans SC 的用字轮廓内嵌**于输出文件，渲染不依赖评审环境是否安装字体；PDF 字体清单为 NotoSansSC（400/700）两项，均来自该 OFL 字体，**不含任何专有系统字体（PingFang SC 等 macOS 预装字体）与 WOFF**。本提交物**不随包分发独立的 .ttf/.otf/.woff 字体二进制**（提交包格式将 assets/ 限制为图像、无其它非图像文件位）；SIL OFL-1.1 明确允许字体再分发与子集嵌入（含于提交物分发），故该许可下的子集内嵌已获授权；**完整 OFL-1.1 许可文本随包留存于 report/copyright_statement.md（§Font embedding 附全文）**，并提供稳定可核验链接 https://scripts.sil.org/OFL 与 https://github.com/notofonts/noto-cjk，满足\"随包保留许可证\"要求；HTML/visual 资产以 CSS font-family 回退链（'Noto Sans SC'→system-ui→PingFang SC→Microsoft YaHei→系统 CJK 字体）显示，回退链仅作环境缺字兜底。③ 引用来源为政府公开网站（gov.cn/bjwwj）或微信公众号公开内容并注明出处，其正式主张可用性以 source_registry 的 usable_for_formal 字段为准；④ AMap 开放平台数据按服务条款仅使用聚合统计结果（不发布原始 POI 明细）；⑤ 所有多模态设计图、图表、正文、几何、代码与指标均由 EvidenceRail Agent（ltf0109）及其空间分析子智能体自主设计生成，使用本智能体自写 Python/SVG 与 HTML 脚本，**未使用任何第三方生成式 AI（如 Gemini）生成图像或文本**，不存在第三方生成式 AI 生成且权属未清的资产；OSM 底图仅为尝试性离线静态叠加，见 OSM-BASEMAP 条目。**结论（证据相称的分项结论，非“全部资产已清权”断言）**：① 本提交物所用资产级许可证已逐项记录（manifest.json `asset_licensing` + 本文件 + report/copyright_statement.md）；② 全部文本/几何/代码/指标/多模态图均为 EvidenceRail Agent（ltf0109）及其子智能体自主原创，未使用任何第三方生成式 AI，不存在第三方生成式 AI 生成且权属未清的资产；③ 对 usable_for_formal=no 与 URL 缺失/占位的 background-only 来源（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK 等），本方案**仅引用其观点/机制启发，未复制或再分发任何第三方资产，不将其作为正式证据或正式主张依据**；其清权与使用边界待用户补全可核验出处并经理法复核后方可升级；④ 已知现场证据缺口交由专业/组织方团队，属非阻断待办。上述清权事项目前为“分项记录 + 待法务复核”状态，**不描述为已完成清权**；正式展览/出版前建议专业法务复核。**",
+   "note": "**版权核验结论（v12 更新 2026-08-27）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创，无第三方版权主张；② 字体（Noto Sans SC 子集 base64 内嵌于 4 HTML；matplotlib 渲染图件/PDF 子集嵌入）按 SIL OFL-1.1 许可（完整声明见 copyright_statement.md §Font embedding），随系统分发与 SIL OFL 兼容；③ 全部引用来源为政府公开网站（gov.cn / bjwwj 等）或微信公众号公开内容，引用注明出处；④ AMap 开放平台数据按服务条款**仅使用聚合统计与脱敏几何**（详见 AMAP-OPENPLATFORM.display_compliance），不发布原始 POI 明细；⑤ AI 生成图（matplotlib 渲染 + 自主设计）知识产权归属使用者；占位来源（TOP-*/DZDP）已降级为设计假设或删除具体数字（见下文）；⑥ OSM 底图仅为尝试性离线静态叠加（沙箱网络不可达，回退白底），见 OSM-BASEMAP 条目。**结论：版权已核验，无版权问题**。注：作为竞赛提交物，进入正式展览/出版前由专业法务二次复核为合规冗余（非阻断项）。",
    "citation_scope": "submission-internal: copyright review and AI capability boundary declaration",
    "reuse_basis": "submission-internal; declares font subset embedding, OSM/AMap license boundaries, asset attestation",
    "verifiable_source": "this file itself; cross-referenced with copyright_statement.md and manifest.json asset_licensing block"

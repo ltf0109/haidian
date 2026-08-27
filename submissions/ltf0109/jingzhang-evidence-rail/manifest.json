@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "e283074958a824756d476e217c72ad9ff525e3dca28edaa2055d6e5f798c6c77"
+   "sha256": "b9f3b534cc878270df7eb54900f87e58ea7c56e8e61067922ef4d57230a28798"
   },
   {
    "path": "agent.json",
@@ -38,7 +38,7 @@
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "82dbca34ae184d64a20f324304f54878f183022f071f70bb12a9e20d8bfadb27"
+   "sha256": "a0ed40051e45c1d77f047190d940379be8edeb9ef48f0f804f6d777c99d9528e"
   },
   {
    "path": "assumptions.json",
@@ -50,13 +50,13 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "98df30728b5ae1e23d60ce03c92fd078b212c9e27a1a648282ca0199cbd6de35"
+   "sha256": "f4ed2e2df513266e449a027e414736f7ee3c3329798077b8a2e5d1182f55f4dc"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "3ef712b82a54b73b345445d7b7b5393c9454a3d74cd14819fc5c90dd3b4e6cbd"
+   "sha256": "fdccd472b79a4789059e17f4c8a7e3965c9a00a001542670a495d27799fbc783"
   },
   {
    "path": "compliance_matrix.json",
@@ -93,21 +93,21 @@
    "path": "report/copyright_statement.md",
    "role": "copyright_statement",
    "required": true,
-   "sha256": "105f9c2fa7352a01fdf39d286fb555923f87252a50934aecc947e7d1371ca804"
+   "sha256": "eb70aa9b33d2464cdf0ce091a0ee04e8eda24bc697bbb253c16726d2e05305ca"
   },
   {
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "e0e845efdc0ada79495f115131bc02a0a1e2eb7ee9ab7ff6b2ace3c2a0d31a07"
+   "sha256": "e2e09aad11c97a8367318bc87dddfdc4f0b96dff06f7b3280555d703ef4814d4"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "40f2076f2d18047d60e9e134f213fa4a9e67d73d9a084d16076f851253c9201f"
+   "sha256": "7d83b4a427200a03b1df7d4ae508153ed7090db01343a28862408da51b3f6a38"
   },
   {
    "path": "visual/index.html",
@@ -121,35 +121,35 @@
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "5fd1964ae41c6ea6d4a559686cba207499f5b1be662daa943dffb7113b2e4d4b"
+   "sha256": "477f4ea4bd73b7b3f87a0b9ad65fc22630d4553efe24d5bba44741ddbd00efbd"
   },
   {
    "path": "assets/figures/land-use-structure.png",
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "32c9ae53ea1426615ecb722579820c42260ed58da2035b142303699daa22e4d6"
+   "sha256": "ec55c7b29020f12cba5b66e71e07b5da18e60105e5679f67125160665194e2fd"
   },
   {
    "path": "assets/figures/metrics-evidence.png",
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "16c1d257a64cf2fbc3b519492c89cd3bfdf0458d5ccf5ea4a588b784dfa6649c"
+   "sha256": "c078419be1f9de23ee9ef4ffa1aac277c5af2c03b7299fec7b7f6fa2125d45ec"
   },
   {
    "path": "assets/figures/mobility-bluegreen.png",
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "d2bf96f4819cd31bd973023a2bb38d59f3af5c421e46c1490bb58bc7a844cfaf"
+   "sha256": "0fe3451612e8d1153b96cde8cdeccbc7d0ecb1ed83536d9590a548a50be961f6"
   },
   {
    "path": "assets/figures/site-overview.png",
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "148219bd7e4996a6bdfdff59e0b995e917d5ad434be32c56b663ac7022a942db"
+   "sha256": "0698174d7f9fe9c598747ade6b24921352ecd7b15329046d6c26e72344283144"
   },
   {
    "path": "geometry/buildings.geojson",
@@ -217,7 +217,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "dc523de9a53d84672feda32fec951a959b8f2ef014e2fedda406e723c46d2fc9"
+   "sha256": "d30e57f897714d23bd590339ed8d77ea284fdb43b05557bd91aa1d7bcc00e7da"
   },
   {
    "path": "report/proposal.en.html",
@@ -241,7 +241,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/site-overview.png",
-   "sha256": "ba4116df5202589952fbf68a29785e8549063f5a9b7b28e4e84be69197e7d75e"
+   "sha256": "481287419ada86c07a18afa9f8291b1d1ec9837ec5449379af129a194a3245a2"
   },
   {
    "path": "assets/figures/land-use-structure.en.png",
@@ -249,7 +249,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/land-use-structure.png",
-   "sha256": "c6724697871adadf1b2c4dc36c62c9bf71e6f41c8f8ae1ae8ec90e2c09e7fec4"
+   "sha256": "203704a6e8d8dd83437f29e7e0bd7e72d8a5c04f45d57e96c0754d786f8f860e"
   },
   {
    "path": "assets/figures/key-areas.en.png",
@@ -257,7 +257,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/key-areas.png",
-   "sha256": "fd561eb99ad0c4d207e56fffbb13e488e103f84f73c0d6a7c962c0b1c053a08a"
+   "sha256": "a47bad1d144db1ea203c26ff42c193572ee7ce63c9ee9b685437bb0938d925d4"
   },
   {
    "path": "assets/figures/mobility-bluegreen.en.png",
@@ -265,7 +265,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/mobility-bluegreen.png",
-   "sha256": "c7e7371c6432f7404eb34cc9e3953312f03e54e420311e930bb97ec13cdd087a"
+   "sha256": "8628da647f07b812a188bfaa7287d04af1964dd645279b3a91bc18221653988e"
   },
   {
    "path": "assets/figures/metrics-evidence.en.png",
@@ -273,7 +273,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/metrics-evidence.png",
-   "sha256": "be21365b47e24a9d078487dda4dcb372eadd7422500d639711c3d5ffce185d4e"
+   "sha256": "b78879f14f36babd24c92bffc8641ba1ffed71fd3d2276697e10cd07cdaf8408"
   },
   {
    "path": "drawings/a3-booklet.en.pdf",
@@ -281,7 +281,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "8626d2192a21d5fcd6104e26bef778244e7eebfa080ed8ebecf54519dd50cfe2"
+   "sha256": "70977040cdabcaedfce2963bed6a0f2c619812e1fede851ade0970781beae86f"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -289,7 +289,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "c181519b99eb0bb6a1e3599087cc935ba344cac07b730d49e8233badc67b7c2a"
+   "sha256": "465990ffab33063e62a783ed2d01cfefae19d61c9388192c0898619b7a8b770f"
   },
   {
    "path": "assets/figures/structure-overview.png",
@@ -343,9 +343,9 @@
    "language": "zh",
    "title_zh": "AI 创新生态图谱（真实 POI 分布）",
    "title_en": "AI Innovation Ecosystem (Real POI Distribution)",
-   "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一口径 16/118/38（众智园/AI 原点/大钟寺，已分类 POI 经 GCJ-02→WGS-84 校正 within key_areas 几何，与 2491 总口径一致）可从 key_areas 几何复算",
-   "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); single caliber 16/118/38 (Zhongzhiyuan/AI Origin/Dazhongsi, categorized POI within key_areas geometry after GCJ-02→WGS-84, consistent with the 2491 total) reproducible from key_areas geometry",
-   "sha256": "cd8cf766e068d4ca168f8ac84dc0c8e5534b7c530993e23d8b95c5d1fc21dc53",
+   "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一可信三区口径 36/161/63（全类别 within 几何）与 16/118/38（已分类子集）并列；2491 = AMap 抓取 box 已分类聚合（非三重点区合计）",
+   "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); three-key-area caliber = 36/161/63 (full cat., within geom) + 16/118/38 (categorized subset); 2491 = AMap fetch-box aggregated categorized (NOT sum of three areas)",
+   "sha256": "1f9181264427d8d2f82fd74614ae1ceaf04995fa670d4c3d114f743f1cb76be4",
    "required": true
   },
   {
@@ -357,7 +357,7 @@
    "description_zh": "英文版（与中文版同数据同布局）",
    "description_en": "English version (same data & layout as Chinese)",
    "translation_of": "assets/figures/ecosystem-map.png",
-   "sha256": "262bd72b1d559f519cf768a945dc869978f0d79342e8d49c0ab26ec65e2fec86",
+   "sha256": "93b995090703bb7d0a1ba8ed272aafe2fe39780fc44196ca37b3af8c15156cd4",
    "required": true
   },
   {
@@ -473,7 +473,12 @@
  ],
  "validation_claim": {
   "self_checked": true,
-  "known_blockers": [],
+  "known_blockers": [
+   "评审 SHA e9eedf79 抓到的 metrics/manifest POI 口径冲突已闭合（v12 统一为 5 层口径；科研 56、居住 27、2491 明确非三重点区合计）",
+   "AMap 点级展示合规依据已写入 sources.json AMAP-OPENPLATFORM.display_compliance（条款 v2024 §4 展示与参考；改进路线 = H3 res9 网格热力）",
+   "en 图底部英文 provisional 警示已修复（v12 重排换行至安全区）",
+   "占位来源（TOP-*/DZDP）已降级为设计假设或删除具体数字"
+  ],
   "data_confidence": "high",
   "readiness_contract": "persisted-self-check-v1",
   "extensions": {

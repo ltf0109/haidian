@@ -6,7 +6,7 @@
  },
  "_recompute_boundary": {
   "package_recomputable": "边界面积/绿地率/公共空间比/建筑基底/分期面积/基于 site_boundary 的 800m·1200m 地铁覆盖等可由 geometry/*.geojson 直接复算",
-  "external_authorized_only": "POI 口径(16/118/38 与 2491)、77 站地铁本体清单、产业/居住 Moran's I 与 Getis-Ord Gi* 的原始数据与中间栅格受数据许可与体积限制未随包分发，仅以聚合统计+参数摘要记录；须在高德开放平台授权或 QGIS/GeoAgent MCP 授权环境下凭外部数据复算，不能仅由包内 GeoJSON 端到端复算",
+  "external_authorized_only": "POI 口径分四层（互不混用）：① 三重点区 within key_areas 几何 全类别 = 36/161/63（众智园/AI 原点/大钟寺；包内可复算）；② 三重点区 within key_areas 几何 已分类子集 = 16/118/38（包内可复算，6 类映射：Medical/Research/Green/Commercial/Residential/Industry）；③ 三重点区 within key_areas 几何 科研子集（科教文化服务类） = 0/56/0（包内可复算）；④ 三重点区 within key_areas 几何 居住子集（商务住宅类） = 0/13/27（包内可复算）；⑤ AMap 抓取 box（POI 文件 bbox）已分类聚合 = 2491 / 全要素 3919（**非三重点区合计**——三区合计仅 260）；地铁 77 站本体清单、产业/居住 Moran's I 与 Getis-Ord Gi* 的原始数据与中间栅格受数据许可与体积限制未随包分发，仅以聚合统计+参数摘要记录；须在高德开放平台授权或 QGIS/GeoAgent MCP 授权环境下凭外部数据复算，不能仅由包内 GeoJSON 端到端复算",
   "implication": "本方案不主张 external_authorized_only 类指标可由包内数据独立复现；其 status=known 表示数值来自授权环境计算结果，非包内可复算"
  },
  "metrics": {
@@ -285,31 +285,31 @@
   },
   "key_area_ai_origin_research_poi_count": {
    "status": "known",
-   "value": 87,
+   "value": 56,
    "unit": "count",
    "source_files": [
     "geometry/key_areas.geojson"
    ],
-   "formula": "count(科教文化服务 POI within PROV-KEY-002, H3 res10 cells)",
+   "formula": "count(type 含 \"科教文化服务\" 的 POI within key_areas.geometry[beijing_ai_origin_community], 经 GCJ-02→WGS-84 校正)",
    "confidence": "medium",
    "assumptions": [
-    "AI 原点社区科研 POI 密度最高（107.9/km² 当量）"
+    "AI 原点社区科研 POI 密度最高（实际重算 = 56，已分布校正）"
    ],
-   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 118 / 大钟寺 38（众智园 16）；口径与 within key_areas 几何一致（已分类 POI，经 GCJ-02→WGS-84 校正，与 2491 总口径一致）"
+   "note": "科研子集（AMap 科教文化服务类）；within key_areas 几何 + GCJ-02→WGS-84 校正。包内可复算：39°56'N-40°00'N × 116°20'E-116°21'E 范围内 56 个科研/教育/培训 POI。与全类别 36/161/63、已分类 16/118/38 是不同口径（前者仅 AMap type 含「科教文化服务」的 POI，后者是全部 POI / 已分类 POI），不构成口径冲突。众智园/大钟寺科研子集 = 0（这两区功能定位为产业培育/居住商业，无 AMap 科教文化服务类 POI）。"
   },
   "key_area_dazhongsi_residential_poi_count": {
    "status": "known",
-   "value": 14,
+   "value": 27,
    "unit": "count",
    "source_files": [
     "geometry/key_areas.geojson"
    ],
-   "formula": "count(商务住宅 POI within PROV-KEY-003, H3 res10 cells)",
+   "formula": "count(type 含 \"商务住宅\" 的 POI within key_areas.geometry[dazhongsi_ai_industry_cluster], 经 GCJ-02→WGS-84 校正)",
    "confidence": "medium",
    "assumptions": [
-    "大钟寺居住密集但产业/科研/商业 POI 为 0 → 渐进更新主战场"
+    "大钟寺居住 POI 密集（实际重算 = 27，已分布校正），渐进更新主战场"
    ],
-   "note": "科研子集（AMap 科教文化服务-科研机构类）；完整 POI 计数见 ecosystem-map：AI 原点 118 / 大钟寺 38（众智园 16）；口径与 within key_areas 几何一致（已分类 POI，经 GCJ-02→WGS-84 校正，与 2491 总口径一致）"
+   "note": "居住子集（AMap 商务住宅类含住宅小区/商务写字楼）；within key_areas 几何 + GCJ-02→WGS-84 校正。包内可复算：大钟寺范围内 27 个商务住宅 POI。与全类别 36/161/63、已分类 16/118/38 是不同口径（前者仅 AMap type 含「商务住宅」的 POI）。众智园/AI 原点居住子集 = 0/13（无住宅小区主导功能）。"
   },
   "building_height_m": {
    "status": "unknown",
@@ -490,7 +490,6 @@
    "generator": "spatial_analysis/fetch_poi_gaode.py（高德 POI 多边形检索 API）+ generate_boards.py:poi_cat() 分类管线",
    "data_source": "高德地图开放平台（AMap）POI 多边形检索 API",
    "data_date": "2026-08-10",
-   "spatial_scope": "研究区 43.6 km²（3×3 网格覆盖组织方临时 site_boundary）",
    "coordinate_system": "GCJ-02（API 原生）→ WGS-84（提交几何，gcj2wgs 偏移校正，见 generate_boards.py）",
    "dedup_rule": "按 AMap POI id 去重；源文件 3919 要素 id 唯一，去重后仍 3919",
    "classification_rule": "poi_cat(type)：医疗保健→Medical / 科教文化→Research / 风景名胜·体育休闲→Green / 餐饮·购物·住宿→Commercial / 商务住宅→Residential / 公司企业→Industry；其余（无关键词匹配）→ 未分类剔除",
@@ -504,14 +503,16 @@
     "Industry": 181
    },
    "uncategorized_dropped": 1428,
-   "consistency": "与 A3/A0 展板 metrics 行 '3 key areas · 2491 POIs (aggregated, study area)' 一致（generate_boards.py: TOTAL_POI = len(poi_plot) = 2491）",
    "license_boundary": "数据来自高德地图开放平台聚合检索；依据《高德地图开放平台服务条款》，原始 POI 明细不得再分发，仅以聚合统计与脱敏几何形式用于本研究",
    "reproducibility": "可复算：在 pandas<3 + geopandas 隔离环境下重新运行 generate_boards.py 的 poi_cat 管线即得 2491（已实机复核：3919 要素 → 分类 2491 / 未分类 1428）",
    "confidence": "medium",
    "assumptions": [
     "研究区范围基于 provisional site_boundary（组织方官方 polygon 未发布），官方几何发布后须重算聚合",
     "POI 分类依据 AMap type 字段关键词映射，可能随平台分类体系变化而变动"
-   ]
+   ],
+   "scope_note": "2491 = AMap POI 多边形检索 box (POI 文件 bbox: 116.30-116.39 E × 39.94-40.04 N, ≈ 7×11 km) 已分类 POI 聚合总量。**非三重点区合计**——三区合计：全类别 260（36+161+63）、已分类 172（16+118+38）。研究区 provisional site_boundary 仅 1.5×10 km 细长条，within site 仅 1320 要素（已分类 909）；抓取范围（POI 文件 bbox）覆盖整个研究区+周边缓冲，是本指标的实际统计域。",
+   "consistency": "A3/A0 展板 metrics 行已同步改为 'Study-area aggregated POIs (AMap fetch box, categorized): 2491' + 'Three Key Areas POIs (full cat., within geom): 36/161/63' + 'Three Key Areas POIs (categorized subset, within geom): 16/118/38'，消除旧版 '3 key areas · 2491 POIs' 误导性归并。",
+   "spatial_scope": "AMap POI 多边形检索 box (POI 文件 bbox: 116.30-116.39 E × 39.94-40.04 N, ≈ 7×11 km)，**大于** provisional site_boundary (1.5×10 km 细长条)，是本指标的统计域。"
   }
  }
 }
