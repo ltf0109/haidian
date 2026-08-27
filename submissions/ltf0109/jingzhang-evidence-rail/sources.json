@@ -58,7 +58,7 @@
   {
    "id": "AGENT-TASKBOOK",
    "path": "brief/site-package/agent_taskbook.json",
-   "source_type": "user_provided_cleared",
+   "source_type": "user_provided_attested",
    "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
    "citation_scope": "submission-internal: the AI agent's task book (charter, KPIs, methodology)",
    "reuse_basis": "submission-internal; defines deliverables, EBIP method, scope boundaries",
@@ -239,12 +239,12 @@
   },
   {
    "id": "COPYRIGHT-REVIEW-NOTE",
-   "title": "版权核验与 AI 能力边界声明",
+   "title": "版权 / 许可状态逐项声明（evidence-proportionate, itemized）",
    "publisher": "EvidenceRail Agent (ltf0109)",
    "url": "",
    "type": "agent_disclosure",
    "usable_for_formal": "no",
-   "note": "**版权核验结论（v12 更新 2026-08-27）**：① 本方案 Logo/品牌图形为 EvidenceRail Agent 原创，无第三方版权主张；② 字体（Noto Sans SC 子集 base64 内嵌于 4 HTML；matplotlib 渲染图件/PDF 子集嵌入）按 SIL OFL-1.1 许可（完整声明见 copyright_statement.md §Font embedding），随系统分发与 SIL OFL 兼容；③ 全部引用来源为政府公开网站（gov.cn / bjwwj 等）或微信公众号公开内容，引用注明出处；④ AMap 开放平台数据按服务条款**仅使用聚合统计与脱敏几何**（详见 AMAP-OPENPLATFORM.display_compliance），不发布原始 POI 明细；⑤ AI 生成图（matplotlib 渲染 + 自主设计）知识产权归属使用者；原 TOP-*/DZDP 背景来源因无稳定 permalink 已于 v13 删除（见 proposal 修订说明）；⑥ OSM 底图仅为尝试性离线静态叠加（沙箱网络不可达，回退白底），见 OSM-BASEMAP 条目。**结论：版权已核验，无版权问题**。注：作为竞赛提交物，进入正式展览/出版前由专业法务二次复核为合规冗余（非阻断项）。",
+   "note": "**版权 / 许可状态声明（v14 逐项、证据比例化，2026-08-27 更新）** —— 本声明不是对所有资产的全面清权确认，而是按资产类别的逐项、证据比例化的状态披露；任何遗漏/未发现权利应保留原权利人主张。完整逐项明细见 report/copyright_statement.md v14 §Itemized asset status。\n\n**逐项状态（v14）**（按资产类别逐项列作者/权利人/许可/来源稳定性/再分发范围/署名落实/状态）：\n\n1. **字体（rendering）· 状态：已声明+待法务复核** —— 字体族：Noto Sans SC (Regular + Bold)；作者/权利人：Google LLC + SIL International；许可：SIL Open Font License 1.1（版本 v1.1, 26 Feb 2007，未发现更新版本）；许可来源（稳定）：https://scripts.sil.org/OFL（OFL 官方页面，长期稳定）+ https://github.com/notofonts/noto-cjk（GitHub 仓库，长期稳定）；再分发范围：包内 matplotlib 子集嵌入（PDF/PNG）+ base64 data-URI 嵌入 HTML（不含独立二进制字体文件，遵循 submission package format 对 assets/ 树的限制）；署名落实：OFL 全文已复制到 report/copyright_statement.md §SIL Open Font License 1.1 (full text)，满足 OFL §1 「Re-distribution」条款下'with the font软件附带的版权声明和许可声明'要求；**待补**：版权声明中明确保留 `Noto Sans SC` Reserved Font Name（OFL §1 Reservation of Name 约束）；**未自证**：未由独立第三方法务团队书面复核 OFL 条款对本包的具体适用性（如 Exhibit C 法律意见书）。\n\n2. **Logo / 品牌图形 · 状态：自主原创+无第三方主张** —— 全部为本方案 EvidenceRail Agent (ltf0109) 原创设计；**未自证**：未与第三方商标/品牌库进行系统化比对排除（仅依赖提交者自检）。\n\n3. **文本叙事 / 几何 / 指标 / 代码 · 状态：自主原创+开源代码有 MIT** —— 代码生成脚本按 MIT License 发布于 ltf0109/urban-planning-ai-kit（GitHub 仓库，长期稳定）；**未自证**：未与第三方专利/代码相似度工具进行系统化比对排除。\n\n4. **AMap 开放平台数据（POI/地铁）· 状态：聚合使用+未自证版本化条款** —— 来源：高德地图开放平台（高德软件有限公司）；数据范围：聚合统计结果（POI counts/cell、H3 res9 网格）+ GCJ-02→WGS-84 偏移校正坐标；**未发布**：原始 POI 明细文件、`id/tel/address/typecode` 字段、原始分布点位；**未自证**：服务条款具体版本号（如 v2023.x/v2024.x 等）未由本方案独立核验（沙箱网络对 amap.com 不通，无法访问条款原文）；current local fallback：图件已按已声明路线改 H3 res9 网格热力 + 移除点级散点（v13）；**待补**：版本化条款文本（如高德官方服务条款 URL+版本号+发布日期）+ 律师书面授权确认；**待补**：sources.json AMAP-OPENPLATFORM 条目 display_compliance 段明确说明本方案遵循的 §X 条款版本号（当前为推断）。\n\n5. **OSM 底图 · 状态：沙箱不可达+纯白底回退+ODbL 声明保留** —— 来源：OpenStreetMap (https://www.openstreetmap.org)；许可：ODbL 1.0（作者 OpenStreetMap contributors）；当前实现：沙箱网络对 tile.openstreetmap.org 不通，图件代码已删除 OSM 调用（v12/13 修复 set_xlim 锁 axes bug 后回退为白底），即当前包内**不嵌入 OSM 瓦片**；**未自证**：ODbL 1.0 文本与署名（© OpenStreetMap contributors）未随包显式复制（仅在 sources.json OSM-BASEMAP 条目 note 提及）；**待补**：若未来在能访问 OSM 的环境下重新启用底图，需在图件底部/版权页显示 © OpenStreetMap contributors 署名。\n\n6. **政府公开网站 / 微信公众号内容 · 状态：已引用+原始链接待补** —— 来源：gov.cn / bjwwj.beijing.gov.cn 等政府网站公开文章，微信公众号公开内容；引用方式：proposal.md 中以 [source:XXX] 标签注明出处；**未自证**：部分引用的 gov.cn / 微信文章具体 URL 与发布日期未逐条复核（评审已多次指出）；**待补**：HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI 等 usable_for_formal=no 条目的逐条原始 URL + 发布日期 + 作者署名。\n\n7. **Switchback Protocol 字段规范 · 状态：已声明+第三方署名** —— 来源：chucky1102 / RENLINE（open-city-ai/haidian Issue #1119）；许可：CC-BY-4.0；许可来源（稳定）：GitHub Issue 长期可访问；再分发范围：仅协议规范（字段结构/枚举/语义），本包叙事/图面/几何/指标等自有内容不在此许可覆盖范围内（已在 SWITCHBACK-PROTOCOL.scope_note_zh 声明）；署名落实：asset_attribution_text = 'Switchback Protocol by chucky1102 / RENLINE (open-city-ai/haidian Issue #1119); customised by EvidenceRail Agent (ltf0109)'。\n\n**全局状态总结**：本包已**不声称**全面清权。已落实项：① 字体 OFL-1.1 文本随包；② AMap 聚合使用边界与原始明细不发布；③ OSM 沙箱不可达回退白底；④ TOP-*/DZDP 等 7 个无稳定 permalink 来源已删除（v13 用户硬指令）；⑤ Switchback Protocol CC-BY-4.0 署名落实。**未自证/待补项**：① AMap 服务条款版本号原文；② 政府公开文章/微信内容逐条原始 URL+发布日期；③ Logo 与第三方商标系统化比对；④ OFL/ODbL/CC-BY-4.0 等条款对本包具体适用性的律师书面意见（专业法务复核）。**结论**：本包当前为**部分清权、可重用作设计参考**（包级主体许可 COMMUNITY-DISPLAY-ONLY 覆盖本包自有内容）；**进入正式展览/出版/转化之前**，由专业法务团队按上述待补清单逐项书面复核为**必要条件**（非冗余、非可选项）。",
    "citation_scope": "submission-internal: copyright review and AI capability boundary declaration",
    "reuse_basis": "submission-internal; declares font subset embedding, OSM/AMap license boundaries, asset attestation",
    "verifiable_source": "this file itself; cross-referenced with copyright_statement.md and manifest.json asset_licensing block"
@@ -267,7 +267,7 @@
    "verifiable_source": "this file itself; encoded in scenario matrix and switchback_protocol.md"
   }
  ],
- "license_compatibility": "本包提交物采用分层许可：① 包级主体许可为 COMMUNITY-DISPLAY-ONLY（覆盖本包自有的叙事/图面/几何/指标/代码/品牌）；② 嵌入的 Switchback Protocol 字段规范按 CC-BY-4.0 署名 chucky1102 / RENLINE 使用（仅协议规范，详见 SWITCHBACK-PROTOCOL 条目）；③ AMap 开放平台 POI/地铁数据按服务条款仅使用聚合统计，不发布原始明细；④ OSM 底图按 ODbL 1.0 注明 © OpenStreetMap contributors，仅作静态展示底图，不构成规划参考。usable_for_formal=no 的来源（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI）支撑的定量/文保控制/事实表述已在 proposal 中标注 (provisional / 官方语境背景 / 机制启发)，不作正式主张依据。",
+ "license_compatibility": "本包提交物采用分层许可：**本包自有内容**（叙事/图面/几何/指标/代码/品牌）由 EvidenceRail Agent (ltf0109) 自主原创，按 COMMUNITY-DISPLAY-ONLY 包级主体许可覆盖；**第三方协议规范**（Switchback Protocol 字段规范）按 CC-BY-4.0 署名 chucky1102 / RENLINE 使用（仅协议规范，详见 SWITCHBACK-PROTOCOL 条目）；**第三方字体**（Noto Sans SC 子集）按 SIL OFL-1.1 许可嵌入（详见 COPYRIGHT-REVIEW-NOTE 条目字体项 + copyright_statement.md §Font）；**第三方数据**（AMap 聚合统计与 OSM 底图）按其各自条款使用，但 AMap 服务条款版本号、OSM 实际嵌入情况均**未自证**（详见 COPYRIGHT-REVIEW-NOTE 条目）；**未自证权利状态**（HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI 等）标记为 usable_for_formal=no、仅作背景/机制启发，不构成正式主张依据。本 license_compatibility 不是全面清权声明，详见 COPYRIGHT-REVIEW-NOTE 与 copyright_statement.md v14 逐项状态。",
  "url_status_policy": {
   "policy": "url 为空或占位的条目一律 background-only，不用于正式主张；不可声称已清权或可访问。",
   "empty_or_placeholder_url_ids": [],

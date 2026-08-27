@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "4b48088a37eade6ec24996305ba00bcfdf380b782780b4efdc5adce745b2e6e8"
+   "sha256": "40551ae30e3d7058a41a44c0f3ba1d112f02df4bf81a75e4731c3f9ebfc2eeef"
   },
   {
    "path": "agent.json",
@@ -44,19 +44,19 @@
    "path": "assumptions.json",
    "role": "assumptions",
    "required": true,
-   "sha256": "ce9acbf3fc45970420e17db850b3d6f2fef229cc064e884c23d5f3ff6d716043"
+   "sha256": "3baa2594655b7ed6b260431b791a47da368798021b6e754e630af567f9e3d439"
   },
   {
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "86311c54bb83fa7167c626e990b1e5d73db5128b9e6ac6629c8fa2809a64ed4b"
+   "sha256": "3a8fc1f307ce4a8a5788b7c80a47c0d212571ecd331692da0e13c94cded5bac0"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "fdccd472b79a4789059e17f4c8a7e3965c9a00a001542670a495d27799fbc783"
+   "sha256": "b7c62867ce951558501a5997a372339c32fa99a70d3d76dd085578a10a9b2e44"
   },
   {
    "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "f5c097ce91ba9c924b00d656c5fc5198b1cf2120254fd7c81f4e2dd674e9f92f"
+   "sha256": "d7894f5ac74f8537845a0c77a061d85a3a0551ff29dc2bbb13ddbf82ed8c5100"
   },
   {
    "path": "report/narrative.md",
@@ -93,7 +93,7 @@
    "path": "report/copyright_statement.md",
    "role": "copyright_statement",
    "required": true,
-   "sha256": "eb70aa9b33d2464cdf0ce091a0ee04e8eda24bc697bbb253c16726d2e05305ca"
+   "sha256": "a670560277822f4ec19aff7f98e1c6cf23087c8632384cf9bc946cba03cbabca"
   },
   {
    "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "c101795575e26a417fa561daae234ca91d10540c50fcc67927167b646955d212"
+   "sha256": "190f9b8748d8ea5213af24c331613c29b5b490510cf030eb3daf22376220b489"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -217,7 +217,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "bc0556dc61a6a3d84c7bc2e4086b898bb250415f83a9ea3a06db9cc53268e5f0"
+   "sha256": "a144d827afd51c4eb426826ed0be07b68f79c9bc99d8175b9f2177f05f3966e0"
   },
   {
    "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
    "required": true,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "8876c93caa99f9362c069f8b38bfa9e95eec18e33f21e53d11e6fd4b15e2a46a"
+   "sha256": "338bd7cba51b652d4e27e2c606a5fe8dea88689dd79cbc57c8f99c8fc6ad4954"
   },
   {
    "path": "visual/index.en.html",
@@ -233,7 +233,7 @@
    "required": true,
    "language": "en",
    "translation_of": "visual/index.html",
-   "sha256": "051bbf75b1188e95963aec5ed07bdd9ab208ecfea016ea8416fc6af1088dc43f"
+   "sha256": "9bdb2b977b31d4a98a962c34055c9d406a2c9aaddf624eead8187aff675ebdbd"
   },
   {
    "path": "assets/figures/site-overview.en.png",
@@ -494,9 +494,9 @@
       "NotoSansSC (subset, weight 400)",
       "NotoSansSC (subset, weight 700)"
      ],
-     "font_license_note": "This submission uses Noto Sans SC (SIL Open Font License 1.1) as the rendering font; the PDF/PNG deliverables embed glyph subsets of Noto Sans SC. The package does NOT ship a standalone .ttf/.otf/.woff binary (the submission package format restricts the assets/ tree to images and provides no non-image file slot). Instead, the full OFL-1.1 license text is reproduced in report/copyright_statement.md and stable license/source URLs are provided (https://scripts.sil.org/OFL and https://github.com/notofonts/noto-cjk), satisfying 'retain the license with the package' under the OFL redistribution terms. No proprietary system font (e.g. PingFang SC) or WOFF file is used or distributed. The earlier 2026-08-25 claim of a bundled 'wqy-microhei-subset.woff' was incorrect and is retracted; the 2026-08-26 interim note describing 'matplotlib subset-embedding of macOS system CJK fonts, no standalone file' is superseded by this Noto-Sans-SC / OFL-1.1 approach.",
+     "font_license_note": "This submission uses Noto Sans SC (SIL Open Font License 1.1) as the rendering font across all asset layers. PDF/PNG deliverables embed glyph subsets via matplotlib (font manifest NotoSansSC, weights 400/700). The 4 HTML deliverables embed a re-subset v14 woff2 (1270 glyphs; Regular 310 KB + Bold 313 KB → base64 403 KB + 407 KB) as @font-face{font-family:'JZEmbedCJK'} data URIs (src local-first + data-URI fallback; font-family stack explicitly hits every element — issue #3978 verified parameters). The package does NOT ship a standalone font binary. The full OFL-1.1 text is reproduced in report/copyright_statement.md; stable license/source URLs are provided. Reserved Font Name 'Noto Sans SC' is retained (OFL §1 Reservation of Name). Per v14 itemized status this font use is 'documented + pending legal re-review', not self-certified as fully cleared.",
      "code_license": "Generation scripts released under MIT License in ltf0109/urban-planning-ai-kit.",
-     "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion. All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no and URL-missing/placeholder background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. Their clearance and usage boundaries remain pending user-supplied verifiable permalinks and legal review; nothing here is represented as completed clearance. Professional legal review is recommended before formal exhibition/publication."
+     "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion. All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. The seven TOP-*/DZDP entries with no stable permalink were deleted in v13 (per contributor instruction); their mechanism-heuristic prose is retained as common urban-planning knowledge, not as sourced claims. For the three third-party asset classes actually used (Noto Sans SC font / AMap aggregate data / OSM basemap), see the itemized status in sources.json COPYRIGHT-REVIEW-NOTE and copyright_statement.md v14: font = OFL-1.1 documented with license text shipped; AMap = aggregate-use boundary without a self-verified clause version (pending); OSM = no tiles embedded in the current build (sandbox unreachable, white-background fallback). Their clearance and usage boundaries remain pending professional legal review; nothing here is represented as completed clearance. Professional legal review is a REQUIRED precondition (not optional) before formal exhibition/publication, per copyright_statement.md v14 §2.2."
     }
    },
    "x-revision-log-v13": {
