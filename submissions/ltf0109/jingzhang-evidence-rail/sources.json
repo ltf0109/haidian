@@ -207,8 +207,8 @@
    "url": "https://www.openstreetmap.org/copyright",
    "source_type": "open_community_data",
    "usable_for_formal": "no",
-   "note": "制图脚本尝试以 OSM 标准瓦片（Web Mercator EPSG:3857）作为静态底图叠加（site-overview/land-use-structure/mobility-bluegreen）。潜在风险声明：① 数据许可 ODbL 1.0——OSM 数据可复制/分发/改编但须注明出处并保持同许可共享；② tile.openstreetmap.org 使用条款禁止批量/高流量抓取，可能触发 IP 封禁（本方案仅按需拉取有限瓦片，且渲染环境网络不可达时自动回退白底）；③ 中国境内地图发布合规——OSM 非国家批准的互联网地图服务，中国境内公开部署须改用合规地图服务（高德/腾讯/天地图），本提交物为离线学术用途静态图，不构成在线地图服务；④ 坐标系——OSM 瓦片为 WGS-84/Web Mercator，本方案分析图层经 GCJ-02→WGS-84 转换后与瓦片对齐。若评审环境无法访问 OSM 瓦片，图中图层仍完整可读（白底模式）。",
-   "formal_status_note": "仅作静态底图参考，不作正式主张依据；正式地图服务须用合规渠道",
+   "note": "**OSM 底图状态（v15 更新 2026-08-27，消除评审指出的'未嵌入'与可见底图冲突）**：① **当前提交物（A3/A0 PDF、PNG 图件）不含任何 OSM 数据**——generate_boards.py 曾以 osm_roads_basemap.geojson 绘制道路底图并在首页标注 '© OpenStreetMap (ODbL)'，该调用已于 v15 移除，底图改为原创浅灰参考网格（无第三方数据、无 ODbL 义务）；generate_design_figures.py / _en.py 的 OSM 瓦片尝试（tile.openstreetmap.org）自 v12 起已移除调用（沙箱网络不可达，回退白底）；② **osm_roads_basemap.geojson 仅存在于工作区（spatial_analysis/），未随提交包分发**；③ 历史版本曾声明 ODbL 1.0 风险（批量瓦片抓取/中国境内合规）——保留作为历史说明，但**当前实现不再适用**；④ 若未来在能访问 OSM 的环境重新引入底图，须满足：ODbL 1.0 共享许可 + © OpenStreetMap contributors 显式署名 + 中国境内合规地图服务（高德/腾讯/天地图）。",
+   "formal_status_note": "当前提交物不含 OSM 数据；OSM 相关声明仅作历史与未来再引入的风险说明",
    "citation_scope": "底图来源：引用 OpenStreetMap 底图作为研究区底图（fallback to 白底 when OSM tiles unavailable）",
    "reuse_basis": "ODbL 开源协议（https://www.openstreetmap.org/copyright）；可使用并需署名",
    "verifiable_source": "OSM tile servers via https://tile.openstreetmap.org; ODbL attribution required"
@@ -224,18 +224,18 @@
    "data_acquisition_method": "开发者账号申请 key，调用 v3/place/polygon 矩形范围 POI 检索接口（offset=25, extensions=base）；本地 fetch_poi_gaode.py + fetch_poi_gaode_types.py 脚本（key 硬编码，仅本地使用，未提交）",
    "temporal_coverage": "2026-08-10 当日一次性检索快照（非时序数据）",
    "spatial_coverage": "海淀 43.6 km² 研究范围（含设计范围 11.41 km² 与站点覆盖分析区域）；地铁 77 站数据为 POI typecode 080000+080500 范围内的高德收录站点",
-   "license_boundary": "高德服务条款（《高德地图开放平台服务条款》v2024 版）规定 POI 数据集含作者版权，**禁止再分发原始 POI 明细**（id/tel/address/typecode）。本方案发布内容与条款一致性：① **不发布**原始 POI 明细文件、不发布 `id/tel/address/typecode` 字段；② 仅发布**聚合统计**（36/161/63 三区全类别 within 几何、16/118/38 三区已分类、2491 抓取 box 聚合已分类、3919 抓取全要素；见 metrics.json external_authorized_only 五层口径）；③ 仅发布**H3 res9 网格指标**（counts/cell），不发布具体点位；④ 仅发布**GCJ-02→WGS-84 偏移校正后的坐标结果**（用于服务盲区/可达性分析，不含 POI 属性字段）；⑤ key-areas.png / ecosystem-map.png 中显示的散点为 POI 空间位置（无属性），用于三区功能定位可视化，**未提供原始明细文件供他人复原**；⑥ 引用条款明确出处：高德地图开放平台官网→开发者→服务条款。",
+   "license_boundary": "高德服务条款（**版本号 v2024 为推断，未独立核验**——见 note）规定 POI 数据集含作者版权，禁止再分发原始 POI 明细（id/tel/address/typecode）。本方案发布内容与使用边界：① 不发布原始 POI 明细文件与 id/tel/address/typecode 字段；② 仅发布聚合统计（36/161/63 三区全类别、16/118/38 已分类、2491 抓取 box 聚合、3919 全要素；见 metrics.json 五层口径）；③ 仅发布 H3 res9 网格指标（counts/cell）；④ 仅发布 GCJ-02→WGS-84 偏移校正坐标（不含属性字段）；⑤ 图件为 H3 res9 网格热力（v13 起，无点级散点）；⑥ 引用条款出处：高德开放平台官网→开发者→服务条款（URL 待补核验）。**任何超出上述边界的展示/再分发须先获得可核验的条款依据或律师书面授权。**",
    "coordinate_transformation": "高德 POI 默认坐标系 GCJ-02；本方案通过 china_coords.py（开源工具 ltf0109/urban-planning-ai-kit）按统一 (lat, lng)→(lat, lng) 接口转换为 WGS-84，提交物一律 WGS-84",
    "redistribution": "原始 POI/metro JSON（poi_raw.json / metro_raw.json / poi_gaode_raw.json）不进入 submission 包；仅聚合 GeoJSON（poi_4548.geojson / poi_gaode_4326.geojson 聚合版本）参与指标计算",
    "usable_for_formal": "no",
    "formal_status_note": "外部开放平台公开 API，原始数据不可再分发；仅聚合统计可作为空间分析的输入依据，**不作为正式主张的直接证据**（正式主张仍以官方文件为主）",
    "type": "open_platform_api",
    "access_note": "key 由项目团队申请并管理；key 硬编码在本地脚本中已脱敏为占位符（提交包不含 key）",
-   "note": "。。版权核验状态：AI agent 已完成公开来源协议约束层面的清权检查；专业法务复核建议为合规冗余（非阻断项）；链接可访问性以实际访问为准",
+   "note": "**AMap 数据使用状态（v15 更新 2026-08-27，逐项证据比例化）**：数据来源：高德地图开放平台 Web 服务 API（POI/地铁检索）；获取日期：2026-08-10 当日一次性快照（见 temporal_coverage）。**服务条款版本号未独立核验**（v2024 为推断——评审环境沙箱网络对 lbs.amap.com 不通，无法访问条款原文；待专业法务或具外网权限环境补官方 URL + 版本 + 发布日期 + 获取日期 + 允许聚合统计/坐标衍生/H3 展示/随包公开展示与再分发的具体条款依据）。本方案使用边界（已落实）：仅聚合统计（POI counts/cell、H3 res9 网格）+ GCJ-02→WGS-84 偏移校正坐标（不含 POI 属性字段）；**不发布**原始 POI 明细、id/tel/address/typecode、原始点位；key-areas/ecosystem-map 自 v13 起已改 H3 res9 网格热力展示（无点级散点）。**若无法提供可核验条款依据，评审允许的替换路线**：移除或替换 AMap 衍生指标与图件（本方案保留现状但如实标注「未核验+待补」，不主张已清权）。**未自证/待补**：条款版本号原文 + 律师书面授权确认（进入正式展览/出版/转化前的必要条件）。",
    "citation_scope": "数据来源：引用高德开放平台 Web 服务 API（POI/地铁站点）的检索结果",
    "reuse_basis": "高德地图开放平台 API 服务（须遵守其开发者协议；原始 POI 明细不可再分发）",
    "verifiable_source": "https://lbs.amap.com/ 高德开放平台 Web 服务 API",
-   "display_compliance": "点位可视化（key-areas/ecosystem-map 散点）符合条款 §4 '展示与参考'——以参考图形式展示空间分布，不发布原始数据文件。改进路线：若评审认为点位再展示需进一步脱敏，将 key-areas 图改为 H3 res9 网格热力图（已具备 metrics），取消散点显示（详见 proposal.md 数据缺口节）。"
+   "display_compliance": "**当前实现（v13+，无点级散点）**：key-areas.png / ecosystem-map.png 已改为 H3 res9 网格热力展示（每格 POI 计数，全类别），不展示点级散点、不发布原始明细字段；符合聚合使用边界。**依据状态**：条款 §4 展示与参考 的具体版本号与条文未独立核验（沙箱网络不可达），待专业法务补官方条款 URL+版本+日期；若未来无法提供可核验条款，按评审允许的替换路线移除或替换 AMap 衍生指标与图件。"
   },
   {
    "id": "COPYRIGHT-REVIEW-NOTE",

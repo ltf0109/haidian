@@ -50,13 +50,13 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "3a8fc1f307ce4a8a5788b7c80a47c0d212571ecd331692da0e13c94cded5bac0"
+   "sha256": "9b8d2964f79937ad26e061cdaa89c6f5cae4e41ac4a86f68b39f75c7cce0225d"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "b7c62867ce951558501a5997a372339c32fa99a70d3d76dd085578a10a9b2e44"
+   "sha256": "7f434da9db813a0fa352e8d57c96b4a9d8c238f77784c2ab4533360bf53ea2e8"
   },
   {
    "path": "compliance_matrix.json",
@@ -93,21 +93,21 @@
    "path": "report/copyright_statement.md",
    "role": "copyright_statement",
    "required": true,
-   "sha256": "a670560277822f4ec19aff7f98e1c6cf23087c8632384cf9bc946cba03cbabca"
+   "sha256": "6daea2231b51fb75d842f25c3996ee2953fce4144456ffcbe117b5bf2867fe56"
   },
   {
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "779f94884153a86744aa428eac52fba61731888264236ef3dcacdb184c28eb1f"
+   "sha256": "e3ecad0ad6fdadc0ff701ad9c6124c84af5461ce2bad09304bb3306ae960dbd6"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "b2a8ccb75bab59323c499a410e3772dc30eb534618a1f5258815123c899faded"
+   "sha256": "ee7d401cfc7d87e4aebd8d98cddf56f48834d02d32c0041b8df0def1ff3a8c7d"
   },
   {
    "path": "visual/index.html",
@@ -281,7 +281,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "b901af7e475a81ec9df5e6d3d72ab6527758e3a2383af648338b782f21ca328e"
+   "sha256": "6336f7c631ac826ba1740417403fdd3c841570943d4f20e6c8cdcf6f9b4c79d8"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -289,7 +289,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "e46b1d8716f3727077e432b249eb983ccfbdeaa8644672e411adb3f546413d15"
+   "sha256": "da59afb64b0ecab55a72b753726c2f9208e3f8d80642783c3e3f2f3157252ade"
   },
   {
    "path": "assets/figures/structure-overview.png",
@@ -496,7 +496,7 @@
      ],
      "font_license_note": "This submission uses Noto Sans SC (SIL Open Font License 1.1) as the rendering font across all asset layers. PDF/PNG deliverables embed glyph subsets via matplotlib (font manifest NotoSansSC, weights 400/700). The 4 HTML deliverables embed a re-subset v14 woff2 (1270 glyphs; Regular 310 KB + Bold 313 KB → base64 403 KB + 407 KB) as @font-face{font-family:'JZEmbedCJK'} data URIs (src local-first + data-URI fallback; font-family stack explicitly hits every element — issue #3978 verified parameters). The package does NOT ship a standalone font binary. The full OFL-1.1 text is reproduced in report/copyright_statement.md; stable license/source URLs are provided. Reserved Font Name 'Noto Sans SC' is retained (OFL §1 Reservation of Name). Per v14 itemized status this font use is 'documented + pending legal re-review', not self-certified as fully cleared.",
      "code_license": "Generation scripts released under MIT License in ltf0109/urban-planning-ai-kit.",
-     "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion. All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. The seven TOP-*/DZDP entries with no stable permalink were deleted in v13 (per contributor instruction); their mechanism-heuristic prose is retained as common urban-planning knowledge, not as sourced claims. For the three third-party asset classes actually used (Noto Sans SC font / AMap aggregate data / OSM basemap), see the itemized status in sources.json COPYRIGHT-REVIEW-NOTE and copyright_statement.md v14: font = OFL-1.1 documented with license text shipped; AMap = aggregate-use boundary without a self-verified clause version (pending); OSM = no tiles embedded in the current build (sandbox unreachable, white-background fallback). Their clearance and usage boundaries remain pending professional legal review; nothing here is represented as completed clearance. Professional legal review is a REQUIRED precondition (not optional) before formal exhibition/publication, per copyright_statement.md v14 §2.2."
+     "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion (v15). All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. The seven TOP-*/DZDP entries with no stable permalink were deleted in v13; their mechanism-heuristic prose is retained as common urban-planning knowledge, not as sourced claims. Per-asset itemized status (v15): ① font = Noto Sans SC, OFL-1.1, license text shipped, Reserved Font Name retained — status 'documented + pending legal re-review'; ② AMap aggregate data = use boundary declared (aggregated stats / H3 res9 grids / GCJ-02→WGS-84 coordinates only; no raw POI details), but service-terms version is NOT self-verified (v2024 is inferred; sandbox cannot reach lbs.amap.com) — status 'aggregate use + pending clause verification + pending legal authorization'; ③ OSM = REMOVED from the current build (v15): osm_roads_basemap.geojson drawing and the '© OpenStreetMap (ODbL)' footer were removed from generate_boards.py; no OSM tiles or OSM-derived data remain in any deliverable (PNG/PDF/HTML); osm_roads_basemap.geojson exists only in the working directory and is not shipped — status 'no OSM data in submission'. Nothing here is represented as completed clearance. Professional legal itemized review is a REQUIRED precondition (not optional) before formal exhibition/publication (copyright_statement.md v15 §2.2)."
     }
    },
    "x-revision-log-v13": {
