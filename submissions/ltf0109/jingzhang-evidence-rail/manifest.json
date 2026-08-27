@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "b9f3b534cc878270df7eb54900f87e58ea7c56e8e61067922ef4d57230a28798"
+   "sha256": "4b48088a37eade6ec24996305ba00bcfdf380b782780b4efdc5adce745b2e6e8"
   },
   {
    "path": "agent.json",
@@ -50,7 +50,7 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "f4ed2e2df513266e449a027e414736f7ee3c3329798077b8a2e5d1182f55f4dc"
+   "sha256": "86311c54bb83fa7167c626e990b1e5d73db5128b9e6ac6629c8fa2809a64ed4b"
   },
   {
    "path": "self_check.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "f139adee8162ab4b87556efdbbf629cc313e7e4f59b12326f5e1c0492dd14893"
+   "sha256": "f5c097ce91ba9c924b00d656c5fc5198b1cf2120254fd7c81f4e2dd674e9f92f"
   },
   {
    "path": "report/narrative.md",
@@ -100,14 +100,14 @@
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "e2e09aad11c97a8367318bc87dddfdc4f0b96dff06f7b3280555d703ef4814d4"
+   "sha256": "779f94884153a86744aa428eac52fba61731888264236ef3dcacdb184c28eb1f"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
    "language": "zh",
-   "sha256": "7d83b4a427200a03b1df7d4ae508153ed7090db01343a28862408da51b3f6a38"
+   "sha256": "b2a8ccb75bab59323c499a410e3772dc30eb534618a1f5258815123c899faded"
   },
   {
    "path": "visual/index.html",
@@ -121,14 +121,14 @@
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "477f4ea4bd73b7b3f87a0b9ad65fc22630d4553efe24d5bba44741ddbd00efbd"
+   "sha256": "35587b65eb779a93a035d4baca74827d8415ecdf6698012e5794bc5eabb18501"
   },
   {
    "path": "assets/figures/land-use-structure.png",
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "ec55c7b29020f12cba5b66e71e07b5da18e60105e5679f67125160665194e2fd"
+   "sha256": "6319a3aab266adbb9bbc0d05d34dc7a22d29e47bd6bb4d5d8ea796702de1d58e"
   },
   {
    "path": "assets/figures/metrics-evidence.png",
@@ -142,14 +142,14 @@
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "0fe3451612e8d1153b96cde8cdeccbc7d0ecb1ed83536d9590a548a50be961f6"
+   "sha256": "1a0219ec4f11feb85effb606f36b0078d19488d1e931030cf27e0c411b45ed13"
   },
   {
    "path": "assets/figures/site-overview.png",
    "role": "proposal_figure",
    "required": true,
    "language": "zh",
-   "sha256": "0698174d7f9fe9c598747ade6b24921352ecd7b15329046d6c26e72344283144"
+   "sha256": "fe90431d05e4cde2a92858feeb02985ae5e673a5afc98485760fb37358976983"
   },
   {
    "path": "geometry/buildings.geojson",
@@ -217,7 +217,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "d30e57f897714d23bd590339ed8d77ea284fdb43b05557bd91aa1d7bcc00e7da"
+   "sha256": "bc0556dc61a6a3d84c7bc2e4086b898bb250415f83a9ea3a06db9cc53268e5f0"
   },
   {
    "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
    "required": true,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "75e8eaecac872c7b3730285f4219e0eb30e0a55f15995a99eb48a053cce23dbb"
+   "sha256": "8876c93caa99f9362c069f8b38bfa9e95eec18e33f21e53d11e6fd4b15e2a46a"
   },
   {
    "path": "visual/index.en.html",
@@ -241,7 +241,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/site-overview.png",
-   "sha256": "481287419ada86c07a18afa9f8291b1d1ec9837ec5449379af129a194a3245a2"
+   "sha256": "b9aed89eabd4edebb63c2fad8223ab927c0b79954fe460e68ecc809571deeeee"
   },
   {
    "path": "assets/figures/land-use-structure.en.png",
@@ -249,7 +249,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/land-use-structure.png",
-   "sha256": "203704a6e8d8dd83437f29e7e0bd7e72d8a5c04f45d57e96c0754d786f8f860e"
+   "sha256": "09b57b6124bd2aa6d14d266f8c2051bb485207f393028cddeb408f82b22b4a60"
   },
   {
    "path": "assets/figures/key-areas.en.png",
@@ -257,7 +257,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/key-areas.png",
-   "sha256": "a47bad1d144db1ea203c26ff42c193572ee7ce63c9ee9b685437bb0938d925d4"
+   "sha256": "e7ee3723761c57748c4d2e78bc97ff5a2e80632de1d3f43af5ac86a08171ef6b"
   },
   {
    "path": "assets/figures/mobility-bluegreen.en.png",
@@ -265,7 +265,7 @@
    "required": true,
    "language": "en",
    "translation_of": "assets/figures/mobility-bluegreen.png",
-   "sha256": "8628da647f07b812a188bfaa7287d04af1964dd645279b3a91bc18221653988e"
+   "sha256": "447b2730e78fd549ec52b7cda413b32a64111c5dd7cbb0b8d7ea3445b535e8eb"
   },
   {
    "path": "assets/figures/metrics-evidence.en.png",
@@ -281,7 +281,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "70977040cdabcaedfce2963bed6a0f2c619812e1fede851ade0970781beae86f"
+   "sha256": "b901af7e475a81ec9df5e6d3d72ab6527758e3a2383af648338b782f21ca328e"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -289,7 +289,7 @@
    "required": true,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "465990ffab33063e62a783ed2d01cfefae19d61c9388192c0898619b7a8b770f"
+   "sha256": "e46b1d8716f3727077e432b249eb983ccfbdeaa8644672e411adb3f546413d15"
   },
   {
    "path": "assets/figures/structure-overview.png",
@@ -345,7 +345,7 @@
    "title_en": "AI Innovation Ecosystem (Real POI Distribution)",
    "description_zh": "AI 创新生态图谱（真实 POI 分布，matplotlib 重绘）；唯一可信三区口径 36/161/63（全类别 within 几何）与 16/118/38（已分类子集）并列；2491 = AMap 抓取 box 已分类聚合（非三重点区合计）",
    "description_en": "AI Innovation Ecosystem (real POI distribution, matplotlib); three-key-area caliber = 36/161/63 (full cat., within geom) + 16/118/38 (categorized subset); 2491 = AMap fetch-box aggregated categorized (NOT sum of three areas)",
-   "sha256": "1f9181264427d8d2f82fd74614ae1ceaf04995fa670d4c3d114f743f1cb76be4",
+   "sha256": "4c58f8c266a8500f500e8b1079e43a1569935a4272b5f73c9e2a31cce35274bc",
    "required": true
   },
   {
@@ -357,7 +357,7 @@
    "description_zh": "英文版（与中文版同数据同布局）",
    "description_en": "English version (same data & layout as Chinese)",
    "translation_of": "assets/figures/ecosystem-map.png",
-   "sha256": "93b995090703bb7d0a1ba8ed272aafe2fe39780fc44196ca37b3af8c15156cd4",
+   "sha256": "9edc008e65982ebdf9b831aa16f7109322028e4dc3c0d30edf35f038cc722121",
    "required": true
   },
   {
@@ -473,13 +473,7 @@
  ],
  "validation_claim": {
   "self_checked": true,
-  "known_blockers": [
-   "评审 SHA e9eedf79 抓到的 metrics/manifest POI 口径冲突已闭合（v12 统一为 5 层口径；科研 56、居住 27、2491 明确非三重点区合计）",
-   "AMap 点级展示合规依据已写入 sources.json AMAP-OPENPLATFORM.display_compliance（条款 v2024 §4 展示与参考；改进路线 = H3 res9 网格热力）",
-   "en 图底部英文 provisional 警示已修复（v12 重排换行至安全区）",
-   "占位来源（TOP-*/DZDP）已降级为设计假设或删除具体数字"
-  ],
-  "data_confidence": "high",
+  "data_confidence": "mixed_provisional_and_conceptual",
   "readiness_contract": "persisted-self-check-v1",
   "extensions": {
    "x-asset-licensing": {
@@ -504,7 +498,30 @@
      "code_license": "Generation scripts released under MIT License in ltf0109/urban-planning-ai-kit.",
      "clearance_conclusion": "Evidence-proportionate, itemized — NOT an 'all assets cleared' assertion. All submitted text/geometry/code/metrics/multimodal figures are original works by EvidenceRail Agent (ltf0109) and its subagents, with no third-party generative-AI assets of unclear ownership. For usable_for_formal=no and URL-missing/placeholder background-only sources (HAIDIAN-*/ORIGIN-*/HERITAGE-*/SANQU-LIANGYI/TOP-*/DZDP-PARK), only their viewpoints/mechanistic inspiration are cited — no third-party asset is copied or redistributed, and they are not used as formal evidence or formal claims. Their clearance and usage boundaries remain pending user-supplied verifiable permalinks and legal review; nothing here is represented as completed clearance. Professional legal review is recommended before formal exhibition/publication."
     }
+   },
+   "x-revision-log-v13": {
+    "schema_version": "1.0",
+    "data": {
+     "review_round": "78/100 request-changes (SHA f3255beb) + 78/100 v13 (SHA f3255beb)",
+     "resolved_in_v12": [
+      "评审 SHA e9eedf79 抓到的 metrics/manifest POI 口径冲突已闭合（v12 统一为 5 层口径；科研 56、居住 27、2491 明确非三重点区合计）",
+      "AMap 点级展示合规依据已写入 sources.json AMAP-OPENPLATFORM.display_compliance（条款 v2024 §4 展示与参考；改进路线 = H3 res9 网格热力）",
+      "en 图底部英文 provisional 警示已修复（v12 重排换行至安全区）",
+      "占位来源（TOP-*/DZDP）已降级为设计假设或删除具体数字"
+     ]
+    }
+   },
+   "x-remaining-dependent": {
+    "schema_version": "1.0",
+    "data": [
+     "组织方尚未发布总体设计范围/三处重点区官方 polygon；site_boundary/key_areas 为 provisional_only，不能作为红线/法定控制/精确面积依据",
+     "法定控规图则及项目级容积率/建筑高度/建筑密度/道路红线/退线/权属/市政/消防/工程容量条件尚未提供",
+     "觉生寺（大钟寺）/清华园车站等文保对象正式四至图纸与建控地带几何为 provisional 推定",
+     "重点区现场踏勘/昼夜观察/居民商户高校师生参与/无障碍专业审查/displacement 社会影响证据缺失（AI 能力边界，待专业团队）",
+     "AMap 原始 POI/77 站本体清单/Moran·I 与 Gi* 中间数据受许可或包体限制未随包分发，须在外部授权环境复核"
+    ]
    }
-  }
+  },
+  "known_blockers": []
  }
 }
