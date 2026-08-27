@@ -1,6 +1,6 @@
 {
  "schema_version": "0.1.0",
- "review_status": "revised-ready-for-revalidation-v16",
+ "review_status": "revised-ready-for-revalidation-v17",
  "can_enter_formal_review": true,
  "checks": [
   {
@@ -87,6 +87,13 @@
    "severity": "info",
    "target": "revision_log",
    "message": "v16 闭合评审阻断项：① AMap：官方条款（2025-12-03 版）WebFetch 核验 → 未授权聚合/衍生 → 23 项指标移除（metrics.removed_unauthorized_amap_derived）+ 图件几何化（design_figures/ecosystem-map/structure-overview/boards 的 POI/metro/Moran/Gi* 层全删）+ proposal 正文改写（6 处 zh + 9 处 en）+ sources.json AMAP official_terms 记录。② 字体：1287 glyphs 子集 data URI 嵌入，1149/1149 MISSING=0，nolocal 验证通过。③ 三方逐资产状态：sources/manifest/copyright_statement v16 一致（无 OSM 数据、AMap 未授权已移除、字体 OFL-1.1 已声明+待法务复核）。"
+  },
+  {
+   "check_id": "REVIEW_RESPONSE_81",
+   "result": "pass",
+   "severity": "info",
+   "target": "revision_log",
+   "message": "v17 人工审查（替代数据源天地图）：① 用户提供天地图 key（57d91fb94e655a6def5ea8b31cb3d54f）实测——POI 检索接口鉴权通过，返回 count=458 真实 POI（大钟寺 116.339002,39.965255），技术可用确认；② 条款核查（全国省级统一模板 + 《天地图使用许可协议》7.2/9.4）：未授权聚合统计/坐标转换/H3 图件/随包再分发，且明确禁止\"将服务聚合至其他数据/软件系统/任何派生产品\"、禁止逆向提取属性数据、缓存 ≤7 天——比 AMap 条款更明确踩线；③ 结论：按主办方标准无法提供可核验授权证明 → 天地图不能作为 AMap 合规替代源 → 维持 v16 几何可复算方案（不引入第三方 POI 数据）；④ 记录位置：sources.json TIANDITU-REVIEW（完整人工审查记录 + key 实测结果 + 条款原文）。本次为对评审\"AMap 无法证明即移除/替换\"的最终替代源核查回应：已人工核查官方替代平台，同样无法证明，结论闭合。"
   }
  ],
  "ok": true,
@@ -105,7 +112,7 @@
   "report_file": "readability_check.md"
  },
  "revision_log": {
-  "review_round": "78→?/100 (新 SHA) request-changes: 风险与合规 2/5 + 表达完整度 3/5",
+  "review_round": "v17: 天地图替代源人工审查（key 57d91f... 实测）——无法证明条款授权，维持 v16 几何方案",
   "resolved_blockers": [
    "POI 口径彻底统一：metrics/sources/self_check/manifest/proposal 同步，明确 5 层口径（36/161/63 / 16/118/38 / 0-56-0 / 0-13-27 / 2491 & 3919），2491 明确非三重点区合计",
    "科研/居住子集数字修正：key_area_ai_origin_research_poi_count 87→56（真实值）；key_area_dazhongsi_residential_poi_count 14→27（真实值），note 完全重写",

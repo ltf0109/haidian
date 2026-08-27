@@ -214,6 +214,32 @@
    "verifiable_source": "OSM tile servers via https://tile.openstreetmap.org; ODbL attribution required"
   },
   {
+   "id": "TIANDITU-REVIEW",
+   "source_type": "alternative_source_manual_review",
+   "title": "天地图替代数据源人工审查记录（v17 · 2026-08-27）",
+   "title_zh": "天地图（国家地理信息公共服务平台）替代数据源人工审查",
+   "url": "https://lbs.tianditu.gov.cn/server/guide.html",
+   "url_status": "verified_official",
+   "key_clauses": {
+    "provincial_template": "全国省级节点统一服务条款模板（宣城/东莞等）：未经书面许可，任何人或机构不得将全部或部分服务聚合至其他数据、软件系统或任何派生产品，不得出售、出租、发行或转让全部或部分服务，不得在非天地图所属服务器上做镜像或以其他任何方式进行使用；引用/转载须注明来源。（示例：https://anhui.tianditu.gov.cn/xuancheng/about.html?type=2 ；https://guangdong.tianditu.gov.cn/dongguan/index/page/copyrightNotice.html）",
+    "license_agreement_7_2": "《天地图使用许可协议》第 7.2 条（公开检索可证，版本号需登录控制台核验）：禁止通过像素采样、坐标反推、拓扑重建等方式逆向提取原始地理要素几何或属性数据。",
+    "license_agreement_9_4": "《天地图使用许可协议》第 9.4 条：所有缓存数据必须设置 max-age ≤ 7 天，并在 HTTP 头显式声明 Cache-Control。",
+    "behavior_limits": "免费层公开限：批量下载（连续 10 次请求含相同 bbox+zoom 且无用户交互）、商业 App 分发、离线缓存超 7 天等行为可能触发人工审核并要求签订商用协议付费。"
+   },
+   "api_test": {
+    "key_provided": "57d91fb94e655a6def5ea8b31cb3d54f (user-provided)",
+    "test_date": "2026-08-27",
+    "test_geocoder": "地理编码接口返回服务错误页（参数/接口限制），未取得数据",
+    "test_poi_search": [
+     "POI 检索接口 key 鉴权通过：queryType=1&level=12&mapBound=116.2,39.9,116.5,40.1 返回 count=458 条真实 POI（样本：大钟寺 lonlat=116.339002,39.965255，poiType=101）——技术可用性确认，key 有效"
+    ],
+    "test_static_map": "未测试（静态图 API 与本次核查目的无关）"
+   },
+   "assessment": "按主办方『逐项证据比例化』标准逐项核查（v17 人工审查）：① 官方条款 URL 可核验（https://lbs.tianditu.gov.cn/server/guide.html 及各省级节点服务条款模板）；② 《天地图使用许可协议》版本号/发布日期需登录控制台才能独立核验，公开页面未标注——版本证据不完整；③ 允许用途：条款**未明确授权**聚合统计、坐标转换、H3 图件及随包公开展示/再分发；反而明确禁止『将服务聚合至其他数据、软件系统或任何派生产品』（省级统一模板）、禁止逆向提取属性数据（许可协议 7.2）、缓存超 7 天（9.4）——本方案此前对 AMap 的用法（POI 计数聚合至 H3 网格 + 坐标转换 + 随包展示）在天地图条款下同样不获授权，甚至更明确踩线。**结论：天地图技术可用（key 有效、数据真实），但按主办方标准无法提供可核验的授权条款证明 → 不能作为 AMap 的合规替代源引入。**v16 移除 23 项 AMap 衍生指标的结论维持不变；本方案现仅主张包内 geometry/*.geojson 端到端可复算的几何指标。若未来获得天地图/高德官方书面授权（或改用许可明确的数据源），可恢复 POI/地铁等分析层。",
+   "usable_for_formal": "no",
+   "formal_status_note": "本条为替代数据源人工审查记录（v17），不引入任何天地图数据；天地图 key 与测试结果仅作透明记录。后续如需恢复分析层，须按条款 9.4（缓存 ≤7 天）与官方书面授权执行。"
+  },
+  {
    "id": "AMAP-OPENPLATFORM",
    "title": "高德开放平台 Web 服务 API（POI/地铁站点数据）",
    "publisher": "高德软件有限公司（AutoNavi / amap.com）",

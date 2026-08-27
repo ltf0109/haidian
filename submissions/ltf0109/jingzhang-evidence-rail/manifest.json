@@ -50,13 +50,13 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "36675cc39d4e946b8384d0d8b7d4e46a732f32d3192fb13963808f26485346aa"
+   "sha256": "5f9714b84a9ce9f56782125a7e30aef599919c1d2dabfa597d87bfc16f2fa04c"
   },
   {
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "4f7770189f1478ad929e702ea6ec34a2bd09b49aa8cff97452d24ceb5f1db893"
+   "sha256": "f30f3c35980ccb715513182face64c5ec273d5eab07013e0b0cda377f952613a"
   },
   {
    "path": "compliance_matrix.json",
@@ -531,6 +531,17 @@
       "图件（design_figures/ecosystem-map/structure-overview/boards）AMap 数据层移除，改几何可复算示意",
       "proposal.md/en AMap 数值主张改写为设计评估（无具体数值）",
       "sources.json AMAP-OPENPLATFORM.official_terms 记录官方条款与合规评估"
+     ]
+    }
+   },
+   "x-revision-log-v17": {
+    "schema_version": "1.0",
+    "data": {
+     "review_round": "v17: 天地图替代源人工审查（user-provided key 实测）",
+     "summary": "用户提供天地图 key 并实测：POI 检索接口鉴权通过（count=458 真实数据）。按主办方逐项证据比例化标准核查《天地图使用许可协议》（省级统一模板 + 7.2/9.4 条款）：未授权聚合统计/坐标转换/H3 图件/随包再分发，明确禁止聚合至派生产品与逆向提取属性数据——无法提供可核验授权证明 → 天地图不能作为 AMap 合规替代源；维持 v16 几何可复算方案。完整记录见 sources.json TIANDITU-REVIEW。",
+     "resolved": [
+      "替代数据源天地图人工审查完成（结论：不引入）",
+      "PR mergeable blocked 根因排查：push 成功，blocked = changes-requested review + main stale"
      ]
     }
    }
