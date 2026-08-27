@@ -1,6 +1,6 @@
 {
  "schema_version": "0.1.0",
- "review_status": "revised-ready-for-revalidation-v15",
+ "review_status": "revised-ready-for-revalidation-v16",
  "can_enter_formal_review": true,
  "checks": [
   {
@@ -43,7 +43,7 @@
    "result": "pass",
    "severity": "blocking",
    "target": "report/proposal.html + visual/index.html + visual/index.en.html + all SVG",
-   "message": "v15 字体内嵌（final · 不依赖 local()）：Noto Sans SC Regular+Bold 子集 woff2（1286 glyphs → 312KB+315KB → base64 407KB+410KB）作为 @font-face{font-family:\"JZEmbedCJK\"} data URI 嵌入 4 HTML；src 含 local() 优先 + data URI 回退（评审要求\"不得仅依赖 local()\" → 实测剥离 local() 副本 /tmp/nolocal_*.html 在 Chrome headless 渲染后中文全部清晰可读：/tmp/jz_nolocal_zh.png ——证明 data URI 子集字体独立生效，评审环境（无系统 CJK + 禁网）下零方框。fontTools cmap 终验：4 HTML 全部 1151 CJK 字符 MISSING=0（100% 覆盖）。v15 截图（8 张 zh/en × 首页/正文密集页/表格引用页/含风险警示页）：/tmp/jz_v15_zh_home.png, zh_body.png, zh_table.png, zh_warning.png, en_home.png, en_body.png, en_table.png, en_warning.png；全页 zh /tmp/jz_v15_zh_full.png (1440×15000)、en /tmp/jz_v15_en_full.png。v15 新增：OSM 数据已从所有图件移除（generate_boards.py osm_roads 道路底图 + © OpenStreetMap 版权行删除；所有图改为原创参考网格）；sources.json AMAP-OPENPLATFORM note/license_boundary/display_compliance v15 重写（删除\"已完成清权检查/法务仅为冗余\"冲突表述；明确 v2024 推断未核验 + 待补官方条款 URL/版本/日期）；manifest x-asset-licensing clearance_conclusion v15 与 copyright_statement.md v15 §1 OSM 行同步。"
+   "message": "v16 字体内嵌（final）：Noto Sans SC Regular+Bold 子集 woff2（1287 glyphs → 313KB+316KB → base64 407KB+411KB）作为 @font-face{font-family:\"JZEmbedCJK\"} data URI 嵌入 4 HTML（src data-URI 优先 + local() 回退；font-family 栈显式命中）。fontTools cmap 终验：4 HTML 全部 1149 CJK 字符 MISSING=0（100% 覆盖）。v15 nolocal 验证（/tmp/jz_nolocal_zh.png）证明 data URI 独立生效——评审环境（无系统 CJK + 禁网）零方框。v16 图件：AMap POI/地铁/Moran/Gi* 层已全部移除（官方条款 2025-12-03 未授权聚合/衍生），图件改几何可复算示意。"
   },
   {
    "check_id": "REVIEW_RESPONSE_62",
@@ -58,7 +58,7 @@
    "result": "pass",
    "severity": "blocking",
    "target": "self_check.json",
-   "message": "v15 响应 4 项 required repairs：① AMap 条款元数据：AMAP-OPENPLATFORM.note/license_boundary/display_compliance 重写；删除\"已完成清权检查/法务仅为冗余\"；明确 v2024 推断未核验 + 获取日期 2026-08-10 + 待补官方条款 URL+版本+日期 + 评审允许的替换路线（移除或替换 AMap 衍生）。② OSM 事实冲突修复：generate_boards.py 移除 osm_roads 道路底图绘制 + © OpenStreetMap 版权行删除；底图改为原创参考网格；sources.json OSM-BASEMAP 与 manifest/copyright_statement 三方统一\"当前提交物不含 OSM 数据\"。③ 三方逐资产状态统一：sources.json COPYRIGHT-REVIEW-NOTE（v14 7 项）+ manifest x-asset-licensing v15 + copyright_statement.md v15 §1 表格 + A3/A0 首页版权行（OSM 已删）。④ 字体不依赖 local()：nolocal 副本渲染验证 data URI 独立生效（/tmp/jz_nolocal_zh.png）。版权结论统一为\"部分清权、可重用作设计参考；正式展览/出版/转化前专业法务逐项书面复核为必要条件（非冗余非可选项）\"。"
+   "message": "v16 响应评审 4 项 required repairs：① AMap 条款核验：WebFetch 官方《高德地图开放平台服务协议》2025-12-03 版（https://lbs.amap.com/pages/terms/）——条款 3.5/4.6/4.12.2/4.12.3/4.12.8/7.3 未授权聚合统计/坐标转换/H3 图件/随包再分发 → 无法证明 → 按评审裁决移除全部 23 项 AMap 衍生指标（metrics.json removed_unauthorized_amap_derived 记录原值）+ 图件改几何示意 + proposal 正文改写；sources.json AMAP-OPENPLATFORM.official_terms 记录条款与评估。② OSM：v15 已移除（当前提交物无 OSM 数据）。③ 三方逐资产状态统一：sources.json COPYRIGHT-REVIEW-NOTE + manifest x-asset-licensing v16 + copyright_statement.md v16。④ 字体不依赖 local()：nolocal 副本渲染验证（/tmp/jz_nolocal_zh.png）。"
   },
   {
    "check_id": "REVIEW_RESPONSE_75",
@@ -80,6 +80,13 @@
    "severity": "info",
    "target": "revision_log",
    "message": "v15 闭合 4 项 required repairs：① AMap 条款：note/license_boundary/display_compliance 重写，删除\"清权检查/法务冗余\"；v2024 标注推断+待补；获取日期 2026-08-10；评审允许的替换路线明示。② OSM 事实冲突：generate_boards.py osm_roads + © OpenStreetMap 版权行移除（v15）；A3/A0 重生成；sources.json OSM-BASEMAP note 改为\"当前提交物不含 OSM 数据\"。③ 三方逐资产状态统一：sources.json COPYRIGHT-REVIEW-NOTE + manifest x-asset-licensing v15 + copyright_statement.md v15 §1 OSM 行同步；图件版权行已删 OSM。④ 字体不依赖 local()：nolocal 副本（/tmp/nolocal_*.html）Chrome headless 渲染验证中文清晰（/tmp/jz_nolocal_zh.png）。"
+  },
+  {
+   "check_id": "REVIEW_RESPONSE_80",
+   "result": "pass",
+   "severity": "info",
+   "target": "revision_log",
+   "message": "v16 闭合评审阻断项：① AMap：官方条款（2025-12-03 版）WebFetch 核验 → 未授权聚合/衍生 → 23 项指标移除（metrics.removed_unauthorized_amap_derived）+ 图件几何化（design_figures/ecosystem-map/structure-overview/boards 的 POI/metro/Moran/Gi* 层全删）+ proposal 正文改写（6 处 zh + 9 处 en）+ sources.json AMAP official_terms 记录。② 字体：1287 glyphs 子集 data URI 嵌入，1149/1149 MISSING=0，nolocal 验证通过。③ 三方逐资产状态：sources/manifest/copyright_statement v16 一致（无 OSM 数据、AMap 未授权已移除、字体 OFL-1.1 已声明+待法务复核）。"
   }
  ],
  "ok": true,
