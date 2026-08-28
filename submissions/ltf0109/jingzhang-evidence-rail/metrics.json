@@ -223,7 +223,13 @@
         "geometry/buildings.geojson",
         "geometry/public_space.geojson"
       ],
+      "formula": "share(residential_AOI_without_public_space_or_green_space_within_800m_walk_along_roads) —— 需授权 POI／居住 AOI 与步行网络数据后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap POI 衍生的居住服务盲区比，v16 按高德服务协议条款移除；可由包内 geometry 复算（居住 AOI 到 public_space/green_space 沿 roads 网络步行距离盲区），需实地/官方数据校验",
       "recovery": {
         "future_collection_method": "基于 geometry/buildings+public_space+roads 计算居住 AOI 至最近公共空间的网络步行距离盲区，辅以街道/社区实地服务设施普查",
@@ -238,7 +244,13 @@
       "source_files": [
         "geometry/land_use.geojson"
       ],
+      "formula": "Moran's I of industry-POI density over spatial weights W (queen/rook contiguity) —— 需授权 POI 或官方产业用地统计后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap 产业 POI 空间自相关（Moran's I），v16 移除；恢复需授权 POI 或官方产业用地统计",
       "recovery": {
         "future_collection_method": "取得权利人书面授权后调用 AMap/官方产业数据，或改用官方产业用地统计做空间自相关",
@@ -253,7 +265,13 @@
       "source_files": [
         "geometry/land_use.geojson"
       ],
+      "formula": "Getis-Ord Gi* z-score of industry-POI density over spatial weights W —— 需授权 POI 或官方产业用地统计后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap 产业 POI 热点（Getis-Ord Gi*），v16 移除；恢复需授权 POI 或官方产业用地统计",
       "recovery": {
         "future_collection_method": "取得权利人书面授权后调用 AMap/官方产业数据，或改用官方产业用地统计做 Gi* 热点/冷点",
@@ -268,12 +286,18 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
+      "formula": "area(union(800m_walk_buffer(metro_stations)) ∩ site_boundary) / area(site_boundary) —— 需官方地铁站点与步行网络数据后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap 地铁站点 800m 覆盖，依赖第三方地铁站点（非包内 geometry），v16 移除；恢复需官方地铁站点+步行网络数据",
       "recovery": {
         "future_collection_method": "采用官方地铁站点 POI+路网做 800m 步行覆盖缓冲，或改由 geometry 计算至最近轨道站点的网络距离达标率",
         "responsible_party": "轨道集团+交通委",
-          "trigger_condition": "官方轨道站点/步行网络数据发布后复算"
+        "trigger_condition": "官方轨道站点/步行网络数据发布后复算"
       }
     },
     "key_area_ai_origin_research_poi_count": {
@@ -283,7 +307,13 @@
       "source_files": [
         "geometry/key_areas.geojson"
       ],
+      "formula": "count(research_POI within AI-Origin key-area polygon) —— 需授权 POI 或官方科研设施统计后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap 科研 POI 计数（AI 原点重点区），v16 按高德服务协议条款移除；恢复需授权 POI 或官方产业/科研设施统计",
       "recovery": {
         "future_collection_method": "取得权利人书面授权后调用 AMap/官方科研设施数据，或改用官方产业/科研用地统计做密度评估",
@@ -299,7 +329,13 @@
         "geometry/key_areas.geojson",
         "geometry/buildings.geojson"
       ],
+      "formula": "min(network_distance_m(Dazhongsi key-area, research carrier POI)) —— 需授权 POI 或官方科研载体点位后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap 重点区到科研载体距离，v16 移除；恢复需授权 POI 或官方科研载体点位",
       "recovery": {
         "future_collection_method": "取得授权科研载体点位后由 geometry 计算 key_area 至最近科研载体的网络/直线距离",
@@ -315,12 +351,81 @@
         "geometry/key_areas.geojson",
         "geometry/buildings.geojson"
       ],
+      "formula": "count(residential_service_POI within Dazhongsi key-area polygon) —— 需授权 POI 或官方居住设施统计后按此固定流程复算",
       "confidence": "unknown",
+      "assumptions": [
+        "原 AMap 衍生指标已按《高德开放平台服务协议》（2025-12-03 版）条款 4.6／4.12.2／4.12.3／7.3 移除；v17 经人工复核认定天地图许可协议同样禁止聚合至派生产品与提取属性数据，不能作为合规替代源",
+        "主办方尚未提供该数据的权利已清理（清权）版本，故本方案不主张其数值（status=unknown, value=null）",
+        "本方案已固化可复算管线：主办方提供清权数据后无需重新设计方法，替换输入即可端到端重算并回填"
+      ],
       "reason": "原 AMap 大钟寺居住 POI 计数，v16 移除；恢复需授权 POI 或官方居住设施统计",
       "recovery": {
         "future_collection_method": "取得权利人书面授权后调用 AMap/官方居住设施数据，或改用 geometry 居住 AOI 判定居住规模",
         "responsible_party": "责任规划师+街道办",
         "trigger_condition": "取得可核验授权数据源后复算"
+      }
+    },
+    "street_network_density_km_per_km2": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(street_centerline_length_km) / site_area_km2 —— 待主办方提供清权街道网络数据后按此固定流程复算",
+      "confidence": "unknown",
+      "assumptions": [
+        "街道网络数据当前不可得：主办方尚未提供权利已清理（清权）版本的数据；不得自行抓取／购买／逆向提取第三方数据（v16 AMap 服务协议、v17 天地图许可协议均判定不可引入）",
+        "本方案已固化可复算管线：取得授权数据后无需重新设计方法，替换输入即可端到端重算并回填",
+        "复算输出：路网密度、步行可达性、街道断面分配与完整街道校核"
+      ],
+      "reason": "街道网络基础数据在主办方未提供清权版本的情况下无法获得；本方案不主张其数值",
+      "recovery": {
+        "future_collection_method": "取得主办方清权街道网络（或官方道路中心线）数据后，按固定流程计算路网密度、步行可达性与街道断面分配",
+        "responsible_party": "海淀园管委会+责任规划师",
+        "trigger_condition": "主办方提供清权街道网络数据后复算"
+      }
+    },
+    "parcel_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "count(parcel_polygons_intersecting_site_boundary) —— 待主办方提供清权地块（宗地）数据后按此固定流程复算",
+      "confidence": "unknown",
+      "assumptions": [
+        "地块（宗地）数据当前不可得：主办方尚未提供权利已清理（清权）版本的数据；不得自行抓取／购买／逆向提取第三方数据（v16 AMap 服务协议、v17 天地图许可协议均判定不可引入）",
+        "本方案已固化可复算管线：取得授权数据后无需重新设计方法，替换输入即可端到端重算并回填",
+        "复算输出：宗地边界、容积率与建筑规模核算、拆改留判定"
+      ],
+      "reason": "地块（宗地）基础数据在主办方未提供清权版本的情况下无法获得；本方案不主张其数值",
+      "recovery": {
+        "future_collection_method": "取得主办方清权地块（宗地）数据后，按固定流程核算宗地边界、容积率与建筑规模，并支撑拆改留判定",
+        "responsible_party": "海淀园管委会+责任规划师",
+        "trigger_condition": "主办方提供清权地块数据后复算"
+      }
+    },
+    "basemap_registration_rms_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "rms(residual_distance_m between basemap_control_points and WGS-84 geometry) —— 待主办方提供清权底图数据后按此固定流程复算",
+      "confidence": "unknown",
+      "assumptions": [
+        "底图数据当前不可得：主办方尚未提供权利已清理（清权）版本的数据；不得自行抓取／购买／逆向提取第三方数据（v16 AMap 服务协议、v17 天地图许可协议均判定不可引入）",
+        "本方案已固化可复算管线：取得授权数据后无需重新设计方法，替换输入即可端到端重算并回填",
+        "坐标系纪律：分析图层出双版本（GCJ-02 配国内底图、WGS-84 配提交物），提交物一律 WGS-84"
+      ],
+      "reason": "底图数据在主办方未提供清权版本的情况下无法获得；本方案不主张其数值，图件均为原创几何示意（无第三方底图）",
+      "recovery": {
+        "future_collection_method": "取得主办方清权底图数据后，按固定流程完成制图底衬与几何配准，并复核 WGS-84 提交坐标系",
+        "responsible_party": "海淀园管委会+责任规划师",
+        "trigger_condition": "主办方提供清权底图数据后复算"
       }
     }
   },
