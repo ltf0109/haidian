@@ -9,7 +9,7 @@
 | 1 | 字体（rendering）— Noto Sans SC (Regular + Bold) | Google LLC + SIL International | SIL OFL-1.1（v1.1, 26 Feb 2007；未发现更新版本） | 稳定（OFL 官方页 + noto-cjk GitHub 仓库均长期可访问） | matplotlib 子集嵌入 PDF/PNG；base64 data-URI 嵌入 HTML（无独立二进制字体文件随包） | OFL 全文随包复制（§Font + §SIL Open Font License 1.1）；保留 `Noto Sans SC` Reserved Font Name | **已声明** — 未由独立第三方法务书面复核 OFL 对本包的具体适用性 |
 | 2 | Logo / 品牌图形 | EvidenceRail Agent (ltf0109) 自主原创 | （无第三方主张） | n/a | 本包全部自有内容 | 已随包使用 | **已声明** — 未与第三方商标 / 品牌库进行系统化比对排除 |
 | 3 | 文本叙事 / 几何 / 指标 / 代码 | EvidenceRail Agent (ltf0109) 自主原创 | 代码生成脚本按 MIT License（urban-planning-ai-kit GitHub 仓库长期稳定） | 稳定（GitHub） | 包内全部自有内容 | 代码仓库已声明 MIT | **已声明** — 未与第三方专利 / 代码相似度工具进行系统化比对排除 |
-| 4 | AMap 开放平台数据（POI / 地铁） | 高德软件有限公司 | 《高德地图开放平台服务条款》（**版本号未自证**——沙箱网络对 amap.com 不通，无法访问条款原文） | n/a（条款原文不可达） | 仅聚合统计结果（POI counts / cell、H3 res9 网格）+ GCJ-02→WGS-84 偏移校正坐标；**未发布**原始 POI 明细、`id/tel/address/typecode`、原始点位 | 已在 AMAP 条目声明 | **聚合使用 + 未自证版本化条款** — 评审指如不能提供可复核条款版本，应改用 H3 聚合图（v13 已按此路线执行）；**待补**：版本号原文 + 律师书面授权 |
+| 4 | AMap 开放平台数据（POI / 地铁 / 站点） | 高德软件有限公司 | 《高德地图开放平台服务条款》（2025-12-03 版，WebFetch 核验） | n/a | 原仅聚合统计（POI/小区/H3 res9/GCJ-02 偏移）与图件点级/热力层；**v16 已整体移除**：包内不含任何 AMap 数据，原值不随包保留 | 移除记录见 sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED | **已移除（v16）**：无 AMap 数据随包；如未来需引入须取得权利人书面授权后再评估，当前无 pending 授权结论 |
 | 5 | OSM 底图 | OpenStreetMap + © OpenStreetMap contributors | ODbL 1.0（历史声明） | 稳定（OSM 官网长期可访问） | **当前提交物（PNG/PDF/HTML）不含任何 OSM 数据**（v15：generate_boards.py 的 osm_roads 道路底图与 © OpenStreetMap 版权行已移除；generate_design_figures 的瓦片调用 v12 起移除；osm_roads_basemap.geojson 仅在工作区未随包分发） | 图件无 OSM 署名需求（无 OSM 数据）；OSM-BASEMAP 条目保留历史与未来再引入风险说明 | **无 OSM 数据（v15）** — 若未来重新引入 OSM，须满足 ODbL 1.0 共享许可 + © OpenStreetMap contributors 显式署名 + 中国境内合规地图服务 |
 | 6 | 政府公开网站 / 微信公众号内容 | 各原作者 / 公众号主体 | 公开网站内容默认可引用（须注明出处） | 部分稳定（gov.cn / bjwwj 等政府网站长期可访问）；部分微信公众号内容 permalink 不稳定（v13 已删除 7 个无稳定 permalink 的 TOP-/DZDP 来源） | proposal.md 中以 `[source:XXX]` 标签注明出处；HAIDIAN-/ORIGIN-/HERITAGE-/SANQU-LIANGYI 等标记为 usable_for_formal=no | 已逐条注明 `[source:XXX]` | **已引用 + 部分原始 URL 待补** — **待补**：HAIDIAN-/ORIGIN-/HERITAGE-/SANQU-LIANGYI 等 usable_for_formal=no 条目的逐条原始 URL + 发布日期 + 作者署名 |
 | 7 | Switchback Protocol 字段规范 | chucky1102 / RENLINE | CC-BY-4.0（open-city-ai/haidian Issue #1119） | 稳定（GitHub Issue 长期可访问） | 仅协议规范（字段结构 / 枚举 / 语义）；**本包自有内容不在此许可覆盖范围内**（已在 SWITCHBACK-PROTOCOL.scope_note_zh 声明） | asset_attribution_text 已随包使用 | **已声明 + 第三方署名** |
@@ -18,14 +18,14 @@
 
 ### 2.1 已落实项
 - 字体 OFL-1.1 全文随包复制（§SIL Open Font License 1.1 in `report/copyright_statement.md`）；Reserved Font Name `Noto Sans SC` 保留
-- AMap 聚合使用边界与原始明细不发布；图件已按评审"已声明路线"改 H3 res9 网格热力 + 移除点级散点（v13）
+- AMap 衍生数据（含 H3 res9 网格热力、点级散点与站点覆盖层）已整体移除（v16）；图件改几何可复算示意，包内不含任何 AMap 数据；移除记录见 sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED
 - OSM 数据已从当前提交物完全移除（v15：道路底图 + © OpenStreetMap 版权行删除；无 OSM 瓦片/衍生数据）
 - 7 个无稳定 permalink 的 TOP-/DZDP 背景来源已彻底删除（v13 用户硬指令）
 - Switchback Protocol CC-BY-4.0 署名落实（asset_attribution_text）
 - 本包代码生成脚本按 MIT License 开源（urban-planning-ai-kit GitHub）
 
 ### 2.2 未自证 / 待补项（必须由专业法务团队逐项书面复核）
-1. **AMap 服务条款版本号原文**（沙箱无法访问 amap.com；当前 display_compliance 段写明的 v2024 §4 为推断）
+1. **AMap 数据用途（已闭合，v16）**：包内已不含任何 AMap 衍生数据，原"服务条款版本号 + 律师书面授权"待补项不再适用；如未来重新引入第三方 POI/站点数据，须先取得权利人书面授权与法务复核（移除记录见 sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED）
 2. **政府公开文章 / 微信内容逐条原始 URL + 发布日期 + 作者署名**（HAIDIAN-/ORIGIN-/HERITAGE-/SANQU-LIANGYI 等 usable_for_formal=no 条目）
 3. **Logo / 品牌图形与第三方商标 / 品牌库的系统化比对排除**
 4. **OFL / ODbL / CC-BY-4.0 等条款对本包具体适用性的律师书面复核**（如 Exhibit C 法律意见书）

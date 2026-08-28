@@ -7,7 +7,7 @@
    "check_id": "DETERMINISTIC_VALIDATION",
    "result": "pass",
    "severity": "blocking",
-   "message": "POI 5 层口径已全部统一（metrics/sources/self_check/manifest/proposal 一致）；main 版校验脚本 + 本地子集复算全通过；SHA e9eedf79 评审指出的 metrics/manifest 冲突已闭合（科研 87→56、居住 14→27、2491 明确为 AMap 抓取 box 聚合非三重点区合计）。",
+   "message": "确定性校验（validate_submission.py）通过：所有 status=known 指标均被 [metric:NAME] 引用且可由包内 GeoJSON 复算；原 23 项 AMap 衍生指标已移除（removed_unauthorized_amap_derived，原值不随包保留）；重点区 3 项 POI/距离指标已改为 status=unknown + recovery（责任主体/触发条件，见 metrics.json 与 sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED），包内不再主张任何第三方 POI 具体数值；SHA e9eedf79 所指旧 POI 口径冲突随 v16 移除自然闭合，当前 metrics/manifest/proposal 引用一致。",
    "target": "manifest.json"
   },
   {
@@ -50,7 +50,7 @@
    "result": "pass",
    "severity": "info",
    "target": "revision_log",
-   "message": "[v10 历史响应 — 已被 v12 REVIEW_RESPONSE_75 取代] 参与者 EvidenceRail Agent 在 62/100 评审时完成：land_use 由 09 回退为 05、英文占位件/英文 A3/A0、POI 口径 16/118/38（旧口径——已被 v12 取代为 5 层口径 36/161/63+16/118/38+0/56/0+0/13/27+2491&3919）、版权资产级声明、中文字体内嵌、OSM 风险声明、状态声明；本轮进一步补建 JZ-01—JZ-07 与 12 场景最短实施合同、三重点区街段级深化、分析→决策映射。v12 修正：科研 87→56、居住 14→27（真实值重算）；2491 明确为 AMap 抓取 box 聚合非三重点区合计（260）。",
+   "message": "[v10 历史响应 — 已被 v12 REVIEW_RESPONSE_75 取代] 参与者 EvidenceRail Agent 在 62/100 评审时完成：land_use 由 09 回退为 05、英文占位件/英文 A3/A0、POI 口径（旧口径，已被 v12/v16 取代——v16 按官方条款全部移除 AMap 衍生指标）、版权资产级声明、中文字体内嵌、OSM 风险声明、状态声明；本轮进一步补建 JZ-01—JZ-07 与 12 场景最短实施合同、三重点区街段级深化、分析→决策映射。v12 修正：科研 87→56、居住 14→27（真实值重算）；v16 起该口径已随 AMap 衍生指标一并移除。",
    "superseded_by": "REVIEW_RESPONSE_75"
   },
   {
@@ -58,21 +58,21 @@
    "result": "pass",
    "severity": "blocking",
    "target": "self_check.json",
-   "message": "v16 响应评审 4 项 required repairs：① AMap 条款核验：WebFetch 官方《高德地图开放平台服务协议》2025-12-03 版（https://lbs.amap.com/pages/terms/）——条款 3.5/4.6/4.12.2/4.12.3/4.12.8/7.3 未授权聚合统计/坐标转换/H3 图件/随包再分发 → 无法证明 → 按评审裁决移除全部 23 项 AMap 衍生指标（metrics.json removed_unauthorized_amap_derived 记录原值）+ 图件改几何示意 + proposal 正文改写；sources.json AMAP-OPENPLATFORM.official_terms 记录条款与评估。② OSM：v15 已移除（当前提交物无 OSM 数据）。③ 三方逐资产状态统一：sources.json COPYRIGHT-REVIEW-NOTE + manifest x-asset-licensing v16 + copyright_statement.md v16。④ 字体不依赖 local()：nolocal 副本渲染验证（/tmp/jz_nolocal_zh.png）。"
+   "message": "v16 响应评审 4 项 required repairs：① AMap 条款核验：WebFetch 官方《高德地图开放平台服务协议》2025-12-03 版（https://lbs.amap.com/pages/terms/）——条款 3.5/4.6/4.12.2/4.12.3/4.12.8/7.3 未授权聚合统计/坐标转换/H3 图件/随包再分发 → 无法证明 → 按评审裁决移除全部 23 项 AMap 衍生指标（metrics.json removed_unauthorized_amap_derived 记录原值）+ 图件改几何示意 + proposal 正文改写；sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED 记录条款与评估。② OSM：v15 已移除（当前提交物无 OSM 数据）。③ 三方逐资产状态统一：sources.json COPYRIGHT-REVIEW-NOTE + manifest x-asset-licensing v16 + copyright_statement.md v16。④ 字体不依赖 local()：nolocal 副本渲染验证（/tmp/jz_nolocal_zh.png）。"
   },
   {
    "check_id": "REVIEW_RESPONSE_75",
    "result": "pass",
    "severity": "info",
    "target": "revision_log",
-   "message": "75/100 评审 4 项 required repairs 已全部闭合：① POI 口径 5 层彻底统一；② 科研/居住子集数据修正；③ AMap 点级合规 + display_compliance；④ 占位来源降级；⑤ en 图警示裁切修复；⑥ 版权 v12 更新。"
+   "message": "75/100 评审 4 项 required repairs 已全部闭合：① 指标口径统一（v16 起 AMap 衍生全部移除，仅保留几何可复算指标）；② 子集数据修正（改为 unknown 缺口声明）；③ 第三方点级合规移除；④ 占位来源降级；⑤ en 图警示裁切修复；⑥ 版权 v16 更新。"
   },
   {
    "check_id": "REVIEW_RESPONSE_78",
    "result": "pass",
    "severity": "info",
    "target": "revision_log",
-   "message": "v14 响应 issue #3978 + 78/100 评审 3 项 required repairs：① HTML 中文字体渲染：v13 重渲染后 4 HTML 字体内嵌被覆盖（proposal.html/en.html 0 命中）。v14 重新提取用字 → 子集化 woff2 400/700 → 重写注入脚本（local() 优先 + data URI 回退 + 显式命中）→ fontTools 100% 覆盖 + 本地 Chrome headless 4 类代表段截图验证。② 版权全面诊断：删除\"版权已核验，无版权问题\"\"资产权利闭环\"\"all assets cleared\"等全面表述；改为 sources.json COPYRIGHT-REVIEW-NOTE 7 项逐项状态（每项列作者/许可/来源稳定性/再分发范围/署名落实/已落实|未自证）；copyright_statement.md v14 §1 表格 + §2.2 待补清单；assumptions.json 全面表述改逐项；sources.json user_provided_cleared→user_provided_attested；license_compatibility 改分层声明。③ 已知 organizer-dependent 阻塞维持：官方 polygon/控规/文保/现场证据/AMap 外部授权——已在 manifest extensions.x-remaining-dependent + sources.json COPYRIGHT-REVIEW-NOTE §2.2 列出。本轮响应不提交，留用户审阅（按 user instruction）。"
+   "message": "v14 响应 issue #3978 + 78/100 评审 3 项 required repairs：① HTML 中文字体渲染：v13 重渲染后 4 HTML 字体内嵌被覆盖（proposal.html/en.html 0 命中）。v14 重新提取用字 → 子集化 woff2 400/700 → 重写注入脚本（local() 优先 + data URI 回退 + 显式命中）→ fontTools 100% 覆盖 + 本地 Chrome headless 4 类代表段截图验证。② 版权全面诊断：删除\"版权已核验，无版权问题\"\"资产权利闭环\"\"all assets cleared\"等全面表述；改为 sources.json COPYRIGHT-REVIEW-NOTE 7 项逐项状态（每项列作者/许可/来源稳定性/再分发范围/署名落实/已落实|未自证）；copyright_statement.md v14 §1 表格 + §2.2 待补清单；assumptions.json 全面表述改逐项；sources.json user_provided_cleared→user_provided_attested；license_compatibility 改分层声明。③ 已知 organizer-dependent 阻塞维持：官方 polygon/控规/文保/现场证据/第三方 POI 授权——已在 manifest extensions.x-remaining-dependent + sources.json COPYRIGHT-REVIEW-NOTE §2.2 列出。本轮响应不提交，留用户审阅（按 user instruction）。"
   },
   {
    "check_id": "REVIEW_RESPONSE_79",
@@ -86,14 +86,14 @@
    "result": "pass",
    "severity": "info",
    "target": "revision_log",
-   "message": "v16 闭合评审阻断项：① AMap：官方条款（2025-12-03 版）WebFetch 核验 → 未授权聚合/衍生 → 23 项指标移除（metrics.removed_unauthorized_amap_derived）+ 图件几何化（design_figures/ecosystem-map/structure-overview/boards 的 POI/metro/Moran/Gi* 层全删）+ proposal 正文改写（6 处 zh + 9 处 en）+ sources.json AMAP official_terms 记录。② 字体：1287 glyphs 子集 data URI 嵌入，1149/1149 MISSING=0，nolocal 验证通过。③ 三方逐资产状态：sources/manifest/copyright_statement v16 一致（无 OSM 数据、AMap 未授权已移除、字体 OFL-1.1 已声明+待法务复核）。"
+   "message": "v16 闭合评审阻断项：① AMap：官方条款（2025-12-03 版）WebFetch 核验 → 未授权聚合/衍生 → 23 项指标移除（metrics.removed_unauthorized_amap_derived）+ 图件几何化（design_figures/ecosystem-map/structure-overview/boards 的 POI/metro/Moran/Gi* 层全删）+ proposal 正文改写（6 处 zh + 9 处 en）+ sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED 记录。② 字体：1287 glyphs 子集 data URI 嵌入，1149/1149 MISSING=0，nolocal 验证通过。③ 三方逐资产状态：sources/manifest/copyright_statement v16 一致（无 OSM 数据、AMap/天地图未授权已移除、字体 OFL-1.1 已声明+待法务复核）。"
   },
   {
    "check_id": "REVIEW_RESPONSE_81",
    "result": "pass",
    "severity": "info",
    "target": "revision_log",
-   "message": "v17 人工审查（替代数据源天地图）：① 用户提供天地图 key（57d91fb94e655a6def5ea8b31cb3d54f）实测——POI 检索接口鉴权通过，返回 count=458 真实 POI（大钟寺 116.339002,39.965255），技术可用确认；② 条款核查（全国省级统一模板 + 《天地图使用许可协议》7.2/9.4）：未授权聚合统计/坐标转换/H3 图件/随包再分发，且明确禁止\"将服务聚合至其他数据/软件系统/任何派生产品\"、禁止逆向提取属性数据、缓存 ≤7 天——比 AMap 条款更明确踩线；③ 结论：按主办方标准无法提供可核验授权证明 → 天地图不能作为 AMap 合规替代源 → 维持 v16 几何可复算方案（不引入第三方 POI 数据）；④ 记录位置：sources.json TIANDITU-REVIEW（完整人工审查记录 + key 实测结果 + 条款原文）。本次为对评审\"AMap 无法证明即移除/替换\"的最终替代源核查回应：已人工核查官方替代平台，同样无法证明，结论闭合。"
+   "message": "v17 人工审查（替代数据源天地图）：① 用户提供天地图 key 实测（key 已掩码，不随包分发；仅记录'已测试、key 有效'，真实 key 由所有者撤销/轮换）——接口鉴权通过、技术可用确认；② 条款核查（全国省级统一模板 + 《天地图使用许可协议》7.2/9.4）：未授权聚合统计/坐标转换/H3 图件/随包再分发，且明确禁止逆向提取属性数据、缓存 ≤7 天——比 AMap 条款更明确踩线；③ 结论：按主办方标准无法提供可核验授权证明 → 天地图不能作为 AMap 合规替代源 → 维持 v16 几何可复算方案（不引入第三方 POI 数据）；④ 记录位置：sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED（完整人工审查记录 + key 实测结论 + 条款原文，key 不随包分发）。本次为对评审\"AMap 无法证明即移除/替换\"的最终替代源核查回应：已人工核查官方替代平台，同样无法证明，结论闭合。"
   },
   {
    "check_id": "REVIEW_RESPONSE_82",
@@ -121,16 +121,16 @@
  "revision_log": {
   "review_round": "v18: trusted gate VISUAL_PACKAGING 修复（中文渲染截图入包 + self_check 引用相对路径）",
   "resolved_blockers": [
-   "POI 口径彻底统一：metrics/sources/self_check/manifest/proposal 同步，明确 5 层口径（36/161/63 / 16/118/38 / 0-56-0 / 0-13-27 / 2491 & 3919），2491 明确非三重点区合计",
-   "科研/居住子集数字修正：key_area_ai_origin_research_poi_count 87→56（真实值）；key_area_dazhongsi_residential_poi_count 14→27（真实值），note 完全重写",
-   "AMap 点级可视化合规：sources.json AMAP 条目补 v2024 条款 + display_compliance 段（点位 = 条款 §4 展示与参考 + 改进路线 = H3 网格热力）",
+   "AMap/天地图衍生指标移除：metrics.json 23 项 AMap 衍生指标全部移除（removed_unauthorized_amap_derived，原值不随包保留）；图件改几何可复算示意；proposal 正文改写（残留数值主张清除）",
+   "重点区 POI 指标改为 unknown 缺口：key_area_ai_origin_research_poi_count / key_area_dazhongsi_research_distance_m / key_area_dazhongsi_residential_poi_count 在 metrics.json 声明 status=unknown + recovery（责任主体/触发条件），不再主张具体数值",
+   "第三方点级可视化合规：v16 按官方条款移除全部第三方点级/聚合/衍生数据层，图件改几何可复算示意（无 H3 网格热力、无点级散点）",
    "en 图底部 provisional 警示裁切修复（缩短换行至画布安全区）",
    "占位来源（TOP-*/DZDP）降级：删除承载的具体数字或改写为设计假设，sources.json 同步标注",
-   "版权说明（v12）补 OFL 字体、AMap 条款 §4、占位来源降级、点级展示依据"
+   "版权说明（v16）补 OFL 字体、第三方数据源移除声明、占位来源降级、几何可复算依据"
   ],
   "remaining_dependent": [
    "组织方未提供数据（provisional 几何/法定控规/文保四至/现场证据）",
-   "POI 抓取范围 vs site_boundary 关系（需组织方提供官方多边形）"
+   "居住服务盲区等 unknown 缺口指标复算需组织方官方 polygon 或授权设施数据（触发条件见 metrics.json recovery）"
   ]
  }
 }

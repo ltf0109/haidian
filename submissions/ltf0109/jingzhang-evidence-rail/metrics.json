@@ -1,273 +1,358 @@
 {
- "schema_version": "0.1.0",
- "units": {
-  "length": "m",
-  "area": "sqm"
- },
- "_recompute_boundary": {
-  "package_recomputable": "边界面积/绿地率/公共空间比/建筑基底/分期面积/基于 site_boundary 的 800m·1200m 地铁覆盖等可由 geometry/*.geojson 直接复算",
-  "external_authorized_only": "v16 更新：AMap 开放平台服务协议（2025-12-03 版）未授权聚合统计/坐标转换/H3 图件/随包再分发用途（条款 4.6/4.12.2/4.12.3/4.12.8/7.3），故全部 23 项 AMap 衍生指标已从 metrics 移除（原值见 removed_unauthorized_amap_derived 字段，仅作透明记录，不构成本方案指标）。剩余指标全部可由包内 geometry/*.geojson 直接复算（site 面积/绿地率/公共空间比/建筑基底/分期面积/H3 网格数等）。",
-  "implication": "本方案不主张 external_authorized_only 类指标可由包内数据独立复现；其 status=known 表示数值来自授权环境计算结果，非包内可复算"
- },
- "metrics": {
-  "site_area_sqm": {
-   "status": "known",
-   "value": 11412825.386,
-   "unit": "sqm",
-   "source_files": [
-    "geometry/site_boundary.geojson"
-   ],
-   "formula": "polygon_area(submitted_site_boundary)",
-   "confidence": "medium",
-   "assumptions": [
-    "面积基于 provisional site_boundary（组织方官方 polygon 未发布）的 EPSG:4548 重算，为临时估算，非官方红线/精确面积依据；官方几何发布后须重算"
-   ],
-   "precision_note": "EPSG:4548 平面面积，6 位小数来自计算器输出，非测量精度；基于 provisional site_boundary（组织方官方 polygon 未发布），官方几何发布后须重算。"
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
   },
-  "building_footprint_area_sqm": {
-   "status": "known",
-   "value": 2651475.657,
-   "unit": "sqm",
-   "formula": "sum(buildings.geometry.area) in EPSG:4548",
-   "source_files": [
-    "geometry/buildings.geojson"
-   ],
-   "confidence": "high",
-   "assumptions": [
-    "建筑物简化为基底多边形"
-   ]
+  "_recompute_boundary": {
+    "package_recomputable": "边界面积/绿地率/公共空间比/建筑基底/分期面积/面积/绿地率/公共空间比/建筑基底/分期面积等可由 geometry/*.geojson 直接复算",
+    "external_authorized_only": "v16 更新：AMap 开放平台服务协议（2025-12-03 版）未授权聚合统计/坐标转换/H3 图件/随包再分发用途（条款 4.6/4.12.2/4.12.3/4.12.8/7.3），故全部 23 项 AMap 衍生指标已从 metrics 移除（原值见 removed_unauthorized_amap_derived 字段，仅作透明记录，不构成本方案指标）。剩余指标全部可由包内 geometry/*.geojson 直接复算（site 面积/绿地率/公共空间比/建筑基底/分期面积等）；H3 网格聚合指标已随 H3 聚合层一并移除。",
+    "implication": "本方案不主张 external_authorized_only 类指标可由包内数据独立复现；其 status=known 表示数值来自授权环境计算结果，非包内可复算"
   },
-  "green_ratio": {
-   "status": "known",
-   "value": 0.256302,
-   "unit": "ratio",
-   "formula": "union(green_space.geometry).area/site.area in EPSG:4548",
-   "source_files": [
-    "geometry/green_space.geojson",
-    "geometry/site_boundary.geojson"
-   ],
-   "confidence": "high",
-   "assumptions": []
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
+      "confidence": "medium",
+      "assumptions": [
+        "面积基于 provisional site_boundary（组织方官方 polygon 未发布）的 EPSG:4548 重算，为临时估算，非官方红线/精确面积依据；官方几何发布后须重算"
+      ],
+      "precision_note": "EPSG:4548 平面面积，6 位小数来自计算器输出，非测量精度；基于 provisional site_boundary（组织方官方 polygon 未发布），官方几何发布后须重算。"
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 2651475.657,
+      "unit": "sqm",
+      "formula": "sum(buildings.geometry.area) in EPSG:4548",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "confidence": "high",
+      "assumptions": [
+        "建筑物简化为基底多边形"
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.256302,
+      "unit": "ratio",
+      "formula": "union(green_space.geometry).area/site.area in EPSG:4548",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.117777,
+      "unit": "ratio",
+      "formula": "union(public_space.geometry).area/site.area in EPSG:4548",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "confidence": "high",
+      "assumptions": []
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario cards in proposal.md 场景卡章节)",
+      "confidence": "high",
+      "assumptions": [
+        "12 张场景卡 = 10 核心 + 2 扩展（含无障碍/老年使用者）"
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(user personas in proposal.md 用户画像章节)",
+      "confidence": "high",
+      "assumptions": [
+        "6 类画像 = 科研人员/创业者/企业/居民/游客/老年与无障碍使用者"
+      ]
+    },
+    "renewal_project_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(renewal projects JZ-01..JZ-07 in proposal.md)",
+      "confidence": "high",
+      "assumptions": [
+        "JZ-01 京张遗址公园慢行断点缝合 / JZ-02 众智园清河创新界面 / JZ-03 原点社区近校成果转化街 / JZ-04 大钟寺站四象限步行连通 / JZ-05 AI公共服务与端侧算力节点 / JZ-06 全球AI活动周公共路线 / JZ-07 OPC 一人公司产业园试点（与 proposal.md 项目表一致）"
+      ]
+    },
+    "scenario_node_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario nodes, 1 per scenario card)",
+      "confidence": "high",
+      "assumptions": [
+        "每个场景卡对应一个空间节点"
+      ]
+    },
+    "landmark_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(cultural landmarks along JZ corridor: 清华园站/人字坡/火车博物馆/农大食堂展区/墨痕研究所)",
+      "confidence": "medium",
+      "assumptions": [
+        "依据大众点评游玩路线节点 + 官方报道；非官方文保名单口径"
+      ]
+    },
+    "university_within_1km_rail_count": {
+      "status": "known",
+      "value": 21,
+      "unit": "count",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "count(distinct university bodies with campus AOI within 1000m of JZ rail alignment CON-001)",
+      "confidence": "high",
+      "assumptions": [
+        "含北航/地大/北大医学部等；支撑高校共建遗产保护机制"
+      ]
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "max(building height) - 待官方控规条件确认",
+      "confidence": "unknown",
+      "assumptions": [
+        "approved height controls are not present in the repository"
+      ],
+      "reason": "approved building height controls and official site boundary are not present in the repository"
+    },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "building_footprint_area / site_area - 待官方控规条件确认",
+      "confidence": "unknown",
+      "assumptions": [
+        "approved density controls are not present in the repository"
+      ],
+      "reason": "approved building density controls are not present in the repository"
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 2925127.03,
+      "unit": "sqm",
+      "formula": "union(green_space.geometry).area in EPSG:4548",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 1344166.894,
+      "unit": "sqm",
+      "formula": "union(public_space.geometry).area in EPSG:4548",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "confidence": "high",
+      "assumptions": [
+        "含京张遗址公园活力带（GREEN-001 兼作公共空间主轴，D1 修复）"
+      ]
+    },
+    "resident_service_blind_spot_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap POI 衍生的居住服务盲区比，v16 按高德服务协议条款移除；可由包内 geometry 复算（居住 AOI 到 public_space/green_space 沿 roads 网络步行距离盲区），需实地/官方数据校验",
+      "recovery": {
+        "future_collection_method": "基于 geometry/buildings+public_space+roads 计算居住 AOI 至最近公共空间的网络步行距离盲区，辅以街道/社区实地服务设施普查",
+        "responsible_party": "责任规划师+街道办+社区",
+        "trigger_condition": "组织方发布官方 site polygon 或取得授权 POI/设施数据后复算"
+      }
+    },
+    "moran_su_industry": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap 产业 POI 空间自相关（Moran's I），v16 移除；恢复需授权 POI 或官方产业用地统计",
+      "recovery": {
+        "future_collection_method": "取得权利人书面授权后调用 AMap/官方产业数据，或改用官方产业用地统计做空间自相关",
+        "responsible_party": "海淀园管委会+责任规划师",
+        "trigger_condition": "取得可核验授权数据源后复算"
+      }
+    },
+    "gistar_industry_hot": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap 产业 POI 热点（Getis-Ord Gi*），v16 移除；恢复需授权 POI 或官方产业用地统计",
+      "recovery": {
+        "future_collection_method": "取得权利人书面授权后调用 AMap/官方产业数据，或改用官方产业用地统计做 Gi* 热点/冷点",
+        "responsible_party": "海淀园管委会+责任规划师",
+        "trigger_condition": "取得可核验授权数据源后复算"
+      }
+    },
+    "design_scope_metro_800m_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap 地铁站点 800m 覆盖，依赖第三方地铁站点（非包内 geometry），v16 移除；恢复需官方地铁站点+步行网络数据",
+      "recovery": {
+        "future_collection_method": "采用官方地铁站点 POI+路网做 800m 步行覆盖缓冲，或改由 geometry 计算至最近轨道站点的网络距离达标率",
+        "responsible_party": "轨道集团+交通委",
+          "trigger_condition": "官方轨道站点/步行网络数据发布后复算"
+      }
+    },
+    "key_area_ai_origin_research_poi_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap 科研 POI 计数（AI 原点重点区），v16 按高德服务协议条款移除；恢复需授权 POI 或官方产业/科研设施统计",
+      "recovery": {
+        "future_collection_method": "取得权利人书面授权后调用 AMap/官方科研设施数据，或改用官方产业/科研用地统计做密度评估",
+        "responsible_party": "海淀园管委会+责任规划师",
+        "trigger_condition": "取得可核验授权数据源后复算"
+      }
+    },
+    "key_area_dazhongsi_research_distance_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap 重点区到科研载体距离，v16 移除；恢复需授权 POI 或官方科研载体点位",
+      "recovery": {
+        "future_collection_method": "取得授权科研载体点位后由 geometry 计算 key_area 至最近科研载体的网络/直线距离",
+        "responsible_party": "责任规划师+中关村科学城",
+        "trigger_condition": "官方/授权科研载体点位发布后复算"
+      }
+    },
+    "key_area_dazhongsi_residential_poi_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "confidence": "unknown",
+      "reason": "原 AMap 大钟寺居住 POI 计数，v16 移除；恢复需授权 POI 或官方居住设施统计",
+      "recovery": {
+        "future_collection_method": "取得权利人书面授权后调用 AMap/官方居住设施数据，或改用 geometry 居住 AOI 判定居住规模",
+        "responsible_party": "责任规划师+街道办",
+        "trigger_condition": "取得可核验授权数据源后复算"
+      }
+    }
   },
-  "public_space_ratio": {
-   "status": "known",
-   "value": 0.117777,
-   "unit": "ratio",
-   "formula": "union(public_space.geometry).area/site.area in EPSG:4548",
-   "source_files": [
-    "geometry/public_space.geojson",
-    "geometry/site_boundary.geojson"
-   ],
-   "confidence": "high",
-   "assumptions": []
-  },
-  "floor_area_ratio": {
-   "status": "unknown",
-   "value": null,
-   "unit": "ratio",
-   "source_files": [
-    "brief/site-package/ranges/planning_limits.json"
-   ],
-   "formula": "total_floor_area_sqm / official_site_area_sqm",
-   "confidence": "unknown",
-   "assumptions": [],
-   "reason": "Approved FAR controls and official site boundary are not present in the public site package."
-  },
-  "key_area_count": {
-   "status": "known",
-   "value": 3,
-   "unit": "count",
-   "source_files": [
-    "geometry/key_areas.geojson"
-   ],
-   "formula": "count(key_detailed_design_areas)",
-   "confidence": "high",
-   "assumptions": []
-  },
-  "scenario_card_count": {
-   "status": "known",
-   "value": 12,
-   "unit": "count",
-   "source_files": [
-    "proposal.md"
-   ],
-   "formula": "count(scenario cards in proposal.md 场景卡章节)",
-   "confidence": "high",
-   "assumptions": [
-    "12 张场景卡 = 10 核心 + 2 扩展（含无障碍/老年使用者）"
-   ]
-  },
-  "persona_count": {
-   "status": "known",
-   "value": 6,
-   "unit": "count",
-   "source_files": [
-    "proposal.md"
-   ],
-   "formula": "count(user personas in proposal.md 用户画像章节)",
-   "confidence": "high",
-   "assumptions": [
-    "6 类画像 = 科研人员/创业者/企业/居民/游客/老年与无障碍使用者"
-   ]
-  },
-  "renewal_project_count": {
-   "status": "known",
-   "value": 7,
-   "unit": "count",
-   "source_files": [
-    "proposal.md"
-   ],
-   "formula": "count(renewal projects JZ-01..JZ-07 in proposal.md)",
-   "confidence": "high",
-   "assumptions": [
-    "JZ-01 京张遗址公园慢行断点缝合 / JZ-02 众智园清河创新界面 / JZ-03 原点社区近校成果转化街 / JZ-04 大钟寺站四象限步行连通 / JZ-05 AI公共服务与端侧算力节点 / JZ-06 全球AI活动周公共路线 / JZ-07 OPC 一人公司产业园试点（与 proposal.md 项目表一致）"
-   ]
-  },
-  "scenario_node_count": {
-   "status": "known",
-   "value": 12,
-   "unit": "count",
-   "source_files": [
-    "proposal.md"
-   ],
-   "formula": "count(scenario nodes, 1 per scenario card)",
-   "confidence": "high",
-   "assumptions": [
-    "每个场景卡对应一个空间节点"
-   ]
-  },
-  "landmark_count": {
-   "status": "known",
-   "value": 5,
-   "unit": "count",
-   "source_files": [
-    "proposal.md"
-   ],
-   "formula": "count(cultural landmarks along JZ corridor: 清华园站/人字坡/火车博物馆/农大食堂展区/墨痕研究所)",
-   "confidence": "medium",
-   "assumptions": [
-    "依据大众点评游玩路线节点 + 官方报道；非官方文保名单口径"
-   ]
-  },
-  "university_within_1km_rail_count": {
-   "status": "known",
-   "value": 21,
-   "unit": "count",
-   "source_files": [
-    "geometry/constraints.geojson"
-   ],
-   "formula": "count(distinct university bodies with campus AOI within 1000m of JZ rail alignment CON-001)",
-   "confidence": "high",
-   "assumptions": [
-    "含北航/地大/北大医学部等；支撑高校共建遗产保护机制"
-   ]
-  },
-  "h3_site_res9_cell_count": {
-   "status": "known",
-   "value": 151,
-   "unit": "count",
-   "source_files": [
-    "geometry/site_boundary.geojson"
-   ],
-   "formula": "count(H3 res9 hexagons covering PROV-SITE-001, centroid-in-zone)",
-   "confidence": "high",
-   "assumptions": [
-    "H3 六边形网格，EPSG:4326 交换 / 4548 计算；单元面积约 0.105 km²"
-   ]
-  },
-  "h3_study_res8_cell_count": {
-   "status": "known",
-   "value": 85,
-   "unit": "count",
-   "source_files": [
-    "geometry/site_boundary.geojson"
-   ],
-   "formula": "count(H3 res8 hexagons covering PROV-RESEARCH-001, centroid-in-zone)",
-   "confidence": "high",
-   "assumptions": [
-    "研究区宏观网格，单元面积约 0.74 km²"
-   ]
-  },
-  "building_height_m": {
-   "status": "unknown",
-   "value": null,
-   "unit": "m",
-   "source_files": [
-    "brief/site-package/ranges/planning_limits.json"
-   ],
-   "formula": "max(building height) - 待官方控规条件确认",
-   "confidence": "unknown",
-   "assumptions": [
-    "approved height controls are not present in the repository"
-   ],
-   "reason": "approved building height controls and official site boundary are not present in the repository"
-  },
-  "building_density": {
-   "status": "unknown",
-   "value": null,
-   "unit": "ratio",
-   "source_files": [
-    "brief/site-package/ranges/planning_limits.json"
-   ],
-   "formula": "building_footprint_area / site_area - 待官方控规条件确认",
-   "confidence": "unknown",
-   "assumptions": [
-    "approved density controls are not present in the repository"
-   ],
-   "reason": "approved building density controls are not present in the repository"
-  },
-  "green_space_area_sqm": {
-   "status": "known",
-   "value": 2925127.03,
-   "unit": "sqm",
-   "formula": "union(green_space.geometry).area in EPSG:4548",
-   "source_files": [
-    "geometry/green_space.geojson"
-   ],
-   "confidence": "high",
-   "assumptions": []
-  },
-  "public_space_area_sqm": {
-   "status": "known",
-   "value": 1344166.894,
-   "unit": "sqm",
-   "formula": "union(public_space.geometry).area in EPSG:4548",
-   "source_files": [
-    "geometry/public_space.geojson"
-   ],
-   "confidence": "high",
-   "assumptions": [
-    "含京张遗址公园活力带（GREEN-001 兼作公共空间主轴，D1 修复）"
-   ]
+  "removed_unauthorized_amap_derived": {
+    "reason": "AMap 开放平台服务协议（2025-12-03 版, https://lbs.amap.com/pages/terms/）条款 4.6/4.12.2/4.12.3/4.12.8/7.3 未授权聚合统计、坐标转换、H3 图件及随包公开展示/再分发；v16 按评审裁决移除",
+    "removed_count": 23,
+    "values_retained": false,
+    "removed_metric_names": [
+      "design_scope_metro_800m_coverage",
+      "design_scope_metro_1200m_coverage",
+      "key_area_dazhongsi_research_distance_m",
+      "resident_service_blind_spot_ratio",
+      "university_aoi_count",
+      "rail_corridor_500m_commercial_count",
+      "rail_corridor_south_commercial_count",
+      "key_area_ai_origin_research_poi_count",
+      "key_area_dazhongsi_residential_poi_count",
+      "moran_su_industry",
+      "moran_su_resident",
+      "gistar_industry_hot",
+      "gistar_industry_cold",
+      "gistar_industry_ns",
+      "gistar_resident_hot",
+      "gistar_resident_cold",
+      "gistar_resident_ns",
+      "poi_subset_metro",
+      "poi_subset_green",
+      "poi_subset_commerce",
+      "poi_subset_industry",
+      "poi_subset_medical",
+      "poi_total_study_area"
+    ],
+    "note": "原 23 项 AMap 衍生指标的数值不随包保留；其中 7 项（resident_service_blind_spot_ratio/moran_su_industry/gistar_industry_hot/design_scope_metro_800m_coverage/key_area_ai_origin_research_poi_count/key_area_dazhongsi_research_distance_m/key_area_dazhongsi_residential_poi_count）已在 metrics 对象以 status=unknown 声明缺口与恢复路径；恢复分析层须取得权利人书面授权或改用许可明确的数据源。详见 sources.json AMAP-TIANDITU-DERIVED-DATA-REMOVED。"
   }
- },
- "removed_unauthorized_amap_derived": {
-  "reason": "AMap 开放平台服务协议（2025-12-03 版, https://lbs.amap.com/pages/terms/）条款 4.6/4.12.2/4.12.3/4.12.8/7.3 未授权聚合统计、坐标转换、H3 图件及随包公开展示/再分发；v16 按评审裁决移除",
-  "removed_count": 23,
-  "former_values": {
-   "design_scope_metro_800m_coverage": 0.719,
-   "design_scope_metro_1200m_coverage": 0.916,
-   "key_area_dazhongsi_research_distance_m": 3230,
-   "resident_service_blind_spot_ratio": 0.54,
-   "university_aoi_count": 6,
-   "rail_corridor_500m_commercial_count": 333,
-   "rail_corridor_south_commercial_count": 0,
-   "key_area_ai_origin_research_poi_count": 56,
-   "key_area_dazhongsi_residential_poi_count": 27,
-   "moran_su_industry": 0.874,
-   "moran_su_resident": 0.9316,
-   "gistar_industry_hot": 37,
-   "gistar_industry_cold": 24,
-   "gistar_industry_ns": 90,
-   "gistar_resident_hot": 48,
-   "gistar_resident_cold": 36,
-   "gistar_resident_ns": 67,
-   "poi_subset_metro": 18,
-   "poi_subset_green": 376,
-   "poi_subset_commerce": 392,
-   "poi_subset_industry": 119,
-   "poi_subset_medical": 192,
-   "poi_total_study_area": 2491
-  }
- }
 }
